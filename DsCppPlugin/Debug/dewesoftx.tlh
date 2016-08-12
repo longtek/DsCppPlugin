@@ -1,0 +1,4921 @@
+﻿// Created by Microsoft (R) C/C++ Compiler Version 10.00.30319.01 (58d5a085).
+//
+// f:\project\dscppplugin16\dscppplugin\debug\dewesoftx.tlh
+//
+// C++ source equivalent of Win32 type library D:\Bin\X2\DEWEsoftX.exe
+// compiler-generated file created 08/12/16 at 09:40:54 - DO NOT EDIT!
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("96d9b72c-93f3-4d0c-90bb-1466845156ef"))
+/* LIBID */ __DEWEsoft;
+struct __declspec(uuid("45be650b-1f90-46bf-bc65-853f09a0a241"))
+/* dual interface */ IData;
+struct __declspec(uuid("cae48a7c-581e-4c0b-ae4f-7a2eb89c0dff"))
+/* dual interface */ IChannel;
+struct __declspec(uuid("788183a5-1fc0-48e8-93ec-a6ee075a42f9"))
+/* dual interface */ IChannelList;
+struct __declspec(uuid("efc6dff0-b694-41f8-905d-45612724bd7d"))
+/* dual interface */ IChannelGroups;
+struct __declspec(uuid("763e6e43-6464-4cb8-9701-a645b060f216"))
+/* dual interface */ IChannelGroup;
+struct __declspec(uuid("82d0cab4-6b17-4810-ba3f-06c235e76366"))
+/* dual interface */ IApp;
+struct __declspec(uuid("c15bab67-52bb-4664-8c9d-e8cc1a1a4c44"))
+/* dispinterface */ IAppEvents;
+struct /* coclass */ App;
+struct __declspec(uuid("a1114daa-8d7f-4809-92f9-d6c1dcbf5d81"))
+/* dual interface */ ILoadEngine;
+struct __declspec(uuid("97c5783f-0b84-47d9-8294-9f33b2739076"))
+/* dual interface */ IStoreEngine;
+struct __declspec(uuid("f095a7a6-c7cc-4492-a4f1-25596b54c673"))
+/* dual interface */ IPlugin;
+struct __declspec(uuid("b06829e7-7afc-4921-b530-6ecbe286c905"))
+/* dual interface */ IPlugin2;
+struct __declspec(uuid("21b73cc2-ac60-4bab-bef0-fa4453894eef"))
+/* dual interface */ IPluginGroup;
+struct __declspec(uuid("a3923065-75e3-4dfb-b049-5ccb981c15f3"))
+/* dual interface */ IScreens;
+struct __declspec(uuid("8262475b-8f95-4917-a339-a343cb5d5065"))
+/* dual interface */ IScreen;
+struct __declspec(uuid("c30bc69b-93bd-44c2-af67-95c12865f8a1"))
+/* dual interface */ IEventList;
+struct __declspec(uuid("4d89cff3-0bfa-4ce1-a17f-e449b5cda72e"))
+/* dual interface */ IEvent;
+struct __declspec(uuid("254bf4b3-cf9c-49a3-8f75-7ce35ef01a5d"))
+/* dual interface */ IMasterClock;
+struct __declspec(uuid("7515b878-6b71-4020-bff3-b880451e163b"))
+/* dual interface */ IDataSection;
+struct __declspec(uuid("9289b1ac-5753-4d6b-b8d6-9e986194875c"))
+/* dual interface */ IDataSections;
+struct __declspec(uuid("66c046ab-0518-453d-9e52-06340574a1c2"))
+/* interface */ ICustomExport;
+struct __declspec(uuid("44f950d5-4db2-4bc8-a636-653d98cbf652"))
+/* dual interface */ IChannelConnection;
+struct __declspec(uuid("56102555-9e45-4ae6-b3be-a4d7f830296e"))
+/* dual interface */ IAISetupScreen;
+struct __declspec(uuid("158b5c24-cf4d-4edf-b2c8-68d46a5cd676"))
+/* dual interface */ IDaqChannel;
+struct __declspec(uuid("99edf4c9-4784-4a66-a1ca-2e395ec319d6"))
+/* dual interface */ IPlugin3;
+struct __declspec(uuid("6b0b2596-bc6b-4c04-8155-ed285696da7d"))
+/* interface */ ICustomExport2;
+struct __declspec(uuid("b2f13d39-72c9-497a-8a38-9d16ddf6d9f2"))
+/* dual interface */ ITrigger;
+struct __declspec(uuid("c0b4dee8-073d-4e57-9dac-8a72cbc6a51f"))
+/* dual interface */ IChannelGroup2;
+struct __declspec(uuid("3a2b361a-ee1b-4ceb-9848-2c0982bcac7f"))
+/* interface */ ICustomDAQ;
+struct __declspec(uuid("0e036530-b449-4ebc-af84-fb2ca6675735"))
+/* dual interface */ IVideoLoadEngine;
+struct __declspec(uuid("87d35b4c-8fa5-4080-9cde-ac49cada92c5"))
+/* dual interface */ IVideoLoadEngines;
+struct __declspec(uuid("78087aeb-d02b-488f-9757-ba685d03771c"))
+/* dual interface */ IAOGroup;
+struct __declspec(uuid("c6e7dd46-7bca-42f3-9ac7-0077d19d4ecf"))
+/* dual interface */ IAOChannel;
+struct __declspec(uuid("1d49da44-d8ee-4cd7-8b62-dd4e7b523b8e"))
+/* dual interface */ ICAN;
+struct __declspec(uuid("f560c6ca-c5fd-4921-ae58-a4f69b17a3e9"))
+/* dual interface */ ICANPort;
+struct __declspec(uuid("da7bd5dc-c815-4471-ada6-8b7be9126e1f"))
+/* dual interface */ IModule;
+struct __declspec(uuid("97ff1354-fd61-4339-94c9-b36691410c4e"))
+/* dual interface */ IPadData;
+struct __declspec(uuid("129fc1e1-2091-4789-978b-faa05f259260"))
+/* dual interface */ IDaqData;
+struct __declspec(uuid("b37a70cb-5b08-490a-ae57-3d75f1c59b1c"))
+/* dual interface */ IModules;
+struct __declspec(uuid("82d459fe-bc05-4ff2-8597-74bb45010608"))
+/* dual interface */ IAveragedFFT;
+struct __declspec(uuid("d7050b91-6a5d-4228-9378-0021325c815c"))
+/* dual interface */ INothing;
+struct __declspec(uuid("20627eb4-d51b-4267-a6cb-8c86112e7502"))
+/* dual interface */ IPluginLicense;
+struct __declspec(uuid("9d97cef7-1a44-4065-904a-28575032572d"))
+/* dual interface */ ITriggerCondition;
+struct __declspec(uuid("2ca6fa4f-0e5c-4b4e-9e8f-e241be14e622"))
+/* dual interface */ ITriggerCondList;
+struct __declspec(uuid("3e3732b1-3146-429d-8c33-f89ae5ffde92"))
+/* dual interface */ ITrig;
+struct __declspec(uuid("f785eaad-9fbf-40a2-8532-3ac46dc8ce28"))
+/* dual interface */ IAlarms;
+struct __declspec(uuid("a4d0a424-ae57-4d56-945e-3b8d1369ddec"))
+/* dual interface */ IAlarmCond;
+struct __declspec(uuid("fc698ce1-0973-498a-aa6b-2f82830be3a6"))
+/* dual interface */ IDaqGroup;
+struct __declspec(uuid("0d7e8d61-796e-47ab-9631-2fc80a5af203"))
+/* dual interface */ IExportFrame;
+struct __declspec(uuid("ceb1a90b-d594-47b5-a154-bb7b4603aca2"))
+/* dual interface */ IFileNameSettings;
+struct __declspec(uuid("aa2e8a89-aadd-4b5f-81b9-d9f76bf35c2a"))
+/* dual interface */ IDaq;
+struct __declspec(uuid("e39d43bc-bfb8-4d48-af5b-53eba55c8817"))
+/* dual interface */ IPluginChannel;
+struct __declspec(uuid("04242cbe-cf38-4a86-b54b-d78a9b64e0fb"))
+/* dual interface */ IDiscreteItem;
+struct __declspec(uuid("53330bbc-6b11-4805-8c41-48b13047dc42"))
+/* dual interface */ IDiscreteList;
+struct __declspec(uuid("14bb3a33-f7a5-4656-8c94-3b529d7306b0"))
+/* dual interface */ IGlobalHeader;
+struct __declspec(uuid("b2fdbf74-7a7d-4be1-bfdc-59f364f320dc"))
+/* dual interface */ IGHObject;
+struct __declspec(uuid("f8f34a4f-cbad-4240-9daf-c226282b8615"))
+/* dual interface */ ITiming;
+struct __declspec(uuid("bea4a4fb-010a-4d58-9140-729783ed0f99"))
+/* dual interface */ IPlugin4;
+struct __declspec(uuid("5d479bea-0369-46dc-8668-ebecc83e0b9f"))
+/* dual interface */ IUserInterface;
+struct __declspec(uuid("d9d2402a-73a9-47c3-a121-951a7efe4fcf"))
+/* dual interface */ IVCContext;
+struct __declspec(uuid("9b3ff991-2d72-4474-a82d-2464d071a715"))
+/* dual interface */ IMathContext;
+struct __declspec(uuid("14c2577b-0281-475a-9302-394d1fa1b473"))
+/* dual interface */ IMathFrameContext;
+struct __declspec(uuid("5c45f430-ee53-49dc-935b-36314a52d438"))
+/* interface */ IDewePlugin;
+struct __declspec(uuid("c4a25fdc-9f2e-413d-9ec8-8df43bd210ca"))
+/* dual interface */ IPowerModule;
+struct __declspec(uuid("2cd91570-4eef-4ab9-a24c-d3c663b4f5b1"))
+/* dual interface */ IPowerModules;
+struct __declspec(uuid("0db0148a-639a-4adc-b781-213b14f1f9ef"))
+/* dual interface */ IArrayInfo;
+struct __declspec(uuid("7a49908d-487a-4f85-96f2-d53b745e91cf"))
+/* dual interface */ IAxisDef;
+struct __declspec(uuid("6f188a41-ad92-4380-b560-02a07dda1339"))
+/* dual interface */ IMath;
+struct __declspec(uuid("b5ff31ac-f12b-4c28-adce-14874043c10a"))
+/* dual interface */ IMathObject;
+struct __declspec(uuid("5db01f14-c1ec-4b60-a258-5945b09eb818"))
+/* dual interface */ IMathItem;
+struct __declspec(uuid("e17a04ba-e047-4896-892e-a8937cc290b6"))
+/* dual interface */ IMathModule;
+struct __declspec(uuid("41315abf-26aa-44b6-a758-c45c3c685997"))
+/* dual interface */ IMathObjContext;
+struct __declspec(uuid("9d693130-279e-443a-b4ca-6c2ada913724"))
+/* dual interface */ IChannelListEx;
+struct __declspec(uuid("e3638e01-ed8e-40c4-baac-d00b5b023ea7"))
+/* dual interface */ IPluginChannelXMLHelper;
+struct __declspec(uuid("0c418a3e-cdf3-4f89-b28b-8d63aca8398f"))
+/* dual interface */ IMathChannel;
+struct __declspec(uuid("74e73f54-f623-4271-8071-d3e715b9ef70"))
+/* dual interface */ IInputGroup;
+struct __declspec(uuid("185eb8a2-805f-4b63-a1fc-bbee49a69337"))
+/* dual interface */ IInputGroups;
+struct __declspec(uuid("dbb2d89c-443b-4abf-838e-27cdea6e424c"))
+/* dual interface */ IProperties;
+struct __declspec(uuid("947bf399-9ef8-4417-a5c0-d5ccd79a0b14"))
+/* dual interface */ ICustomExport3;
+struct __declspec(uuid("5649e2dc-2ef0-4d1d-8e23-2a0dc041d0a5"))
+/* dual interface */ IRegistrationHelper;
+struct __declspec(uuid("2e02870e-2b86-40be-bad3-1ff6ff4d03c9"))
+/* dual interface */ IAmplInterfaces;
+struct __declspec(uuid("40aadaed-bcc1-4134-b154-de6e016de703"))
+/* dual interface */ IAmplInterface;
+struct __declspec(uuid("01c5e234-c56d-4fa3-8c77-e1ad0484790d"))
+/* dual interface */ IAmplChainList;
+struct __declspec(uuid("24428804-6902-4cc5-808c-86b362414bda"))
+/* dual interface */ IAmplChain;
+struct __declspec(uuid("39f60bb4-26eb-47c1-884a-d10114fa06e7"))
+/* dual interface */ IAmplifier;
+struct __declspec(uuid("9ea5ff19-04b2-4138-81db-88ecdab95f21"))
+/* dual interface */ IImportGroup;
+struct __declspec(uuid("b05e7b8b-09a8-418e-8b32-922bd729f1ad"))
+/* dual interface */ IImportChannel;
+struct __declspec(uuid("06ed52b2-5a28-4564-99ce-10ed7a82f933"))
+/* dual interface */ IPluginLicense2;
+struct __declspec(uuid("6d30b59f-0060-40db-b6b2-7f87465ce3b7"))
+/* dual interface */ IOfflineCalc;
+struct __declspec(uuid("89dc7c60-9fce-48d3-a70a-eb035cfc3a44"))
+/* dual interface */ ICNTGroup;
+struct __declspec(uuid("062c4672-b1c5-43fa-8c77-62c1dcb928f0"))
+/* dual interface */ ICustomDAQ2;
+struct __declspec(uuid("1bffb38d-377e-4e0a-a697-0e3d25aa768d"))
+/* dual interface */ ICntChannel;
+struct __declspec(uuid("df31d5d6-d4c4-47b6-84ec-73b748b67c22"))
+/* dual interface */ ITrigInfo;
+struct __declspec(uuid("c58c7b68-e2f7-478a-acf7-11b8d6a16509"))
+/* dual interface */ IDigitalTrigLevel;
+struct __declspec(uuid("aa6c3d58-ed6d-4529-aaf8-ecb0a682a270"))
+/* dual interface */ ISyncSource;
+struct __declspec(uuid("6dd0e754-22ab-4687-8fd4-28d9475cd02c"))
+/* dual interface */ ICANContext;
+struct __declspec(uuid("953fd7c5-a46c-4f92-a229-220a12a1a115"))
+/* dual interface */ ICANPortContext;
+struct __declspec(uuid("1d828c6f-8559-4000-84b1-570451541753"))
+/* dual interface */ ICANMsg;
+struct __declspec(uuid("0ab26cc9-1f8f-4289-9f0e-6fb42ba4cac0"))
+/* dual interface */ IProjectManager;
+struct __declspec(uuid("96a73a79-b803-4331-9204-b28708f0811b"))
+/* dual interface */ IDisplayTemplate;
+struct __declspec(uuid("e224aecc-b2f3-42ee-a7c1-4650d1a5d740"))
+/* dual interface */ IDisplayFrameTemplate;
+struct __declspec(uuid("2af787a0-cf72-41a2-a0c9-d8dc56676387"))
+/* dual interface */ IDisplayFrameTemplates;
+struct __declspec(uuid("a727cf4a-fbaf-45f6-bc6a-8a58e05aeb3f"))
+/* dual interface */ IDIGroup;
+struct __declspec(uuid("cc93ddf0-d660-47bf-97d8-368afce0a6be"))
+/* dual interface */ IDIPort;
+struct __declspec(uuid("1a6efdac-300e-40d7-8a4e-0f4c370993dd"))
+/* dual interface */ IDIChannel;
+struct __declspec(uuid("85163d18-0a7e-4844-93eb-f9a0c4c43968"))
+/* dual interface */ IVideo;
+struct __declspec(uuid("c102fc8b-bfde-4d2f-954c-062cf19eaa6b"))
+/* dual interface */ ICamera;
+struct __declspec(uuid("999f8e10-ec80-4d2a-a785-c1fd3cb87f22"))
+/* dual interface */ IVideoFrame;
+struct __declspec(uuid("b657e514-6aa4-4b43-af88-d5d4c8b6251c"))
+/* dual interface */ IIndexChanger;
+struct __declspec(uuid("f1dd1197-a2c6-478a-840c-b226864b11d3"))
+/* dual interface */ ISetupMessages;
+struct __declspec(uuid("daa5f907-902b-4d5b-982b-4afcb191eeb1"))
+/* dual interface */ IViewInfo;
+struct __declspec(uuid("0850b5b8-80c8-41a5-a34d-04adfe00a000"))
+/* dual interface */ IAxisViewInfo;
+struct __declspec(uuid("4e5157c0-cb61-4a6e-8183-e4d747568c21"))
+/* dual interface */ ILockableCursor;
+struct __declspec(uuid("b2ede09d-d64b-4ef2-aefd-6945a76dfac4"))
+/* dual interface */ ILockableCursors;
+struct __declspec(uuid("83054c30-0f5b-433d-9863-e521c5ca254b"))
+/* dual interface */ IMathItem2;
+enum MenuItems;
+enum ExportTypes;
+enum ConnTypes;
+enum EventReason;
+enum EventType;
+enum AOOperationMode;
+enum AOSweepMode;
+enum AOWaveForm;
+enum TSRDivType;
+enum GHObjectType;
+enum EventIDs;
+enum CustomVCMessages;
+enum CustomMathMessages;
+enum CustomMathFrameMessages;
+enum XMLType;
+enum ModulesFunction;
+enum TAxisType;
+enum CustomExpEventIDs;
+enum SpecDirectory;
+enum CustomImpMessages;
+enum ImportTypes;
+enum MathMultipassType;
+enum ImportStatus;
+enum CustomDAQMessages;
+enum CustomCANMessages;
+enum ControlChFlags;
+enum SetupMessageType;
+enum ReportMessageType;
+struct T_ReducedRec;
+struct T_RecordPosition;
+struct T_ChIndex;
+struct ITestRecord;
+struct T_CANFrame;
+struct DaqDeviceInfo;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(IAppEvents, __uuidof(IAppEvents));
+_COM_SMARTPTR_TYPEDEF(IScreen, __uuidof(IScreen));
+_COM_SMARTPTR_TYPEDEF(IScreens, __uuidof(IScreens));
+_COM_SMARTPTR_TYPEDEF(IMasterClock, __uuidof(IMasterClock));
+_COM_SMARTPTR_TYPEDEF(IAISetupScreen, __uuidof(IAISetupScreen));
+_COM_SMARTPTR_TYPEDEF(IDaqChannel, __uuidof(IDaqChannel));
+_COM_SMARTPTR_TYPEDEF(IVideoLoadEngine, __uuidof(IVideoLoadEngine));
+_COM_SMARTPTR_TYPEDEF(IVideoLoadEngines, __uuidof(IVideoLoadEngines));
+_COM_SMARTPTR_TYPEDEF(IPadData, __uuidof(IPadData));
+_COM_SMARTPTR_TYPEDEF(IDaqData, __uuidof(IDaqData));
+_COM_SMARTPTR_TYPEDEF(IModule, __uuidof(IModule));
+_COM_SMARTPTR_TYPEDEF(IModules, __uuidof(IModules));
+_COM_SMARTPTR_TYPEDEF(IAveragedFFT, __uuidof(IAveragedFFT));
+_COM_SMARTPTR_TYPEDEF(INothing, __uuidof(INothing));
+_COM_SMARTPTR_TYPEDEF(IPluginLicense, __uuidof(IPluginLicense));
+_COM_SMARTPTR_TYPEDEF(IDaqGroup, __uuidof(IDaqGroup));
+_COM_SMARTPTR_TYPEDEF(IFileNameSettings, __uuidof(IFileNameSettings));
+_COM_SMARTPTR_TYPEDEF(IPluginChannel, __uuidof(IPluginChannel));
+_COM_SMARTPTR_TYPEDEF(IDiscreteItem, __uuidof(IDiscreteItem));
+_COM_SMARTPTR_TYPEDEF(IDiscreteList, __uuidof(IDiscreteList));
+_COM_SMARTPTR_TYPEDEF(IGHObject, __uuidof(IGHObject));
+_COM_SMARTPTR_TYPEDEF(IGlobalHeader, __uuidof(IGlobalHeader));
+_COM_SMARTPTR_TYPEDEF(ITiming, __uuidof(ITiming));
+_COM_SMARTPTR_TYPEDEF(IMathFrameContext, __uuidof(IMathFrameContext));
+_COM_SMARTPTR_TYPEDEF(IDewePlugin, __uuidof(IDewePlugin));
+_COM_SMARTPTR_TYPEDEF(IPluginChannelXMLHelper, __uuidof(IPluginChannelXMLHelper));
+_COM_SMARTPTR_TYPEDEF(IMathChannel, __uuidof(IMathChannel));
+_COM_SMARTPTR_TYPEDEF(IProperties, __uuidof(IProperties));
+_COM_SMARTPTR_TYPEDEF(IInputGroup, __uuidof(IInputGroup));
+_COM_SMARTPTR_TYPEDEF(IInputGroups, __uuidof(IInputGroups));
+_COM_SMARTPTR_TYPEDEF(IRegistrationHelper, __uuidof(IRegistrationHelper));
+_COM_SMARTPTR_TYPEDEF(IAmplifier, __uuidof(IAmplifier));
+_COM_SMARTPTR_TYPEDEF(IAmplChain, __uuidof(IAmplChain));
+_COM_SMARTPTR_TYPEDEF(IAmplChainList, __uuidof(IAmplChainList));
+_COM_SMARTPTR_TYPEDEF(IAmplInterface, __uuidof(IAmplInterface));
+_COM_SMARTPTR_TYPEDEF(IAmplInterfaces, __uuidof(IAmplInterfaces));
+_COM_SMARTPTR_TYPEDEF(IImportChannel, __uuidof(IImportChannel));
+_COM_SMARTPTR_TYPEDEF(IPluginLicense2, __uuidof(IPluginLicense2));
+_COM_SMARTPTR_TYPEDEF(IOfflineCalc, __uuidof(IOfflineCalc));
+_COM_SMARTPTR_TYPEDEF(ICustomDAQ2, __uuidof(ICustomDAQ2));
+_COM_SMARTPTR_TYPEDEF(IDigitalTrigLevel, __uuidof(IDigitalTrigLevel));
+_COM_SMARTPTR_TYPEDEF(ISyncSource, __uuidof(ISyncSource));
+_COM_SMARTPTR_TYPEDEF(ICANMsg, __uuidof(ICANMsg));
+_COM_SMARTPTR_TYPEDEF(ICANPortContext, __uuidof(ICANPortContext));
+_COM_SMARTPTR_TYPEDEF(ICANContext, __uuidof(ICANContext));
+_COM_SMARTPTR_TYPEDEF(IProjectManager, __uuidof(IProjectManager));
+_COM_SMARTPTR_TYPEDEF(IDIPort, __uuidof(IDIPort));
+_COM_SMARTPTR_TYPEDEF(IDIGroup, __uuidof(IDIGroup));
+_COM_SMARTPTR_TYPEDEF(IDIChannel, __uuidof(IDIChannel));
+_COM_SMARTPTR_TYPEDEF(IVideoFrame, __uuidof(IVideoFrame));
+_COM_SMARTPTR_TYPEDEF(ICamera, __uuidof(ICamera));
+_COM_SMARTPTR_TYPEDEF(IVideo, __uuidof(IVideo));
+_COM_SMARTPTR_TYPEDEF(IViewInfo, __uuidof(IViewInfo));
+_COM_SMARTPTR_TYPEDEF(IAxisViewInfo, __uuidof(IAxisViewInfo));
+_COM_SMARTPTR_TYPEDEF(ILockableCursor, __uuidof(ILockableCursor));
+_COM_SMARTPTR_TYPEDEF(ILockableCursors, __uuidof(ILockableCursors));
+_COM_SMARTPTR_TYPEDEF(IMathItem2, __uuidof(IMathItem2));
+_COM_SMARTPTR_TYPEDEF(IStoreEngine, __uuidof(IStoreEngine));
+_COM_SMARTPTR_TYPEDEF(IAOChannel, __uuidof(IAOChannel));
+_COM_SMARTPTR_TYPEDEF(IPlugin4, __uuidof(IPlugin4));
+_COM_SMARTPTR_TYPEDEF(IPowerModule, __uuidof(IPowerModule));
+_COM_SMARTPTR_TYPEDEF(IPowerModules, __uuidof(IPowerModules));
+_COM_SMARTPTR_TYPEDEF(ICustomExport3, __uuidof(ICustomExport3));
+_COM_SMARTPTR_TYPEDEF(ISetupMessages, __uuidof(ISetupMessages));
+_COM_SMARTPTR_TYPEDEF(ICANPort, __uuidof(ICANPort));
+_COM_SMARTPTR_TYPEDEF(ICAN, __uuidof(ICAN));
+_COM_SMARTPTR_TYPEDEF(IDaq, __uuidof(IDaq));
+_COM_SMARTPTR_TYPEDEF(IData, __uuidof(IData));
+_COM_SMARTPTR_TYPEDEF(IChannel, __uuidof(IChannel));
+_COM_SMARTPTR_TYPEDEF(IChannelList, __uuidof(IChannelList));
+_COM_SMARTPTR_TYPEDEF(IChannelGroup, __uuidof(IChannelGroup));
+_COM_SMARTPTR_TYPEDEF(IChannelGroups, __uuidof(IChannelGroups));
+_COM_SMARTPTR_TYPEDEF(IPluginGroup, __uuidof(IPluginGroup));
+_COM_SMARTPTR_TYPEDEF(IDataSection, __uuidof(IDataSection));
+_COM_SMARTPTR_TYPEDEF(IDataSections, __uuidof(IDataSections));
+_COM_SMARTPTR_TYPEDEF(ILoadEngine, __uuidof(ILoadEngine));
+_COM_SMARTPTR_TYPEDEF(IChannelConnection, __uuidof(IChannelConnection));
+_COM_SMARTPTR_TYPEDEF(IChannelGroup2, __uuidof(IChannelGroup2));
+_COM_SMARTPTR_TYPEDEF(IAOGroup, __uuidof(IAOGroup));
+_COM_SMARTPTR_TYPEDEF(ITriggerCondition, __uuidof(ITriggerCondition));
+_COM_SMARTPTR_TYPEDEF(ITriggerCondList, __uuidof(ITriggerCondList));
+_COM_SMARTPTR_TYPEDEF(ITrig, __uuidof(ITrig));
+_COM_SMARTPTR_TYPEDEF(ITrigger, __uuidof(ITrigger));
+_COM_SMARTPTR_TYPEDEF(IAlarmCond, __uuidof(IAlarmCond));
+_COM_SMARTPTR_TYPEDEF(IAlarms, __uuidof(IAlarms));
+_COM_SMARTPTR_TYPEDEF(IUserInterface, __uuidof(IUserInterface));
+_COM_SMARTPTR_TYPEDEF(IVCContext, __uuidof(IVCContext));
+_COM_SMARTPTR_TYPEDEF(IMathContext, __uuidof(IMathContext));
+_COM_SMARTPTR_TYPEDEF(IAxisDef, __uuidof(IAxisDef));
+_COM_SMARTPTR_TYPEDEF(IArrayInfo, __uuidof(IArrayInfo));
+_COM_SMARTPTR_TYPEDEF(IMathItem, __uuidof(IMathItem));
+_COM_SMARTPTR_TYPEDEF(IMathObjContext, __uuidof(IMathObjContext));
+_COM_SMARTPTR_TYPEDEF(IChannelListEx, __uuidof(IChannelListEx));
+_COM_SMARTPTR_TYPEDEF(IImportGroup, __uuidof(IImportGroup));
+_COM_SMARTPTR_TYPEDEF(ICNTGroup, __uuidof(ICNTGroup));
+_COM_SMARTPTR_TYPEDEF(ICntChannel, __uuidof(ICntChannel));
+_COM_SMARTPTR_TYPEDEF(ITrigInfo, __uuidof(ITrigInfo));
+_COM_SMARTPTR_TYPEDEF(IEvent, __uuidof(IEvent));
+_COM_SMARTPTR_TYPEDEF(IEventList, __uuidof(IEventList));
+_COM_SMARTPTR_TYPEDEF(IDisplayFrameTemplate, __uuidof(IDisplayFrameTemplate));
+_COM_SMARTPTR_TYPEDEF(IDisplayFrameTemplates, __uuidof(IDisplayFrameTemplates));
+_COM_SMARTPTR_TYPEDEF(IDisplayTemplate, __uuidof(IDisplayTemplate));
+_COM_SMARTPTR_TYPEDEF(IIndexChanger, __uuidof(IIndexChanger));
+_COM_SMARTPTR_TYPEDEF(IApp, __uuidof(IApp));
+_COM_SMARTPTR_TYPEDEF(IPlugin, __uuidof(IPlugin));
+_COM_SMARTPTR_TYPEDEF(IPlugin2, __uuidof(IPlugin2));
+_COM_SMARTPTR_TYPEDEF(ICustomExport, __uuidof(ICustomExport));
+_COM_SMARTPTR_TYPEDEF(IPlugin3, __uuidof(IPlugin3));
+_COM_SMARTPTR_TYPEDEF(ICustomExport2, __uuidof(ICustomExport2));
+_COM_SMARTPTR_TYPEDEF(ICustomDAQ, __uuidof(ICustomDAQ));
+_COM_SMARTPTR_TYPEDEF(IExportFrame, __uuidof(IExportFrame));
+_COM_SMARTPTR_TYPEDEF(IMath, __uuidof(IMath));
+_COM_SMARTPTR_TYPEDEF(IMathObject, __uuidof(IMathObject));
+_COM_SMARTPTR_TYPEDEF(IMathModule, __uuidof(IMathModule));
+
+//
+// Type library items
+//
+
+struct __declspec(uuid("c15bab67-52bb-4664-8c9d-e8cc1a1a4c44"))
+IAppEvents : IDispatch
+{};
+
+struct __declspec(uuid("58a7d77d-64f1-4db8-a6cb-f2b4cab84056"))
+App;
+    // [ default ] interface IApp
+    // [ default, source ] dispinterface IAppEvents
+
+struct __declspec(uuid("8262475b-8f95-4917-a339-a343cb5d5065"))
+IScreen : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Name (
+        /*[out,retval]*/ BSTR * Value ) = 0;
+      virtual HRESULT __stdcall get_Id (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall Show ( ) = 0;
+      virtual HRESULT __stdcall get_IsCurrent (
+        /*[out,retval]*/ VARIANT_BOOL * Value ) = 0;
+      virtual HRESULT __stdcall SetCursor (
+        /*[in]*/ long ACursor,
+        /*[in]*/ double Time,
+        /*[in]*/ VARIANT_BOOL AbsTime ) = 0;
+      virtual HRESULT __stdcall ZoomIn ( ) = 0;
+      virtual HRESULT __stdcall ZoomOut ( ) = 0;
+      virtual HRESULT __stdcall GetCursor (
+        /*[in]*/ long ACursor,
+        /*[in]*/ VARIANT_BOOL AbsTime,
+        /*[out,retval]*/ double * Value ) = 0;
+};
+
+struct __declspec(uuid("a3923065-75e3-4dfb-b049-5ccb981c15f3"))
+IScreens : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ long Index,
+        /*[out,retval]*/ struct IScreen * * Value ) = 0;
+      virtual HRESULT __stdcall get__NewEnum (
+        /*[out,retval]*/ IUnknown * * Value ) = 0;
+      virtual HRESULT __stdcall get_Current (
+        /*[out,retval]*/ struct IScreen * * Value ) = 0;
+};
+
+struct __declspec(uuid("254bf4b3-cf9c-49a3-8f75-7ce35ef01a5d"))
+IMasterClock : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall GetCurrentTime (
+        /*[out,retval]*/ double * Value ) = 0;
+      virtual HRESULT __stdcall GetAcqTime (
+        /*[out,retval]*/ double * Value ) = 0;
+};
+
+struct __declspec(uuid("56102555-9e45-4ae6-b3be-a4d7f830296e"))
+IAISetupScreen : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall ShowChannelSetup (
+        /*[in]*/ long ChNo ) = 0;
+      virtual HRESULT __stdcall SetColumnVisible (
+        /*[in]*/ long ColNo,
+        /*[in]*/ VARIANT_BOOL Visible ) = 0;
+};
+
+struct __declspec(uuid("158b5c24-cf4d-4edf-b2c8-68d46a5cd676"))
+IDaqChannel : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_CardGain (
+        /*[out,retval]*/ double * Value ) = 0;
+      virtual HRESULT __stdcall get_CardOffset (
+        /*[out,retval]*/ double * Value ) = 0;
+      virtual HRESULT __stdcall get_ModuleGain (
+        /*[out,retval]*/ double * Value ) = 0;
+      virtual HRESULT __stdcall get_ModuleOffset (
+        /*[out,retval]*/ double * Value ) = 0;
+      virtual HRESULT __stdcall get_ModuleType (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall get_AutoZero (
+        /*[out,retval]*/ VARIANT_BOOL * Value ) = 0;
+      virtual HRESULT __stdcall put_AutoZero (
+        /*[in]*/ VARIANT_BOOL Value ) = 0;
+      virtual HRESULT __stdcall SetCardGain (
+        /*[in]*/ float Gain ) = 0;
+      virtual HRESULT __stdcall GetBoardOpt (
+        /*[in]*/ long Index,
+        /*[out,retval]*/ unsigned short * Value ) = 0;
+      virtual HRESULT __stdcall get_CardBitResolution (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall get_CustomSensorScale (
+        /*[out,retval]*/ float * Value ) = 0;
+      virtual HRESULT __stdcall put_CustomSensorScale (
+        /*[in]*/ float Value ) = 0;
+      virtual HRESULT __stdcall get_CustomSensorOffset (
+        /*[out,retval]*/ float * Value ) = 0;
+      virtual HRESULT __stdcall put_CustomSensorOffset (
+        /*[in]*/ float Value ) = 0;
+      virtual HRESULT __stdcall SetBoardOpt (
+        /*[in]*/ long Index,
+        /*[in]*/ unsigned short Used ) = 0;
+      virtual HRESULT __stdcall SetSensor (
+        /*[in]*/ BSTR SensorName,
+        /*[out,retval]*/ VARIANT_BOOL * Value ) = 0;
+      virtual HRESULT __stdcall GetSensor (
+        /*[out,retval]*/ BSTR * Value ) = 0;
+      virtual HRESULT __stdcall GetSensorType (
+        /*[out,retval]*/ BSTR * Value ) = 0;
+};
+
+struct __declspec(uuid("0e036530-b449-4ebc-af84-fb2ca6675735"))
+IVideoLoadEngine : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall GetFramesInfo (
+        /*[out]*/ VARIANT * Frames ) = 0;
+};
+
+struct __declspec(uuid("87d35b4c-8fa5-4080-9cde-ac49cada92c5"))
+IVideoLoadEngines : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall get__NewEnum (
+        /*[out,retval]*/ IUnknown * * Value ) = 0;
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ long Index,
+        /*[out,retval]*/ struct IVideoLoadEngine * * Value ) = 0;
+};
+
+struct __declspec(uuid("97ff1354-fd61-4339-94c9-b36691410c4e"))
+IPadData : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Name (
+        /*[out,retval]*/ BSTR * Value ) = 0;
+      virtual HRESULT __stdcall get_ModuleType (
+        /*[out,retval]*/ short * Value ) = 0;
+      virtual HRESULT __stdcall get_SpeedCode (
+        /*[out,retval]*/ short * Value ) = 0;
+      virtual HRESULT __stdcall get_ConfigCode (
+        /*[out,retval]*/ short * Value ) = 0;
+      virtual HRESULT __stdcall CopyToString (
+        /*[out,retval]*/ BSTR * Value ) = 0;
+      virtual HRESULT __stdcall ModuleAmpl (
+        /*[out,retval]*/ float * Value ) = 0;
+      virtual HRESULT __stdcall ModuleOffset (
+        /*[out,retval]*/ float * Value ) = 0;
+      virtual HRESULT __stdcall CopyUnitToString (
+        /*[out,retval]*/ BSTR * Value ) = 0;
+      virtual HRESULT __stdcall ShortCopyToString (
+        /*[out,retval]*/ BSTR * Value ) = 0;
+      virtual HRESULT __stdcall get_Data (
+        /*[in]*/ long Index,
+        /*[out,retval]*/ float * Value ) = 0;
+      virtual HRESULT __stdcall get_RangeCode (
+        /*[out,retval]*/ short * Value ) = 0;
+      virtual HRESULT __stdcall put_RangeCode (
+        /*[in]*/ short Value ) = 0;
+      virtual HRESULT __stdcall get_Address (
+        /*[out,retval]*/ short * Value ) = 0;
+      virtual HRESULT __stdcall put_Address (
+        /*[in]*/ short Value ) = 0;
+      virtual HRESULT __stdcall get_Ranges (
+        /*[in]*/ long Index,
+        /*[out,retval]*/ BSTR * Value ) = 0;
+      virtual HRESULT __stdcall get_RangesCount (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall get_RangeIndex (
+        /*[in]*/ long Index,
+        /*[out,retval]*/ long * Value ) = 0;
+};
+
+struct __declspec(uuid("129fc1e1-2091-4789-978b-faa05f259260"))
+IDaqData : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Name (
+        /*[out,retval]*/ BSTR * Value ) = 0;
+      virtual HRESULT __stdcall CopyToString (
+        /*[out,retval]*/ BSTR * Value ) = 0;
+      virtual HRESULT __stdcall ShortCopyToString (
+        /*[out,retval]*/ BSTR * Value ) = 0;
+      virtual HRESULT __stdcall CopyUnitToString (
+        /*[out,retval]*/ BSTR * Value ) = 0;
+      virtual HRESULT __stdcall ModuleAmpl (
+        /*[out,retval]*/ float * Value ) = 0;
+      virtual HRESULT __stdcall ModuleOffset (
+        /*[out,retval]*/ float * Value ) = 0;
+      virtual HRESULT __stdcall get_Address (
+        /*[out,retval]*/ short * Value ) = 0;
+      virtual HRESULT __stdcall put_Address (
+        /*[in]*/ short Value ) = 0;
+      virtual HRESULT __stdcall get_RangeCode (
+        /*[out,retval]*/ unsigned char * Value ) = 0;
+      virtual HRESULT __stdcall put_RangeCode (
+        /*[in]*/ unsigned char Value ) = 0;
+      virtual HRESULT __stdcall get_FilterCode (
+        /*[out,retval]*/ unsigned char * Value ) = 0;
+      virtual HRESULT __stdcall put_FilterCode (
+        /*[in]*/ unsigned char Value ) = 0;
+      virtual HRESULT __stdcall get_ICPInput (
+        /*[out,retval]*/ unsigned char * Value ) = 0;
+      virtual HRESULT __stdcall put_ICPInput (
+        /*[in]*/ unsigned char Value ) = 0;
+      virtual HRESULT __stdcall get_VRange (
+        /*[out,retval]*/ unsigned char * Value ) = 0;
+      virtual HRESULT __stdcall put_VRange (
+        /*[in]*/ unsigned char Value ) = 0;
+      virtual HRESULT __stdcall get_Overflow (
+        /*[out,retval]*/ unsigned char * Value ) = 0;
+      virtual HRESULT __stdcall put_Overflow (
+        /*[in]*/ unsigned char Value ) = 0;
+      virtual HRESULT __stdcall get_CurrentSource (
+        /*[out,retval]*/ unsigned char * Value ) = 0;
+      virtual HRESULT __stdcall put_CurrentSource (
+        /*[in]*/ unsigned char Value ) = 0;
+      virtual HRESULT __stdcall get_HighpassType (
+        /*[out,retval]*/ unsigned char * Value ) = 0;
+      virtual HRESULT __stdcall put_HighpassType (
+        /*[in]*/ unsigned char Value ) = 0;
+      virtual HRESULT __stdcall get_ModuleError (
+        /*[out,retval]*/ unsigned char * Value ) = 0;
+      virtual HRESULT __stdcall put_ModuleError (
+        /*[in]*/ unsigned char Value ) = 0;
+      virtual HRESULT __stdcall get_Remote (
+        /*[out,retval]*/ unsigned char * Value ) = 0;
+      virtual HRESULT __stdcall put_Remote (
+        /*[in]*/ unsigned char Value ) = 0;
+      virtual HRESULT __stdcall get_Ranges (
+        /*[in]*/ long ARangeCode,
+        /*[out,retval]*/ BSTR * Value ) = 0;
+      virtual HRESULT __stdcall get_RangesCount (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall get_Filters (
+        /*[in]*/ unsigned char AFilterCode,
+        /*[out,retval]*/ BSTR * Value ) = 0;
+      virtual HRESULT __stdcall get_FiltersCount (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall get_ModuleType (
+        /*[out,retval]*/ short * Value ) = 0;
+      virtual HRESULT __stdcall put_ModuleType (
+        /*[in]*/ short Value ) = 0;
+      virtual HRESULT __stdcall get_DaqNNamesCount (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall get_DaqNNames (
+        /*[in]*/ short ANameCode,
+        /*[out,retval]*/ BSTR * Value ) = 0;
+      virtual HRESULT __stdcall ThermLinearize (
+        /*[in]*/ double InputVoltage,
+        /*[out,retval]*/ double * Value ) = 0;
+      virtual HRESULT __stdcall get_FREQAInputCoupling (
+        /*[out,retval]*/ char * Value ) = 0;
+      virtual HRESULT __stdcall put_FREQAInputCoupling (
+        /*[in]*/ char Value ) = 0;
+      virtual HRESULT __stdcall get_FREQAOutputFilter (
+        /*[out,retval]*/ char * Value ) = 0;
+      virtual HRESULT __stdcall put_FREQAOutputFilter (
+        /*[in]*/ char Value ) = 0;
+      virtual HRESULT __stdcall get_FREQATriggerLevel (
+        /*[out,retval]*/ float * Value ) = 0;
+      virtual HRESULT __stdcall put_FREQATriggerLevel (
+        /*[in]*/ float Value ) = 0;
+};
+
+struct __declspec(uuid("da7bd5dc-c815-4471-ada6-8b7be9126e1f"))
+IModule : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Index (
+        /*[out,retval]*/ short * Value ) = 0;
+      virtual HRESULT __stdcall get_PadData (
+        /*[out,retval]*/ struct IPadData * * Value ) = 0;
+      virtual HRESULT __stdcall SetPad (
+        /*[in]*/ long NewAddress ) = 0;
+      virtual HRESULT __stdcall GetDataPad ( ) = 0;
+      virtual HRESULT __stdcall get_DaqData (
+        /*[out,retval]*/ struct IDaqData * * Value ) = 0;
+      virtual HRESULT __stdcall SetDaq (
+        /*[out,retval]*/ VARIANT_BOOL * Value ) = 0;
+      virtual HRESULT __stdcall SetDaqAddress (
+        /*[in]*/ long Address,
+        /*[in]*/ long Timeout ) = 0;
+      virtual HRESULT __stdcall FillModule (
+        /*[in]*/ long Address,
+        /*[in]*/ long Timeout,
+        /*[out,retval]*/ VARIANT_BOOL * Value ) = 0;
+      virtual HRESULT __stdcall DetectModule (
+        /*[in]*/ long Address ) = 0;
+      virtual HRESULT __stdcall get_ModuleType (
+        /*[out,retval]*/ short * Value ) = 0;
+      virtual HRESULT __stdcall put_ModuleType (
+        /*[in]*/ short Value ) = 0;
+      virtual HRESULT __stdcall ClearModule ( ) = 0;
+      virtual HRESULT __stdcall GetSerialNumber (
+        /*[out,retval]*/ BSTR * Value ) = 0;
+      virtual HRESULT __stdcall FREQAFindTriggerLevel ( ) = 0;
+      virtual HRESULT __stdcall SetModule (
+        /*[in]*/ long SetType ) = 0;
+};
+
+struct __declspec(uuid("b37a70cb-5b08-490a-ae57-3d75f1c59b1c"))
+IModules : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall get__NewEnum (
+        /*[out,retval]*/ IUnknown * * Value ) = 0;
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ long Index,
+        /*[out,retval]*/ struct IModule * * Value ) = 0;
+};
+
+struct __declspec(uuid("82d459fe-bc05-4ff2-8597-74bb45010608"))
+IAveragedFFT : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_AverageType (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall put_AverageType (
+        /*[in]*/ long Value ) = 0;
+      virtual HRESULT __stdcall get_Window (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall put_Window (
+        /*[in]*/ long Value ) = 0;
+      virtual HRESULT __stdcall get_Lines (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall put_Lines (
+        /*[in]*/ long Value ) = 0;
+      virtual HRESULT __stdcall get_AveCount (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall put_AveCount (
+        /*[in]*/ long Value ) = 0;
+      virtual HRESULT __stdcall GetData (
+        /*[in]*/ long ChNo,
+        /*[in]*/ long OctaveDivider,
+        /*[in]*/ long Weighting,
+        /*[out]*/ long * BandCount,
+        /*[out]*/ VARIANT * Data ) = 0;
+      virtual HRESULT __stdcall GetChannels (
+        /*[out]*/ VARIANT * Channels ) = 0;
+      virtual HRESULT __stdcall CalculateFromPos (
+        /*[in]*/ long Mid,
+        /*[in]*/ long Dir,
+        /*[out,retval]*/ VARIANT_BOOL * Value ) = 0;
+      virtual HRESULT __stdcall get_Overlap (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall put_Overlap (
+        /*[in]*/ long Value ) = 0;
+      virtual HRESULT __stdcall GetFFTData (
+        /*[in]*/ long ChNo,
+        /*[in]*/ long Weighting,
+        /*[in]*/ long DCCutoff,
+        /*[out]*/ VARIANT * Data ) = 0;
+      virtual HRESULT __stdcall GetCPBData (
+        /*[in]*/ long ChNo,
+        /*[in]*/ long OctaveDivider,
+        /*[in]*/ long Weighting,
+        /*[out]*/ long * BandCount,
+        /*[out]*/ VARIANT * Data ) = 0;
+      virtual HRESULT __stdcall GetCPBXData (
+        /*[in]*/ long ChNo,
+        /*[in]*/ long OctaveDivider,
+        /*[in]*/ long Weighting,
+        /*[out]*/ long * BandCount,
+        /*[out]*/ VARIANT * Data ) = 0;
+};
+
+struct __declspec(uuid("d7050b91-6a5d-4228-9378-0021325c815c"))
+INothing : IDispatch
+{};
+
+struct __declspec(uuid("20627eb4-d51b-4267-a6cb-8c86112e7502"))
+IPluginLicense : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall GetRegTypeWanted (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall GetTrustedCode (
+        /*[in]*/ long Param,
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall GetHardwareCode (
+        /*[out,retval]*/ BSTR * Value ) = 0;
+      virtual HRESULT __stdcall SetLicenseCode (
+        /*[in]*/ BSTR LicenseCode,
+        /*[out,retval]*/ VARIANT_BOOL * Value ) = 0;
+};
+
+struct __declspec(uuid("fc698ce1-0973-498a-aa6b-2f82830be3a6"))
+IDaqGroup : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ long Index,
+        /*[out,retval]*/ struct IDaqChannel * * Value ) = 0;
+      virtual HRESULT __stdcall get__NewEnum (
+        /*[out,retval]*/ IUnknown * * Value ) = 0;
+};
+
+struct __declspec(uuid("ceb1a90b-d594-47b5-a154-bb7b4603aca2"))
+IFileNameSettings : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_AutoCreate (
+        /*[out,retval]*/ VARIANT_BOOL * Value ) = 0;
+      virtual HRESULT __stdcall put_AutoCreate (
+        /*[in]*/ VARIANT_BOOL Value ) = 0;
+      virtual HRESULT __stdcall get_UseMultiFile (
+        /*[out,retval]*/ VARIANT_BOOL * Value ) = 0;
+      virtual HRESULT __stdcall put_UseMultiFile (
+        /*[in]*/ VARIANT_BOOL Value ) = 0;
+      virtual HRESULT __stdcall get_BaseFileName (
+        /*[out,retval]*/ BSTR * Value ) = 0;
+      virtual HRESULT __stdcall put_BaseFileName (
+        /*[in]*/ BSTR Value ) = 0;
+      virtual HRESULT __stdcall get_UseTime (
+        /*[out,retval]*/ VARIANT_BOOL * Value ) = 0;
+      virtual HRESULT __stdcall put_UseTime (
+        /*[in]*/ VARIANT_BOOL Value ) = 0;
+      virtual HRESULT __stdcall get_UseDate (
+        /*[out,retval]*/ VARIANT_BOOL * Value ) = 0;
+      virtual HRESULT __stdcall put_UseDate (
+        /*[in]*/ VARIANT_BOOL Value ) = 0;
+      virtual HRESULT __stdcall get_AutoFlipFile (
+        /*[out,retval]*/ VARIANT_BOOL * Value ) = 0;
+      virtual HRESULT __stdcall put_AutoFlipFile (
+        /*[in]*/ VARIANT_BOOL Value ) = 0;
+      virtual HRESULT __stdcall get_AutoFlipSize (
+        /*[out,retval]*/ float * Value ) = 0;
+      virtual HRESULT __stdcall put_AutoFlipSize (
+        /*[in]*/ float Value ) = 0;
+      virtual HRESULT __stdcall get_AutoFlipUnit (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall put_AutoFlipUnit (
+        /*[in]*/ long Value ) = 0;
+      virtual HRESULT __stdcall get_AutoFlipAbsTime (
+        /*[out,retval]*/ VARIANT_BOOL * Value ) = 0;
+      virtual HRESULT __stdcall put_AutoFlipAbsTime (
+        /*[in]*/ VARIANT_BOOL Value ) = 0;
+      virtual HRESULT __stdcall get_MultiFileStartIndex (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall put_MultiFileStartIndex (
+        /*[in]*/ long Value ) = 0;
+};
+
+struct __declspec(uuid("e39d43bc-bfb8-4d48-af5b-53eba55c8817"))
+IPluginChannel : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall ReserveMemory (
+        /*[in]*/ long DBSize ) = 0;
+      virtual HRESULT __stdcall FreeMemory ( ) = 0;
+      virtual HRESULT __stdcall SetIndex (
+        /*[in]*/ long Level,
+        /*[in]*/ VARIANT Ind ) = 0;
+      virtual HRESULT __stdcall SetChNo (
+        /*[in]*/ BSTR Value ) = 0;
+      virtual HRESULT __stdcall SetSettings (
+        /*[in]*/ BSTR Value ) = 0;
+      virtual HRESULT __stdcall get_LongName (
+        /*[out,retval]*/ BSTR * Value ) = 0;
+      virtual HRESULT __stdcall put_LongName (
+        /*[in]*/ BSTR Value ) = 0;
+      virtual HRESULT __stdcall MarkAsOffline ( ) = 0;
+      virtual HRESULT __stdcall get_PluginGUID (
+        /*[out,retval]*/ BSTR * Value ) = 0;
+      virtual HRESULT __stdcall get_DefaultRes (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall put_DefaultRes (
+        /*[in]*/ long Value ) = 0;
+      virtual HRESULT __stdcall get_AlwaysReserveMemoryInSetup (
+        /*[out,retval]*/ VARIANT_BOOL * Value ) = 0;
+      virtual HRESULT __stdcall put_AlwaysReserveMemoryInSetup (
+        /*[in]*/ VARIANT_BOOL Value ) = 0;
+      virtual HRESULT __stdcall get_DefaultMax (
+        /*[out,retval]*/ double * Value ) = 0;
+      virtual HRESULT __stdcall put_DefaultMax (
+        /*[in]*/ double Value ) = 0;
+      virtual HRESULT __stdcall get_DefaultMin (
+        /*[out,retval]*/ double * Value ) = 0;
+      virtual HRESULT __stdcall put_DefaultMin (
+        /*[in]*/ double Value ) = 0;
+      virtual HRESULT __stdcall get_AsyncBufSize (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall put_AsyncBufSize (
+        /*[in]*/ long Value ) = 0;
+};
+
+struct __declspec(uuid("04242cbe-cf38-4a86-b54b-d78a9b64e0fb"))
+IDiscreteItem : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Value (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall put_Value (
+        /*[in]*/ long Value ) = 0;
+      virtual HRESULT __stdcall get_Caption (
+        /*[out,retval]*/ BSTR * Value ) = 0;
+      virtual HRESULT __stdcall put_Caption (
+        /*[in]*/ BSTR Value ) = 0;
+      virtual HRESULT __stdcall get_Color (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall put_Color (
+        /*[in]*/ long Value ) = 0;
+};
+
+struct __declspec(uuid("53330bbc-6b11-4805-8c41-48b13047dc42"))
+IDiscreteList : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall get__NewEnum (
+        /*[out,retval]*/ IUnknown * * Value ) = 0;
+      virtual HRESULT __stdcall Remove (
+        /*[in]*/ long Ind ) = 0;
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ long Index,
+        /*[out,retval]*/ struct IDiscreteItem * * Value ) = 0;
+      virtual HRESULT __stdcall Add (
+        /*[out,retval]*/ struct IDiscreteItem * * Value ) = 0;
+      virtual HRESULT __stdcall Find (
+        /*[in]*/ long Val,
+        /*[out,retval]*/ struct IDiscreteItem * * Value ) = 0;
+};
+
+struct __declspec(uuid("b2fdbf74-7a7d-4be1-bfdc-59f364f320dc"))
+IGHObject : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Data (
+        /*[out,retval]*/ BSTR * Value ) = 0;
+      virtual HRESULT __stdcall put_Data (
+        /*[in]*/ BSTR Value ) = 0;
+      virtual HRESULT __stdcall get_Caption (
+        /*[out,retval]*/ BSTR * Value ) = 0;
+      virtual HRESULT __stdcall put_Caption (
+        /*[in]*/ BSTR Value ) = 0;
+      virtual HRESULT __stdcall get_ObjType (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall get_SubList (
+        /*[out,retval]*/ VARIANT * Value ) = 0;
+      virtual HRESULT __stdcall put_SubList (
+        /*[in]*/ VARIANT Value ) = 0;
+      virtual HRESULT __stdcall SetObjType (
+        /*[in]*/ long Value ) = 0;
+      virtual HRESULT __stdcall get_UniqueID (
+        /*[out,retval]*/ BSTR * Value ) = 0;
+      virtual HRESULT __stdcall put_UniqueID (
+        /*[in]*/ BSTR Value ) = 0;
+      virtual HRESULT __stdcall get_DataType (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall put_DataType (
+        /*[in]*/ long Value ) = 0;
+      virtual HRESULT __stdcall get_DefaultData (
+        /*[out,retval]*/ BSTR * Value ) = 0;
+      virtual HRESULT __stdcall put_DefaultData (
+        /*[in]*/ BSTR Value ) = 0;
+};
+
+struct __declspec(uuid("14bb3a33-f7a5-4656-8c94-3b529d7306b0"))
+IGlobalHeader : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall get__NewEnum (
+        /*[out,retval]*/ IUnknown * * Value ) = 0;
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ long Ind,
+        /*[out,retval]*/ struct IGHObject * * Value ) = 0;
+      virtual HRESULT __stdcall Add (
+        /*[out,retval]*/ struct IGHObject * * Value ) = 0;
+      virtual HRESULT __stdcall Remove (
+        /*[in]*/ long Index ) = 0;
+};
+
+struct __declspec(uuid("f8f34a4f-cbad-4240-9daf-c226282b8615"))
+ITiming : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Tracking (
+        /*[out,retval]*/ VARIANT_BOOL * Value ) = 0;
+};
+
+struct __declspec(uuid("14c2577b-0281-475a-9302-394d1fa1b473"))
+IMathFrameContext : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall Apply (
+        /*[in]*/ VARIANT Props ) = 0;
+};
+
+struct __declspec(uuid("5c45f430-ee53-49dc-935b-36314a52d438"))
+IDewePlugin : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall OnMessage (
+        /*[in]*/ long Msg,
+        /*[in]*/ VARIANT InParam,
+        /*[in,out]*/ VARIANT * OutParam ) = 0;
+};
+
+struct __declspec(uuid("e3638e01-ed8e-40c4-baac-d00b5b023ea7"))
+IPluginChannelXMLHelper : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall FindNode (
+        /*[in]*/ long IndexLevel,
+        /*[in]*/ VARIANT Ind,
+        /*[in]*/ VARIANT_BOOL ChannelNode,
+        /*[in]*/ VARIANT_BOOL AllowCreate,
+        /*[out,retval]*/ VARIANT * Value ) = 0;
+      virtual HRESULT __stdcall StartExtractChannels ( ) = 0;
+      virtual HRESULT __stdcall ExtractNextChannel (
+        /*[out]*/ long * IndexLevel,
+        /*[out]*/ VARIANT * Ind,
+        /*[out,retval]*/ VARIANT_BOOL * Value ) = 0;
+      virtual HRESULT __stdcall MountAllChannels ( ) = 0;
+};
+
+struct __declspec(uuid("0c418a3e-cdf3-4f89-b28b-8d63aca8398f"))
+IMathChannel : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_DefaultMin (
+        /*[out,retval]*/ double * Value ) = 0;
+      virtual HRESULT __stdcall put_DefaultMin (
+        /*[in]*/ double Value ) = 0;
+      virtual HRESULT __stdcall get_DefaultMax (
+        /*[out,retval]*/ double * Value ) = 0;
+      virtual HRESULT __stdcall put_DefaultMax (
+        /*[in]*/ double Value ) = 0;
+      virtual HRESULT __stdcall get_DefaultRes (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall put_DefaultRes (
+        /*[in]*/ long Value ) = 0;
+};
+
+struct __declspec(uuid("dbb2d89c-443b-4abf-838e-27cdea6e424c"))
+IProperties : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall get__NewEnum (
+        /*[out,retval]*/ IUnknown * * Value ) = 0;
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ VARIANT Index,
+        /*[out,retval]*/ VARIANT * Value ) = 0;
+      virtual HRESULT __stdcall put_Item (
+        /*[in]*/ VARIANT Index,
+        /*[in]*/ VARIANT Value ) = 0;
+      virtual HRESULT __stdcall Add (
+        /*[in]*/ BSTR Name,
+        /*[in]*/ VARIANT Value ) = 0;
+};
+
+struct __declspec(uuid("74e73f54-f623-4271-8071-d3e715b9ef70"))
+IInputGroup : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Index (
+        /*[out,retval]*/ VARIANT * Value ) = 0;
+      virtual HRESULT __stdcall get_Name (
+        /*[out,retval]*/ BSTR * Value ) = 0;
+      virtual HRESULT __stdcall put_Name (
+        /*[in]*/ BSTR Value ) = 0;
+      virtual HRESULT __stdcall get_Guid (
+        /*[out,retval]*/ BSTR * Value ) = 0;
+      virtual HRESULT __stdcall put_Guid (
+        /*[in]*/ BSTR Value ) = 0;
+      virtual HRESULT __stdcall get_Properties (
+        /*[out,retval]*/ struct IProperties * * Value ) = 0;
+};
+
+struct __declspec(uuid("185eb8a2-805f-4b63-a1fc-bbee49a69337"))
+IInputGroups : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall get__NewEnum (
+        /*[out,retval]*/ IUnknown * * Value ) = 0;
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ long Index,
+        /*[out,retval]*/ struct IInputGroup * * Value ) = 0;
+};
+
+struct __declspec(uuid("5649e2dc-2ef0-4d1d-8e23-2a0dc041d0a5"))
+IRegistrationHelper : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall CheckRegistration ( ) = 0;
+};
+
+struct __declspec(uuid("39f60bb4-26eb-47c1-884a-d10114fa06e7"))
+IAmplifier : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall IOControl (
+        /*[in]*/ long IOCode,
+        /*[in]*/ VARIANT InParam,
+        /*[out]*/ VARIANT * OutParam,
+        /*[out,retval]*/ long * Value ) = 0;
+};
+
+struct __declspec(uuid("24428804-6902-4cc5-808c-86b362414bda"))
+IAmplChain : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall get__NewEnum (
+        /*[out,retval]*/ IUnknown * * Value ) = 0;
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ long Index,
+        /*[out,retval]*/ struct IAmplifier * * Value ) = 0;
+      virtual HRESULT __stdcall IOControl (
+        /*[in]*/ long IOCode,
+        /*[in]*/ VARIANT InParam,
+        /*[out]*/ VARIANT * OutParam,
+        /*[out,retval]*/ long * Value ) = 0;
+};
+
+struct __declspec(uuid("01c5e234-c56d-4fa3-8c77-e1ad0484790d"))
+IAmplChainList : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall get__NewEnum (
+        /*[out,retval]*/ IUnknown * * Value ) = 0;
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ long Index,
+        /*[out,retval]*/ struct IAmplChain * * Value ) = 0;
+};
+
+struct __declspec(uuid("40aadaed-bcc1-4134-b154-de6e016de703"))
+IAmplInterface : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_ChainList (
+        /*[out,retval]*/ struct IAmplChainList * * Value ) = 0;
+      virtual HRESULT __stdcall get_SubInterface (
+        /*[out,retval]*/ struct IAmplInterface * * Value ) = 0;
+      virtual HRESULT __stdcall IOControl (
+        /*[in]*/ long IOCode,
+        /*[in]*/ VARIANT InParam,
+        /*[out]*/ VARIANT * OutParam,
+        /*[out,retval]*/ long * Value ) = 0;
+};
+
+struct __declspec(uuid("2e02870e-2b86-40be-bad3-1ff6ff4d03c9"))
+IAmplInterfaces : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_MainInterface (
+        /*[out,retval]*/ struct IAmplInterface * * Value ) = 0;
+};
+
+struct __declspec(uuid("b05e7b8b-09a8-418e-8b32-922bd729f1ad"))
+IImportChannel : IDispatch
+{};
+
+struct __declspec(uuid("06ed52b2-5a28-4564-99ce-10ed7a82f933"))
+IPluginLicense2 : IPluginLicense
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall GetLicenseCode (
+        /*[in]*/ VARIANT_BOOL Builtin,
+        /*[out,retval]*/ BSTR * Value ) = 0;
+};
+
+struct __declspec(uuid("6d30b59f-0060-40db-b6b2-7f87465ce3b7"))
+IOfflineCalc : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall StoreCalculatedChannels ( ) = 0;
+      virtual HRESULT __stdcall Calculate ( ) = 0;
+};
+
+struct __declspec(uuid("062c4672-b1c5-43fa-8c77-62c1dcb928f0"))
+ICustomDAQ2 : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall OnMessage (
+        /*[in]*/ long Msg,
+        /*[in]*/ VARIANT InParam,
+        /*[in,out]*/ VARIANT * OutParam,
+        /*[out,retval]*/ HRESULT * Value ) = 0;
+};
+
+struct __declspec(uuid("c58c7b68-e2f7-478a-acf7-11b8d6a16509"))
+IDigitalTrigLevel : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_TrigType (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall get_Coupling (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall get_TrigLevel (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall get_ReTrigLevel (
+        /*[out,retval]*/ long * Value ) = 0;
+};
+
+struct __declspec(uuid("aa6c3d58-ed6d-4529-aaf8-ecb0a682a270"))
+ISyncSource : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_SampleRate (
+        /*[out,retval]*/ double * Value ) = 0;
+      virtual HRESULT __stdcall put_SampleRate (
+        /*[in]*/ double Value ) = 0;
+      virtual HRESULT __stdcall get_IsSyncSource (
+        /*[out,retval]*/ VARIANT_BOOL * Value ) = 0;
+      virtual HRESULT __stdcall put_IsSyncSource (
+        /*[in]*/ VARIANT_BOOL Value ) = 0;
+};
+
+struct __declspec(uuid("1d828c6f-8559-4000-84b1-570451541753"))
+ICANMsg : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall AddData (
+        /*[in]*/ VARIANT Data,
+        /*[in]*/ double TimeStamp ) = 0;
+};
+
+struct __declspec(uuid("953fd7c5-a46c-4f92-a229-220a12a1a115"))
+ICANPortContext : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall GetMsg (
+        /*[in]*/ long ArbId,
+        /*[in]*/ VARIANT_BOOL Extended,
+        /*[in]*/ long DLC,
+        /*[out,retval]*/ struct ICANMsg * * Value ) = 0;
+      virtual HRESULT __stdcall SetTotalMsgCount (
+        /*[in]*/ long Value ) = 0;
+      virtual HRESULT __stdcall SetErrMsgCount (
+        /*[in]*/ long Value ) = 0;
+      virtual HRESULT __stdcall get_ListenOnly (
+        /*[out,retval]*/ VARIANT_BOOL * Value ) = 0;
+      virtual HRESULT __stdcall get_Used (
+        /*[out,retval]*/ VARIANT_BOOL * Value ) = 0;
+      virtual HRESULT __stdcall get_BaudRate (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall get_Termination (
+        /*[out,retval]*/ VARIANT_BOOL * Value ) = 0;
+      virtual HRESULT __stdcall get_Captured (
+        /*[out,retval]*/ VARIANT_BOOL * Value ) = 0;
+};
+
+struct __declspec(uuid("6dd0e754-22ab-4687-8fd4-28d9475cd02c"))
+ICANContext : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Ports (
+        /*[in]*/ long Index,
+        /*[out,retval]*/ struct ICANPortContext * * Value ) = 0;
+      virtual HRESULT __stdcall get_PortCount (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall GetClock (
+        /*[out,retval]*/ double * Value ) = 0;
+      virtual HRESULT __stdcall GetClockOffset (
+        /*[out,retval]*/ double * Value ) = 0;
+};
+
+struct __declspec(uuid("0ab26cc9-1f8f-4289-9f0e-6fb42ba4cac0"))
+IProjectManager : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall ChangeProject (
+        /*[in]*/ BSTR ProjectName,
+        /*[out,retval]*/ VARIANT_BOOL * Value ) = 0;
+      virtual HRESULT __stdcall GetCurrentProject (
+        /*[out,retval]*/ BSTR * Value ) = 0;
+      virtual HRESULT __stdcall GetProjects (
+        /*[out,retval]*/ VARIANT * Value ) = 0;
+};
+
+struct __declspec(uuid("cc93ddf0-d660-47bf-97d8-368afce0a6be"))
+IDIPort : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall ApplyDBBuf ( ) = 0;
+};
+
+struct __declspec(uuid("a727cf4a-fbaf-45f6-bc6a-8a58e05aeb3f"))
+IDIGroup : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall get__NewEnum (
+        /*[out,retval]*/ IUnknown * * Value ) = 0;
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ long Index,
+        /*[out,retval]*/ struct IDIPort * * Value ) = 0;
+};
+
+struct __declspec(uuid("1a6efdac-300e-40d7-8a4e-0f4c370993dd"))
+IDIChannel : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_DIFilter (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall get_DIInvert (
+        /*[out,retval]*/ VARIANT_BOOL * Value ) = 0;
+      virtual HRESULT __stdcall get_TrigLevels (
+        /*[out,retval]*/ struct IDigitalTrigLevel * * Value ) = 0;
+};
+
+struct __declspec(uuid("999f8e10-ec80-4d2a-a785-c1fd3cb87f22"))
+IVideoFrame : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall GetData (
+        /*[out,retval]*/ VARIANT * Value ) = 0;
+      virtual HRESULT __stdcall get_BufSize (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall GetTS (
+        /*[out,retval]*/ double * Value ) = 0;
+};
+
+struct __declspec(uuid("c102fc8b-bfde-4d2f-954c-062cf19eaa6b"))
+ICamera : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_FrameList (
+        /*[in]*/ long Index,
+        /*[out,retval]*/ struct IVideoFrame * * Value ) = 0;
+      virtual HRESULT __stdcall GetBitmapInfoHeader (
+        /*[out,retval]*/ VARIANT * Value ) = 0;
+      virtual HRESULT __stdcall get_FrameBufSize (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall get_FramePos (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall get_Name (
+        /*[out,retval]*/ BSTR * Value ) = 0;
+      virtual HRESULT __stdcall get_FrameDataSize (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall get_FrameSizeInBytes (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall get_Used (
+        /*[out,retval]*/ VARIANT_BOOL * Value ) = 0;
+      virtual HRESULT __stdcall Start ( ) = 0;
+      virtual HRESULT __stdcall Stop ( ) = 0;
+      virtual HRESULT __stdcall TakeSnapshot (
+        /*[out,retval]*/ VARIANT * Param1 ) = 0;
+};
+
+struct __declspec(uuid("85163d18-0a7e-4844-93eb-f9a0c4c43968"))
+IVideo : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_CameraCount (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall get_Cameras (
+        /*[in]*/ long Index,
+        /*[out,retval]*/ struct ICamera * * Value ) = 0;
+};
+
+struct __declspec(uuid("daa5f907-902b-4d5b-982b-4afcb191eeb1"))
+IViewInfo : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_AxisViewType (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall put_AxisViewType (
+        /*[in]*/ long Value ) = 0;
+      virtual HRESULT __stdcall get_DefaultVC (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall put_DefaultVC (
+        /*[in]*/ long Value ) = 0;
+};
+
+struct __declspec(uuid("0850b5b8-80c8-41a5-a34d-04adfe00a000"))
+IAxisViewInfo : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_AxisViewType (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall put_AxisViewType (
+        /*[in]*/ long Value ) = 0;
+      virtual HRESULT __stdcall get_ReverseAxis (
+        /*[out,retval]*/ VARIANT_BOOL * Value ) = 0;
+      virtual HRESULT __stdcall put_ReverseAxis (
+        /*[in]*/ VARIANT_BOOL Value ) = 0;
+};
+
+struct __declspec(uuid("4e5157c0-cb61-4a6e-8183-e4d747568c21"))
+ILockableCursor : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Locked (
+        /*[out,retval]*/ VARIANT_BOOL * Value ) = 0;
+      virtual HRESULT __stdcall get_Position (
+        /*[out,retval]*/ double * Value ) = 0;
+      virtual HRESULT __stdcall put_Position (
+        /*[in]*/ double Value ) = 0;
+      virtual HRESULT __stdcall Lock ( ) = 0;
+      virtual HRESULT __stdcall Unlock ( ) = 0;
+};
+
+struct __declspec(uuid("b2ede09d-d64b-4ef2-aefd-6945a76dfac4"))
+ILockableCursors : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall get__NewEnum (
+        /*[out,retval]*/ IUnknown * * Value ) = 0;
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ long Index,
+        /*[out,retval]*/ struct ILockableCursor * * Value ) = 0;
+};
+
+struct __declspec(uuid("83054c30-0f5b-433d-9863-e521c5ca254b"))
+IMathItem2 : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall IOControl (
+        /*[in]*/ long Msg,
+        /*[in]*/ VARIANT InParam,
+        /*[in,out]*/ VARIANT * OutParam,
+        /*[out,retval]*/ long * Value ) = 0;
+};
+
+enum __declspec(uuid("c98512aa-1356-44f6-aacb-a466a6998d93"))
+MenuItems
+{
+    ItemSaveSetup = 0,
+    ItemSaveSetupAs = 1,
+    ItemLoadSetup = 2
+};
+
+enum __declspec(uuid("fef026de-47e5-475f-bbe2-90fd45416dd1"))
+ExportTypes
+{
+    etValueBased = 0,
+    etChannelBased = 1
+};
+
+enum __declspec(uuid("41973fe5-943d-43e2-8f5f-b8c0a34e22c3"))
+ConnTypes
+{
+    ctLast = 0,
+    ctOverlap = 1,
+    ctTrigger = 2,
+    ctNew = 3
+};
+
+enum __declspec(uuid("6e384ac0-ca49-4130-9f8a-ab4f974513e0"))
+EventReason
+{
+    erGetData = 0,
+    erStartStoring = 1,
+    erStopStoring = 2,
+    erTrigger = 3,
+    erException = 4,
+    erTriggerStop = 5,
+    erAlarm = 6,
+    erExit = 7,
+    erDataLost = 8,
+    erMessageBox = 9,
+    erProgress = 10,
+    erStopAcquisition = 11
+};
+
+enum __declspec(uuid("75f3611e-bb01-4f33-892c-55fe5a11de96"))
+EventType
+{
+    etText = 21,
+    etKeyboard = 20,
+    etVoice = 22,
+    etPicture = 23,
+    etModule = 24,
+    etStart = 1,
+    etStop = 2,
+    etTrigger = 3,
+    etVStart = 11,
+    etVStop = 12
+};
+
+struct __declspec(uuid("97c5783f-0b84-47d9-8294-9f33b2739076"))
+IStoreEngine : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Storing (
+        /*[out,retval]*/ VARIANT_BOOL * Value ) = 0;
+      virtual HRESULT __stdcall get_StoreMode (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall get_IsTriggering (
+        /*[out,retval]*/ VARIANT_BOOL * Value ) = 0;
+      virtual HRESULT __stdcall get_FileSize (
+        /*[out,retval]*/ unsigned __int64 * Value ) = 0;
+      virtual HRESULT __stdcall AddNewEvent (
+        /*[in]*/ enum EventType Type_,
+        /*[in]*/ VARIANT Data ) = 0;
+      virtual HRESULT __stdcall get_FileName (
+        /*[out,retval]*/ BSTR * Value ) = 0;
+      virtual HRESULT __stdcall get_TrackingOffset (
+        /*[out,retval]*/ double * Value ) = 0;
+      virtual HRESULT __stdcall StartStoreTimeChanged ( ) = 0;
+      virtual HRESULT __stdcall get_Paused (
+        /*[out,retval]*/ VARIANT_BOOL * Value ) = 0;
+      virtual HRESULT __stdcall get_AllowIBSkipping (
+        /*[out,retval]*/ VARIANT_BOOL * Value ) = 0;
+      virtual HRESULT __stdcall put_AllowIBSkipping (
+        /*[in]*/ VARIANT_BOOL Value ) = 0;
+};
+
+enum __declspec(uuid("d1b0a3f4-1f61-48ef-87bf-5b11727d706d"))
+AOOperationMode
+{
+    aomFixed = 0,
+    aomSweep = 1,
+    aomStepSweep = 2,
+    aomBurst = 3,
+    aomChirp = 4
+};
+
+enum __declspec(uuid("12f8dd91-00ea-4fb5-b72f-64261bc6e4c5"))
+AOSweepMode
+{
+    aosSingle = 0,
+    aosLoop = 1
+};
+
+enum __declspec(uuid("1f6111e5-7777-4a16-b9f3-e9f03e71a7e8"))
+AOWaveForm
+{
+    aowSine = 0,
+    aowTrian = 1,
+    aowRect = 2,
+    aowSaw = 3,
+    aowWhiteNoise = 4,
+    aowArbitrary = 5
+};
+
+struct __declspec(uuid("c6e7dd46-7bca-42f3-9ac7-0077d19d4ecf"))
+IAOChannel : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_WaveForm (
+        /*[out,retval]*/ enum AOWaveForm * Value ) = 0;
+      virtual HRESULT __stdcall put_WaveForm (
+        /*[in]*/ enum AOWaveForm Value ) = 0;
+      virtual HRESULT __stdcall get_Ampl (
+        /*[out,retval]*/ float * Value ) = 0;
+      virtual HRESULT __stdcall put_Ampl (
+        /*[in]*/ float Value ) = 0;
+      virtual HRESULT __stdcall get_Offset (
+        /*[out,retval]*/ float * Value ) = 0;
+      virtual HRESULT __stdcall put_Offset (
+        /*[in]*/ float Value ) = 0;
+      virtual HRESULT __stdcall get_Phase (
+        /*[out,retval]*/ float * Value ) = 0;
+      virtual HRESULT __stdcall put_Phase (
+        /*[in]*/ float Value ) = 0;
+      virtual HRESULT __stdcall get_FilterType (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall put_FilterType (
+        /*[in]*/ long Value ) = 0;
+      virtual HRESULT __stdcall get_FilterProtoType (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall put_FilterProtoType (
+        /*[in]*/ long Value ) = 0;
+      virtual HRESULT __stdcall get_FilterOrder (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall put_FilterOrder (
+        /*[in]*/ long Value ) = 0;
+      virtual HRESULT __stdcall get_FilterFreq2 (
+        /*[out,retval]*/ float * Value ) = 0;
+      virtual HRESULT __stdcall put_FilterFreq2 (
+        /*[in]*/ float Value ) = 0;
+      virtual HRESULT __stdcall get_FilterFreq1 (
+        /*[out,retval]*/ float * Value ) = 0;
+      virtual HRESULT __stdcall put_FilterFreq1 (
+        /*[in]*/ float Value ) = 0;
+      virtual HRESULT __stdcall get_Range (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall put_Range (
+        /*[in]*/ long Value ) = 0;
+};
+
+enum __declspec(uuid("7c31b33e-796e-48a9-9d29-3f64c5201079"))
+TSRDivType
+{
+    sdSkip = 0,
+    sdAverage = 1,
+    sdFilter4th = 2,
+    sdFilter6th = 3,
+    sdFilter8th = 4
+};
+
+enum __declspec(uuid("6ee206ab-a139-4604-b7bc-4d8c56f62d10"))
+GHObjectType
+{
+    gtInput = 1,
+    gtFileName = 5,
+    gtSelection = 2,
+    gtDir = 4,
+    gtMemo = 3,
+    gtDivision = 6,
+    gtSound = 7
+};
+
+enum __declspec(uuid("9f3f5561-398e-4916-b71e-eefc0aefed88"))
+EventIDs
+{
+    evOnInitiateAcq = 100,
+    evOnAlarmEx = 101,
+    evOnGetSampleRates = 102,
+    evOnSetSampleRate = 103,
+    evOnInitiateSetup = 104,
+    evOnInitiateHardware = 105,
+    evHasAbsoluteClock = 106,
+    evOnCheckSampleRate = 107,
+    evOnUpdateXML = 108,
+    evIsMasterClock = 109,
+    evShowAnalysisFrame = 110,
+    evUpdateAnalysisFrame = 111,
+    evRepaintAnalysisFrame = 112,
+    evHideAnalysisFrame = 113,
+    evResizeAnalysisFrame = 114,
+    evStartAnalysis = 115,
+    evStopAnalysis = 116,
+    evCalculateAnalysis = 117,
+    evPrepareAnalysis = 118,
+    evAfterLoadFile = 119,
+    evPreInitiate = 120,
+    evOnUpdateHWXML = 121,
+    evGetIndexLevelName = 122,
+    evGetInputGroups = 123,
+    evGetReplayMode = 124,
+    evSetRegistrationHelper = 125,
+    evSetDWVersion = 126,
+    evNewDataFileCreated = 127,
+    evGetStartErrorParams = 128,
+    evEstablishConnections = 129,
+    evEnterHardwareSetup = 130,
+    evChannelRemoved = 131,
+    evGetDisabledChannels = 132,
+    evOnEnterPluginSetupScreen = 133,
+    evOnLeavePluginSetupScreen = 134,
+    evGetFreeCode = 135,
+    evGetMaxCalcDelay = 136,
+    evOnPrepareAcq = 137,
+    evFileStoringFinished = 138,
+    evEnableZero = 139,
+    evOnSetZero = 140,
+    evOnClearData = 141,
+    evHasDisplayTemplate = 142,
+    evUpdateDisplayTemplate = 143,
+    evOnChannelValueChanged = 144,
+    evOnChannelEnabled = 145,
+    evChangeIndex = 146,
+    evGetDisplayName = 147,
+    evOnBeforeGetData = 148,
+    evReadBuildInLicense = 149,
+    evWriteBuildInLicense = 150,
+    evSupportsBuildInLicense = 151,
+    evSampleRateChanged = 152,
+    evIsFullOfflineCalc = 153,
+    evOnEnterAnalysisPluginSetupScreen = 154,
+    evOnLeaveAnalysisPluginSetupScreen = 155,
+    evGetDataStarted = 156,
+    evResizeHWFrame = 157
+};
+
+struct __declspec(uuid("bea4a4fb-010a-4d58-9140-729783ed0f99"))
+IPlugin4 : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall OnEvent (
+        /*[in]*/ enum EventIDs EventID,
+        /*[in]*/ VARIANT InParam,
+        /*[in,out]*/ VARIANT * OutParam ) = 0;
+};
+
+enum __declspec(uuid("4081a3cb-4839-4f96-a040-308a7df50ec2"))
+CustomVCMessages
+{
+    vcVersionCheck = 0,
+    vcDrawData = 1,
+    vcInit = 2,
+    vcAcceptChannel = 3,
+    vcSave = 4,
+    vcLoad = 5,
+    vcGetDataRegion = 6,
+    vcMouseWheel = 7,
+    vcMouseWheelUp = 8,
+    vcMouseWheelDown = 9,
+    vcMouseUp = 10,
+    vcMouseDown = 11,
+    vcMouseMove = 12,
+    vcMouseClick = 13,
+    vcMouseDblClick = 14,
+    vcKeyDown = 15,
+    vcKeyUp = 16,
+    vcKeyChar = 17,
+    vcStartAcq = 18,
+    vcShowFrame = 19,
+    vcHideFrame = 20,
+    vcInitFrame = 21,
+    vcResizeFrame = 22,
+    vcResize = 23,
+    vcAcceptInputGroup = 24,
+    vcMouseEnter = 25,
+    vcMouseLeave = 26,
+    vcInitScreen = 27,
+    vcAddChannel = 28,
+    vcAddInputGroup = 29,
+    vcSupportsCopyDataToClipboard = 30,
+    vcCopyDataToClipboard = 31,
+    vcUpdateXML = 32
+};
+
+enum __declspec(uuid("f3cf5784-0639-41d7-a6bc-80212c6527b1"))
+CustomMathMessages
+{
+    mthVersionCheck = 0,
+    mthInit = 1,
+    mthInitiate = 2,
+    mthCalculate = 3,
+    mthReset = 4,
+    mthMountChannels = 5,
+    mthGetProps = 6,
+    mthSetProps = 7,
+    mthGetDescription = 8,
+    mthSampleRateChanged = 9,
+    mthAcceptInputChannel = 10,
+    mthGetOutChDescription = 11,
+    mthGetInputChannels = 12,
+    mthUpdateXML = 13,
+    mthPreInitiate = 14,
+    mthGetInputGroups = 15,
+    mthClearCalc = 16,
+    mthStopCalc = 17,
+    mthDeinit = 18,
+    mthGetDefaultChannelName = 19,
+    mthGetDefaultChannelColor = 20,
+    mthGetRecalcOnPosChanged = 21,
+    mthGetRegistration = 22,
+    mthNeedsMultipass = 23,
+    mthPassStarted = 24,
+    mthPassCompleted = 25,
+    mthUpdateDisplayTemplate = 26,
+    mthSetCalcDelay = 27,
+    mthMountDynamicChannels = 28
+};
+
+enum __declspec(uuid("7d1500d2-b292-4781-897d-364c41b47b56"))
+CustomMathFrameMessages
+{
+    mfrVersionCheck = 0,
+    mfrShowFrame = 1,
+    mfrHideFrame = 2,
+    mfrResizeFrame = 3,
+    mfrSetFrame = 4,
+    mfrInitFrame = 5,
+    mfrSetContext = 6,
+    mfrSetObject = 7,
+    mfrSetModule = 8
+};
+
+enum __declspec(uuid("b56de8ed-f8da-4859-9307-1ced09b40088"))
+XMLType
+{
+    xmlFile = 0,
+    xmlString = 1,
+    xmlMSXML = 2
+};
+
+struct __declspec(uuid("c4a25fdc-9f2e-413d-9ec8-8df43bd210ca"))
+IPowerModule : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall LoadFromXML (
+        /*[in]*/ enum XMLType AType,
+        /*[in]*/ VARIANT XML ) = 0;
+      virtual HRESULT __stdcall SaveToXML (
+        /*[in]*/ enum XMLType AType,
+        /*[in,out]*/ VARIANT * XML ) = 0;
+      virtual HRESULT __stdcall GetFFT (
+        /*[in]*/ long ValueType,
+        /*[in]*/ long Phase,
+        /*[out]*/ VARIANT * Data ) = 0;
+      virtual HRESULT __stdcall get_FFTSampleRate (
+        /*[out,retval]*/ float * Value ) = 0;
+      virtual HRESULT __stdcall get_FFTBlockSize (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall get_ModuleIndex (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall SaveToXML1 (
+        /*[in]*/ long AType,
+        /*[out]*/ VARIANT * XML ) = 0;
+      virtual HRESULT __stdcall LoadFromXML1 (
+        /*[in]*/ long AType,
+        /*[in]*/ VARIANT XML ) = 0;
+      virtual HRESULT __stdcall GetVectorScopeData (
+        /*[out,retval]*/ VARIANT * Value ) = 0;
+};
+
+struct __declspec(uuid("2cd91570-4eef-4ab9-a24c-d3c663b4f5b1"))
+IPowerModules : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall get__NewEnum (
+        /*[out,retval]*/ IUnknown * * Value ) = 0;
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ long Index,
+        /*[out,retval]*/ struct IPowerModule * * Value ) = 0;
+      virtual HRESULT __stdcall Add (
+        /*[out,retval]*/ struct IPowerModule * * Value ) = 0;
+      virtual HRESULT __stdcall Remove (
+        /*[in]*/ long Ind ) = 0;
+};
+
+enum __declspec(uuid("da607018-e48b-4c72-8e3d-1ab24c664b7e"))
+ModulesFunction
+{
+    mfBridgeZeroAll = 0,
+    mfAmplZeroAll = 1,
+    mfShortOnOffAll = 2,
+    mfShuntOnOffAll = 3,
+    mfShuntCalCheckAll = 4,
+    mfChargeBZeroAll = 5,
+    mfFreqAFindTriggerAll = 6,
+    mfDAQP_MDAQ_SetPowerOnDefaultAll = 7,
+    mfDAQP_ResetPowerOnDefaultAll = 8,
+    mfMDAQ_CalFileClearAll = 9,
+    mfBridgeZeroByGroupID = 10,
+    mfAmplZeroByGroupID = 11,
+    mfShuntCalCheckByGroupID = 12,
+    mfSetHighestRangeAll = 13,
+    mfSetBestRangeAll = 14,
+    mfSetHighestFilterAll = 15,
+    mfSetFilter40PerOfSRAll = 16,
+    mfSetFilterCustomAll = 17,
+    mfSetHighestRangeByGroupID = 18,
+    mfSetBestRangeByGroupID = 19,
+    mfSetHighestFilterByGroupID = 20,
+    mfSetFilter40PerOfSRByGroupID = 21,
+    mfSetFilterCustomByGroupID = 22,
+    mfRescanDAQPAt = 23,
+    mfRescanMDAQAt = 24,
+    mfRescanPADAt = 25,
+    mfRescanDAQPMDAQAll = 26,
+    mfRescanPADAll = 27,
+    mfRescanMSIAt = 28,
+    mfRescanMSIAll = 29,
+    mfRescanDLRAll = 30,
+    mfResetFirstScan = 31
+};
+
+enum __declspec(uuid("ebc2e683-d112-4e3b-a0a4-901114559390"))
+TAxisType
+{
+    atString = 0,
+    atFloat = 1,
+    atFloatLinearFunc = 2
+};
+
+enum __declspec(uuid("8a811bfe-f440-498f-b20e-79a18e10d550"))
+CustomExpEventIDs
+{
+    evStartDataFolderEx = 0,
+    evWriteEventTrigInfo = 1,
+    evWriteArray = 2,
+    evWriteArrayDouble = 3,
+    evWriteAsyncArray = 4,
+    evWriteAsyncArrayDouble = 5,
+    evSupportsArray = 6,
+    evSetTelemetryTime = 7,
+    evWriteAsyncBinaryData = 8,
+    evSupportsBinary = 9
+};
+
+struct __declspec(uuid("947bf399-9ef8-4417-a5c0-d5ccd79a0b14"))
+ICustomExport3 : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall OnEvent (
+        /*[in]*/ enum CustomExpEventIDs EventIDs,
+        /*[in]*/ VARIANT InParam,
+        /*[in,out]*/ VARIANT * OutParam,
+        /*[out,retval]*/ HRESULT * Value ) = 0;
+};
+
+enum __declspec(uuid("81a9e08b-9841-4eaa-9aac-f7928e8ca127"))
+SpecDirectory
+{
+    sdSystemDir = 0,
+    sdLogDir = 1,
+    sdScriptsDir = 2,
+    sdTempDir = 3,
+    sdDataDir = 4,
+    sdSetupDataDir = 5,
+    sdExportDataDir = 6,
+    sdIniDir = 7,
+    sdAddonsDir = 8,
+    sdAppDir = 9
+};
+
+enum __declspec(uuid("19b8a8ba-8168-403d-a9fc-ad4b08fa98f0"))
+CustomImpMessages
+{
+    impVersionCheck = 0,
+    impInit = 1,
+    impDeinit = 2,
+    impOpenFile = 3,
+    impCloseFile = 4,
+    impShowFrame = 5,
+    impHideFrame = 6,
+    impPrepareImport = 7,
+    impClearImport = 8,
+    impStartImport = 9,
+    impEndImport = 10,
+    impImport = 11,
+    impGetBlockSize = 12,
+    impGetSampleRate = 13,
+    impGetBlockCount = 14,
+    impGetAbsStartTime = 15,
+    impGetImportType = 16,
+    impResizeFrame = 17,
+    impGetTrustedCode = 18
+};
+
+enum __declspec(uuid("8afbe66e-2a57-481f-90db-c536bbe9f9ad"))
+ImportTypes
+{
+    itValueBased = 0,
+    itChannelBased = 1
+};
+
+enum __declspec(uuid("bd8d187f-854c-40db-89e8-1cbca3854173"))
+MathMultipassType
+{
+    mptNone = 0,
+    mptForward = 1,
+    mptBackward = 2
+};
+
+enum __declspec(uuid("dc731cf8-dc9e-4c40-afe5-a63c60804328"))
+ImportStatus
+{
+    impsFinished = 0,
+    impsData = 1,
+    impsGap = 2
+};
+
+enum __declspec(uuid("8258387f-4239-48af-93c4-e0a99e474d5d"))
+CustomDAQMessages
+{
+    daqGetDeviceType = 0,
+    daqUpdateXMLAISetup = 1,
+    daqAmplMeasurementsCount = 2,
+    daqAmplGetMeasurement = 3,
+    daqAmplSetMeasurementCode = 4,
+    daqSetNamePrefix = 50000
+};
+
+enum __declspec(uuid("8f5f3785-5355-413c-9a9c-0a10a6736b45"))
+CustomCANMessages
+{
+    canGetDeviceType = 0,
+    canStartAcq = 1,
+    canStopAcq = 2,
+    canPrepareAcq = 3,
+    canGetData = 4,
+    canGetCardCount = 5,
+    canGetCardCodes = 6,
+    canportStartAcq = 7,
+    canportStopAcq = 8,
+    canportPrepareAcq = 9,
+    canportGetData = 10,
+    canportClearBuffers = 11,
+    canportGetBaudRates = 12,
+    canInit = 13,
+    canShowFrame = 14,
+    canHideFrame = 15,
+    canportEnableOutput = 16,
+    canportGetOutputEnabled = 17,
+    canportWriteFrame = 18,
+    canSupportsOutput = 19,
+    canportCaptureSet = 20,
+    canportCaptureStartRead = 21,
+    canportCaptureEndRead = 22,
+    canportCaptureGetMessageCount = 23,
+    canportCaptureReadMessage = 24
+};
+
+enum __declspec(uuid("ee5b7b9f-75fa-41b9-8b22-637fa80441b0"))
+ControlChFlags
+{
+    ctrlCh_NumType_Mask = 7,
+    ctrlCh_NumType_Bool = 0,
+    ctrlCh_NumType_Int = 1,
+    ctrlCh_NumType_Float = 2,
+    ctrlCh_AllowAlarmDO = 8
+};
+
+enum __declspec(uuid("d4f87eef-f063-43e9-a3c3-ee201d3b437d"))
+SetupMessageType
+{
+    smsgHint = 0,
+    smsgWarning = 1,
+    smsgError = 2
+};
+
+struct __declspec(uuid("f1dd1197-a2c6-478a-840c-b226864b11d3"))
+ISetupMessages : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall Add (
+        /*[in]*/ enum SetupMessageType MsgType,
+        /*[in]*/ BSTR Header,
+        /*[in]*/ BSTR Text ) = 0;
+};
+
+enum __declspec(uuid("bb9f970a-e054-4aa3-8875-299dbd575ef8"))
+ReportMessageType
+{
+    rmtError = 0,
+    rmtWarning = 1,
+    rmtInformation = 2,
+    rmtDeveloper = 3
+};
+
+#pragma pack(push, 4)
+
+struct __declspec(uuid("50295f10-3b8c-4cf9-a97d-31b6eb315870"))
+T_ReducedRec
+{
+    float Min;
+    float Max;
+    float Ave;
+    float Rms;
+};
+
+#pragma pack(pop)
+
+#pragma pack(push, 4)
+
+struct __declspec(uuid("708c0f32-eb53-47e9-bbbd-b7ef8eae260c"))
+T_RecordPosition
+{
+    long Mid;
+    long Dir;
+};
+
+#pragma pack(pop)
+
+#pragma pack(push, 4)
+
+struct __declspec(uuid("36809686-ccaf-476d-87fb-c45a9d2faa2b"))
+T_ChIndex
+{
+    short IndexLevel;
+    long Index1;
+    long Index2;
+    long Index3;
+    long Index4;
+    long Index5;
+};
+
+#pragma pack(pop)
+
+#pragma pack(push, 4)
+
+struct __declspec(uuid("c79db759-bd3b-4037-9807-374b134a0450"))
+ITestRecord
+{
+    long Field1;
+    long Field2;
+};
+
+#pragma pack(pop)
+
+#pragma pack(push, 1)
+
+struct __declspec(uuid("7f3a1690-0b3b-4803-8d5f-919ed42650f8"))
+T_CANFrame
+{
+    unsigned char Byte0;
+    unsigned char Byte1;
+    unsigned char Byte2;
+    unsigned char Byte3;
+    unsigned char Byte4;
+    unsigned char Byte5;
+    unsigned char Byte6;
+    unsigned char Byte7;
+};
+
+#pragma pack(pop)
+
+struct __declspec(uuid("f560c6ca-c5fd-4921-ae58-a4f69b17a3e9"))
+ICANPort : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall SendFrame (
+        /*[in]*/ VARIANT_BOOL Extended,
+        /*[in]*/ long ArbId,
+        /*[in]*/ struct T_CANFrame Data,
+        /*[in]*/ long Size,
+        /*[out,retval]*/ VARIANT_BOOL * Value ) = 0;
+      virtual HRESULT __stdcall EnableOutput (
+        /*[in]*/ VARIANT_BOOL Enable ) = 0;
+      virtual HRESULT __stdcall get_MessageCount (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall ReadMessage (
+        /*[in,out]*/ double * TimeStamp,
+        /*[in,out]*/ long * ArbId,
+        /*[in,out]*/ long * DataLo,
+        /*[in,out]*/ long * DataHi,
+        /*[out,retval]*/ VARIANT_BOOL * Value ) = 0;
+      virtual HRESULT __stdcall StartRead ( ) = 0;
+      virtual HRESULT __stdcall EndRead ( ) = 0;
+      virtual HRESULT __stdcall GetBaudRateList (
+        /*[out,retval]*/ VARIANT * Value ) = 0;
+      virtual HRESULT __stdcall SetBaudRate (
+        /*[in]*/ long BaudRate ) = 0;
+      virtual HRESULT __stdcall GetBaudRate (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall get_TotalMsgCount (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall get_TotalErrMsgCount (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall Capture (
+        /*[in]*/ VARIANT_BOOL Status ) = 0;
+      virtual HRESULT __stdcall get_UseListenOnly (
+        /*[out,retval]*/ VARIANT_BOOL * Value ) = 0;
+      virtual HRESULT __stdcall put_UseListenOnly (
+        /*[in]*/ VARIANT_BOOL Value ) = 0;
+};
+
+struct __declspec(uuid("1d49da44-d8ee-4cd7-8b62-dd4e7b523b8e"))
+ICAN : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_SupportsOutput (
+        /*[out,retval]*/ VARIANT_BOOL * Value ) = 0;
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall get__NewEnum (
+        /*[out,retval]*/ IUnknown * * Value ) = 0;
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ long Index,
+        /*[out,retval]*/ struct ICANPort * * Value ) = 0;
+};
+
+#pragma pack(push, 4)
+
+struct __declspec(uuid("d8122735-ba22-4258-9942-c52a5b30f2c6"))
+DaqDeviceInfo
+{
+    BSTR Name;
+    BSTR SerialNumber;
+    BSTR Firmware;
+    BSTR FirmwareSub;
+    BSTR CalDate;
+    BSTR DriverVersion;
+    BSTR Used;
+    BSTR OptionCount;
+    BSTR OptionTypes;
+    BSTR AICount;
+    BSTR DICount;
+    BSTR CNTCount;
+    BSTR AIUsedCount;
+    BSTR DIUsedCount;
+    BSTR CNTUsedCount;
+};
+
+#pragma pack(pop)
+
+struct __declspec(uuid("aa2e8a89-aadd-4b5f-81b9-d9f76bf35c2a"))
+IDaq : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall GetDeviceCode (
+        /*[in]*/ long Index,
+        /*[out,retval]*/ BSTR * Value ) = 0;
+      virtual HRESULT __stdcall get_CardCount (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall get_DaqType (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall get_DataLost (
+        /*[out,retval]*/ VARIANT_BOOL * Value ) = 0;
+      virtual HRESULT __stdcall put_DataLost (
+        /*[in]*/ VARIANT_BOOL Value ) = 0;
+      virtual HRESULT __stdcall GetDeviceInfo (
+        /*[in]*/ long Index,
+        /*[out,retval]*/ struct DaqDeviceInfo * Value ) = 0;
+      virtual HRESULT __stdcall SetDeviceCalDate (
+        /*[in]*/ long Index,
+        /*[in]*/ BSTR CalDate,
+        /*[in]*/ BSTR Pwd,
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall GetDITrgLevel (
+        /*[in]*/ long PinNr,
+        /*[out]*/ long * TrgLevel,
+        /*[out]*/ long * ReTrgLevel,
+        /*[out]*/ unsigned char * Coupling,
+        /*[out]*/ unsigned char * SupportLevel,
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall SetDITrgLevel (
+        /*[in]*/ long PinNr,
+        /*[in]*/ long TrgLevel,
+        /*[in]*/ long ReTrgLevel,
+        /*[in]*/ unsigned char Coupling,
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall GetCNTTrgLevel (
+        /*[in]*/ long CNTNr,
+        /*[in]*/ unsigned char PinType,
+        /*[out]*/ long * TrgLevel,
+        /*[out]*/ long * ReTrgLevel,
+        /*[out]*/ unsigned char * Coupling,
+        /*[out]*/ unsigned char * SupportLevel,
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall SetCNTTrgLevel (
+        /*[in]*/ long CNTNr,
+        /*[in]*/ unsigned char PinType,
+        /*[in]*/ long TrgLevel,
+        /*[in]*/ long ReTrgLevel,
+        /*[in]*/ unsigned char Coupling,
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall IOControl (
+        /*[in]*/ long Msg,
+        /*[in]*/ VARIANT InParam,
+        /*[out]*/ VARIANT * OutParam,
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall get_CanAutoCalculate (
+        /*[out,retval]*/ VARIANT_BOOL * Value ) = 0;
+};
+
+struct __declspec(uuid("45be650b-1f90-46bf-bc65-853f09a0a241"))
+IData : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Groups (
+        /*[out,retval]*/ struct IChannelGroups * * Value ) = 0;
+      virtual HRESULT __stdcall get_SampleRate (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall FindChannel (
+        /*[in]*/ BSTR Name,
+        /*[out,retval]*/ struct IChannel * * Value ) = 0;
+      virtual HRESULT __stdcall get_Samples (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall GetSamplesAcquired (
+        /*[out]*/ long * Mid,
+        /*[out]*/ long * Dir ) = 0;
+      virtual HRESULT __stdcall get_ShownChannels (
+        /*[out,retval]*/ struct IChannelList * * Value ) = 0;
+      virtual HRESULT __stdcall get_ActiveChannels (
+        /*[out,retval]*/ struct IChannelList * * Value ) = 0;
+      virtual HRESULT __stdcall get_ExternalClock (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall get_StartStoreTime (
+        /*[out,retval]*/ DATE * Value ) = 0;
+      virtual HRESULT __stdcall FindChannelByIndex (
+        /*[in]*/ struct T_ChIndex Index,
+        /*[out,retval]*/ struct IChannel * * Value ) = 0;
+      virtual HRESULT __stdcall get_CurrentPos (
+        /*[out,retval]*/ struct T_RecordPosition * Value ) = 0;
+      virtual HRESULT __stdcall put_CurrentPos (
+        /*[in]*/ struct T_RecordPosition Value ) = 0;
+      virtual HRESULT __stdcall get_EndStamp (
+        /*[out,retval]*/ struct T_RecordPosition * Value ) = 0;
+      virtual HRESULT __stdcall put_EndStamp (
+        /*[in]*/ struct T_RecordPosition Value ) = 0;
+      virtual HRESULT __stdcall get_StartStamp (
+        /*[out,retval]*/ struct T_RecordPosition * Value ) = 0;
+      virtual HRESULT __stdcall put_StartStamp (
+        /*[in]*/ struct T_RecordPosition Value ) = 0;
+      virtual HRESULT __stdcall GetIndexName (
+        /*[in]*/ struct T_ChIndex Index,
+        /*[out,retval]*/ BSTR * Value ) = 0;
+      virtual HRESULT __stdcall FindChannelByIndex1 (
+        /*[in]*/ long IndexLevel,
+        /*[in]*/ long I1,
+        /*[in]*/ long I2,
+        /*[in]*/ long I3,
+        /*[in]*/ long I4,
+        /*[in]*/ long I5,
+        /*[out,retval]*/ struct IChannel * * Value ) = 0;
+      virtual HRESULT __stdcall GetIndexName1 (
+        /*[in]*/ long IndexLevel,
+        /*[in]*/ long I1,
+        /*[in]*/ long I2,
+        /*[in]*/ long I3,
+        /*[in]*/ long I4,
+        /*[in]*/ long I5,
+        /*[out,retval]*/ BSTR * Value ) = 0;
+      virtual HRESULT __stdcall BuildChannelList ( ) = 0;
+      virtual HRESULT __stdcall get_AllChannels (
+        /*[out,retval]*/ struct IChannelList * * Value ) = 0;
+      virtual HRESULT __stdcall get_UsedChannels (
+        /*[out,retval]*/ struct IChannelList * * Value ) = 0;
+      virtual HRESULT __stdcall StartDataSync ( ) = 0;
+      virtual HRESULT __stdcall EndDataSync ( ) = 0;
+      virtual HRESULT __stdcall GetIndexNameShort (
+        /*[in]*/ struct T_ChIndex ChIndex,
+        /*[out,retval]*/ BSTR * Value ) = 0;
+      virtual HRESULT __stdcall GetIndexNameShort1 (
+        /*[in]*/ long IndexLevel,
+        /*[in]*/ long I1,
+        /*[in]*/ long I2,
+        /*[in]*/ long I3,
+        /*[in]*/ long I4,
+        /*[in]*/ long I5,
+        /*[out,retval]*/ BSTR * Value ) = 0;
+      virtual HRESULT __stdcall get_StartStoreTimeUTC (
+        /*[out,retval]*/ DATE * Value ) = 0;
+      virtual HRESULT __stdcall ApplyChannels ( ) = 0;
+      virtual HRESULT __stdcall SetStartStoreTimeUTC (
+        /*[in]*/ DATE Time ) = 0;
+      virtual HRESULT __stdcall SetExternalClock (
+        /*[in]*/ long Value ) = 0;
+      virtual HRESULT __stdcall get_ExternalTrigger (
+        /*[out,retval]*/ VARIANT_BOOL * Value ) = 0;
+      virtual HRESULT __stdcall put_ExternalTrigger (
+        /*[in]*/ VARIANT_BOOL Value ) = 0;
+      virtual HRESULT __stdcall get_MaxCalcDelay (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall get_FirstTimeStamp (
+        /*[out,retval]*/ struct T_RecordPosition * Value ) = 0;
+      virtual HRESULT __stdcall get_MRealTimeStamp (
+        /*[out,retval]*/ struct T_RecordPosition * Value ) = 0;
+      virtual HRESULT __stdcall get_MeasureMode (
+        /*[out,retval]*/ VARIANT_BOOL * Value ) = 0;
+      virtual HRESULT __stdcall get_FreezeMode (
+        /*[out,retval]*/ VARIANT_BOOL * Value ) = 0;
+      virtual HRESULT __stdcall get_SampleRateEx (
+        /*[out,retval]*/ double * Value ) = 0;
+      virtual HRESULT __stdcall get_CurrentPosD (
+        /*[out,retval]*/ double * Value ) = 0;
+      virtual HRESULT __stdcall put_CurrentPosD (
+        /*[in]*/ double Value ) = 0;
+      virtual HRESULT __stdcall get_StartStampD (
+        /*[out,retval]*/ double * Value ) = 0;
+      virtual HRESULT __stdcall put_StartStampD (
+        /*[in]*/ double Value ) = 0;
+      virtual HRESULT __stdcall get_EndStampD (
+        /*[out,retval]*/ double * Value ) = 0;
+      virtual HRESULT __stdcall put_EndStampD (
+        /*[in]*/ double Value ) = 0;
+      virtual HRESULT __stdcall get_IBRate (
+        /*[in]*/ long Level,
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall get_IBAbsRate (
+        /*[in]*/ long Level,
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall get_IBAbsMidRate (
+        /*[in]*/ long Level,
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall get_IBLevels (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall get_InputGroups (
+        /*[out,retval]*/ struct IInputGroups * * Value ) = 0;
+      virtual HRESULT __stdcall FindChannelByIndexEx (
+        /*[in]*/ VARIANT Index,
+        /*[out,retval]*/ struct IChannel * * Value ) = 0;
+      virtual HRESULT __stdcall get_SRDivLCM (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall get_AnalyseMode (
+        /*[out,retval]*/ VARIANT_BOOL * Value ) = 0;
+};
+
+struct __declspec(uuid("cae48a7c-581e-4c0b-ae4f-7a2eb89c0dff"))
+IChannel : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_IBValues (
+        /*[in]*/ long Index,
+        /*[out,retval]*/ struct T_ReducedRec * Value ) = 0;
+      virtual HRESULT __stdcall get_RBValues (
+        /*[in]*/ long Index,
+        /*[out,retval]*/ struct T_ReducedRec * Value ) = 0;
+      virtual HRESULT __stdcall get_DBValues (
+        /*[in]*/ long Index,
+        /*[out,retval]*/ float * Value ) = 0;
+      virtual HRESULT __stdcall get_DBBufSize (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall get_DBDataSize (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall get_DBPos (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall get_IBBufSize (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall get_IBDataSize (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall get_IBPos (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall get_RBBufSize (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall get_RBDataSize (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall get_RBPos (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall get_Name (
+        /*[out,retval]*/ BSTR * Value ) = 0;
+      virtual HRESULT __stdcall put_Name (
+        /*[in]*/ BSTR Value ) = 0;
+      virtual HRESULT __stdcall get_DBTimeStamp (
+        /*[in]*/ long Index,
+        /*[out,retval]*/ double * Value ) = 0;
+      virtual HRESULT __stdcall get_Used (
+        /*[out,retval]*/ VARIANT_BOOL * Value ) = 0;
+      virtual HRESULT __stdcall put_Used (
+        /*[in]*/ VARIANT_BOOL Value ) = 0;
+      virtual HRESULT __stdcall get_Shown (
+        /*[out,retval]*/ VARIANT_BOOL * Value ) = 0;
+      virtual HRESULT __stdcall put_Shown (
+        /*[in]*/ VARIANT_BOOL Value ) = 0;
+      virtual HRESULT __stdcall GetUnscaledData (
+        /*[out,retval]*/ VARIANT * Value ) = 0;
+      virtual HRESULT __stdcall GetScaledData (
+        /*[out,retval]*/ VARIANT * Value ) = 0;
+      virtual HRESULT __stdcall GetDBAddress (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall get_DataType (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall get_Bytes (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall get_Async (
+        /*[out,retval]*/ VARIANT_BOOL * Value ) = 0;
+      virtual HRESULT __stdcall AddSingleSample (
+        /*[in]*/ float Value ) = 0;
+      virtual HRESULT __stdcall GetTSData (
+        /*[out,retval]*/ VARIANT * Value ) = 0;
+      virtual HRESULT __stdcall GetUnscaledDataEx (
+        /*[in]*/ long Start,
+        /*[in]*/ long Count,
+        /*[out,retval]*/ VARIANT * Value ) = 0;
+      virtual HRESULT __stdcall ScaleValue (
+        /*[in]*/ float Value,
+        /*[out,retval]*/ float * Value1 ) = 0;
+      virtual HRESULT __stdcall AddAsyncSingleSample (
+        /*[in]*/ float Value,
+        /*[in]*/ double TimeStamp ) = 0;
+      virtual HRESULT __stdcall GetScaledDataEx (
+        /*[in]*/ long Start,
+        /*[in]*/ long Count,
+        /*[out,retval]*/ VARIANT * Value ) = 0;
+      virtual HRESULT __stdcall get_SRDiv (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall get_Group (
+        /*[out,retval]*/ struct IChannelGroup * * Value ) = 0;
+      virtual HRESULT __stdcall get_Description (
+        /*[out,retval]*/ BSTR * Value ) = 0;
+      virtual HRESULT __stdcall put_Description (
+        /*[in]*/ BSTR Value ) = 0;
+      virtual HRESULT __stdcall get_Unit_ (
+        /*[out,retval]*/ BSTR * Value ) = 0;
+      virtual HRESULT __stdcall put_Unit_ (
+        /*[in]*/ BSTR Value ) = 0;
+      virtual HRESULT __stdcall AddAsyncDoubleSample (
+        /*[in]*/ double Value,
+        /*[in]*/ double TimeStamp ) = 0;
+      virtual HRESULT __stdcall AddAsyncByteSample (
+        /*[in]*/ unsigned char Value,
+        /*[in]*/ double TimeStamp ) = 0;
+      virtual HRESULT __stdcall get_MType (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall put_MType (
+        /*[in]*/ long Value ) = 0;
+      virtual HRESULT __stdcall get_Measurement (
+        /*[out,retval]*/ BSTR * Value ) = 0;
+      virtual HRESULT __stdcall put_Measurement (
+        /*[in]*/ BSTR Value ) = 0;
+      virtual HRESULT __stdcall CreateConnection (
+        /*[out,retval]*/ struct IChannelConnection * * Value ) = 0;
+      virtual HRESULT __stdcall get_MainDisplayColor (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall put_MainDisplayColor (
+        /*[in]*/ long Value ) = 0;
+      virtual HRESULT __stdcall get_TypicalMinValue (
+        /*[out,retval]*/ float * Value ) = 0;
+      virtual HRESULT __stdcall get_TypicalMaxValue (
+        /*[out,retval]*/ float * Value ) = 0;
+      virtual HRESULT __stdcall get_Index (
+        /*[out,retval]*/ struct T_ChIndex * Value ) = 0;
+      virtual HRESULT __stdcall GetScaledDataEx1 (
+        /*[in]*/ long Start,
+        /*[in]*/ long Count,
+        /*[out]*/ VARIANT * Data ) = 0;
+      virtual HRESULT __stdcall GetUnscaledDataEx1 (
+        /*[in]*/ long Start,
+        /*[in]*/ long Count,
+        /*[out]*/ VARIANT * Data ) = 0;
+      virtual HRESULT __stdcall GetTSDataEx (
+        /*[in]*/ long Start,
+        /*[in]*/ long Count,
+        /*[out,retval]*/ VARIANT * Value ) = 0;
+      virtual HRESULT __stdcall GetTSDataEx1 (
+        /*[in]*/ long Start,
+        /*[in]*/ long Count,
+        /*[out]*/ VARIANT * Data ) = 0;
+      virtual HRESULT __stdcall GetIBValues (
+        /*[in]*/ long Pos,
+        /*[out]*/ float * Min,
+        /*[out]*/ float * Max,
+        /*[out]*/ float * Ave,
+        /*[out]*/ float * Rms ) = 0;
+      virtual HRESULT __stdcall GetRBValues (
+        /*[in]*/ long Pos,
+        /*[out]*/ float * Min,
+        /*[out]*/ float * Max,
+        /*[out]*/ float * Ave,
+        /*[out]*/ float * Rms ) = 0;
+      virtual HRESULT __stdcall GetIndex1 (
+        /*[out]*/ long * IndexLevel,
+        /*[out]*/ long * I1,
+        /*[out]*/ long * I2,
+        /*[out]*/ long * I3,
+        /*[out]*/ long * I4,
+        /*[out]*/ long * I5 ) = 0;
+      virtual HRESULT __stdcall get_UserScaleMin (
+        /*[out,retval]*/ float * Value ) = 0;
+      virtual HRESULT __stdcall put_UserScaleMin (
+        /*[in]*/ float Value ) = 0;
+      virtual HRESULT __stdcall get_UserScaleMax (
+        /*[out,retval]*/ float * Value ) = 0;
+      virtual HRESULT __stdcall put_UserScaleMax (
+        /*[in]*/ float Value ) = 0;
+      virtual HRESULT __stdcall get_Scale (
+        /*[out,retval]*/ double * Value ) = 0;
+      virtual HRESULT __stdcall put_Scale (
+        /*[in]*/ double Value ) = 0;
+      virtual HRESULT __stdcall get_Offset (
+        /*[out,retval]*/ double * Value ) = 0;
+      virtual HRESULT __stdcall put_Offset (
+        /*[in]*/ double Value ) = 0;
+      virtual HRESULT __stdcall IncDBSamples (
+        /*[in]*/ long Count ) = 0;
+      virtual HRESULT __stdcall AddSingleSamples (
+        /*[in]*/ long Count,
+        /*[in]*/ VARIANT Data,
+        /*[in]*/ VARIANT Timestamps ) = 0;
+      virtual HRESULT __stdcall SetSRDiv (
+        /*[in]*/ long SRDiv ) = 0;
+      virtual HRESULT __stdcall SetSRDivType (
+        /*[in]*/ enum TSRDivType AType ) = 0;
+      virtual HRESULT __stdcall get_ExportOrder (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall put_ExportOrder (
+        /*[in]*/ long Value ) = 0;
+      virtual HRESULT __stdcall get_CalcDelay (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall put_CalcDelay (
+        /*[in]*/ long Value ) = 0;
+      virtual HRESULT __stdcall AddAsyncShortintSample (
+        /*[in]*/ char Value,
+        /*[in]*/ double TimeStamp ) = 0;
+      virtual HRESULT __stdcall AddAsyncSmallintSample (
+        /*[in]*/ short Value,
+        /*[in]*/ double TimeStamp ) = 0;
+      virtual HRESULT __stdcall AddAsyncIntegerSample (
+        /*[in]*/ long Value,
+        /*[in]*/ double TimeStamp ) = 0;
+      virtual HRESULT __stdcall AddAsyncInt64Sample (
+        /*[in]*/ __int64 Value,
+        /*[in]*/ double TimeStamp ) = 0;
+      virtual HRESULT __stdcall get_CalcSRDiv (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall get_ChangeThreshold (
+        /*[out,retval]*/ float * Value ) = 0;
+      virtual HRESULT __stdcall put_ChangeThreshold (
+        /*[in]*/ float Value ) = 0;
+      virtual HRESULT __stdcall get_DiscreteList (
+        /*[out,retval]*/ struct IDiscreteList * * Value ) = 0;
+      virtual HRESULT __stdcall GetChannelSetup (
+        /*[out]*/ VARIANT * Data ) = 0;
+      virtual HRESULT __stdcall SetChannelSetup (
+        /*[in]*/ VARIANT Data ) = 0;
+      virtual HRESULT __stdcall SetDataType (
+        /*[in]*/ long ADataType ) = 0;
+      virtual HRESULT __stdcall get_BitCount (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall put_BitCount (
+        /*[in]*/ long Value ) = 0;
+      virtual HRESULT __stdcall get_Settings (
+        /*[out,retval]*/ BSTR * Value ) = 0;
+      virtual HRESULT __stdcall get_ChNo (
+        /*[out,retval]*/ BSTR * Value ) = 0;
+      virtual HRESULT __stdcall get_Exported (
+        /*[out,retval]*/ VARIANT_BOOL * Value ) = 0;
+      virtual HRESULT __stdcall put_Exported (
+        /*[in]*/ VARIANT_BOOL Value ) = 0;
+      virtual HRESULT __stdcall get_AbsMin (
+        /*[out,retval]*/ double * Value ) = 0;
+      virtual HRESULT __stdcall get_AbsMax (
+        /*[out,retval]*/ double * Value ) = 0;
+      virtual HRESULT __stdcall get_IsSingleValue (
+        /*[out,retval]*/ VARIANT_BOOL * Value ) = 0;
+      virtual HRESULT __stdcall get_SingleValue (
+        /*[out,retval]*/ double * Value ) = 0;
+      virtual HRESULT __stdcall put_SingleValue (
+        /*[in]*/ double Value ) = 0;
+      virtual HRESULT __stdcall SetFreezeMode (
+        /*[in]*/ VARIANT_BOOL Freeze ) = 0;
+      virtual HRESULT __stdcall get_LogicalName (
+        /*[out,retval]*/ BSTR * Value ) = 0;
+      virtual HRESULT __stdcall put_LogicalName (
+        /*[in]*/ BSTR Value ) = 0;
+      virtual HRESULT __stdcall get_LogicalIndex (
+        /*[out,retval]*/ __int64 * Value ) = 0;
+      virtual HRESULT __stdcall put_LogicalIndex (
+        /*[in]*/ __int64 Value ) = 0;
+      virtual HRESULT __stdcall get_Tag (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall put_Tag (
+        /*[in]*/ long Value ) = 0;
+      virtual HRESULT __stdcall SetAsync (
+        /*[in]*/ VARIANT_BOOL Async ) = 0;
+      virtual HRESULT __stdcall SetIsSingleValue (
+        /*[in]*/ VARIANT_BOOL Value ) = 0;
+      virtual HRESULT __stdcall get_Scale_ (
+        /*[out,retval]*/ double * Value ) = 0;
+      virtual HRESULT __stdcall put_Scale_ (
+        /*[in]*/ double Value ) = 0;
+      virtual HRESULT __stdcall get_Stored (
+        /*[out,retval]*/ VARIANT_BOOL * Value ) = 0;
+      virtual HRESULT __stdcall put_Stored (
+        /*[in]*/ VARIANT_BOOL Value ) = 0;
+      virtual HRESULT __stdcall AddByteSample (
+        /*[in]*/ unsigned char Value ) = 0;
+      virtual HRESULT __stdcall AddShortintSample (
+        /*[in]*/ char Value ) = 0;
+      virtual HRESULT __stdcall AddSmallintSample (
+        /*[in]*/ short Value ) = 0;
+      virtual HRESULT __stdcall AddWordSample (
+        /*[in]*/ unsigned short Value ) = 0;
+      virtual HRESULT __stdcall AddIntegerSample (
+        /*[in]*/ long Value ) = 0;
+      virtual HRESULT __stdcall AddIn64Sample (
+        /*[in]*/ __int64 Value ) = 0;
+      virtual HRESULT __stdcall AddDoubleSample (
+        /*[in]*/ double Value ) = 0;
+      virtual HRESULT __stdcall GetValueAtAbsPos (
+        /*[in]*/ long Pos,
+        /*[in,out]*/ long * SeekPos,
+        /*[in]*/ VARIANT_BOOL Interpolate,
+        /*[out,retval]*/ float * Value ) = 0;
+      virtual HRESULT __stdcall GetValueAtAbsPosDouble (
+        /*[in]*/ long Pos,
+        /*[in,out]*/ long * SeekPos,
+        /*[in]*/ VARIANT_BOOL Interpolate,
+        /*[out,retval]*/ double * Value ) = 0;
+      virtual HRESULT __stdcall UpdateXML (
+        /*[in]*/ VARIANT DOMDocument,
+        /*[in]*/ VARIANT DOMNode,
+        /*[in]*/ VARIANT_BOOL Write ) = 0;
+      virtual HRESULT __stdcall get_ArrayInfo (
+        /*[out,retval]*/ struct IArrayInfo * * Value ) = 0;
+      virtual HRESULT __stdcall get_ArrayChannel (
+        /*[out,retval]*/ VARIANT_BOOL * Value ) = 0;
+      virtual HRESULT __stdcall put_ArrayChannel (
+        /*[in]*/ VARIANT_BOOL Value ) = 0;
+      virtual HRESULT __stdcall get_ArraySize (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall AddAsyncData (
+        /*[in]*/ VARIANT Data,
+        /*[in]*/ double TimeStamp ) = 0;
+      virtual HRESULT __stdcall AddData (
+        /*[in]*/ VARIANT Data ) = 0;
+      virtual HRESULT __stdcall GetOfflineStatus (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall get_ExpectedAsyncRate (
+        /*[out,retval]*/ float * Value ) = 0;
+      virtual HRESULT __stdcall put_ExpectedAsyncRate (
+        /*[in]*/ float Value ) = 0;
+      virtual HRESULT __stdcall get_FirstIBLevel (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall get_IBValuesEx (
+        /*[in]*/ long Level,
+        /*[in]*/ long Index,
+        /*[out,retval]*/ struct T_ReducedRec * Value ) = 0;
+      virtual HRESULT __stdcall get_IBPosEx (
+        /*[in]*/ long Level,
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall get_IBDataSizeEx (
+        /*[in]*/ long Level,
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall get_SelectorIndexLevel (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall put_SelectorIndexLevel (
+        /*[in]*/ long Value ) = 0;
+      virtual HRESULT __stdcall get_SelectorIndexStartLevel (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall put_SelectorIndexStartLevel (
+        /*[in]*/ long Value ) = 0;
+      virtual HRESULT __stdcall get_SelectorIndex (
+        /*[out,retval]*/ VARIANT * Value ) = 0;
+      virtual HRESULT __stdcall put_SelectorIndex (
+        /*[in]*/ VARIANT Value ) = 0;
+      virtual HRESULT __stdcall get_Text (
+        /*[out,retval]*/ BSTR * Value ) = 0;
+      virtual HRESULT __stdcall put_Text (
+        /*[in]*/ BSTR Value ) = 0;
+      virtual HRESULT __stdcall get_FirstX (
+        /*[out,retval]*/ double * Value ) = 0;
+      virtual HRESULT __stdcall put_FirstX (
+        /*[in]*/ double Value ) = 0;
+      virtual HRESULT __stdcall get_SecondX (
+        /*[out,retval]*/ double * Value ) = 0;
+      virtual HRESULT __stdcall put_SecondX (
+        /*[in]*/ double Value ) = 0;
+      virtual HRESULT __stdcall get_IsControlChannel (
+        /*[out,retval]*/ VARIANT_BOOL * Value ) = 0;
+      virtual HRESULT __stdcall put_IsControlChannel (
+        /*[in]*/ VARIANT_BOOL Value ) = 0;
+      virtual HRESULT __stdcall get_ControlChannelState (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall put_ControlChannelState (
+        /*[in]*/ long Value ) = 0;
+      virtual HRESULT __stdcall get_DBValuesDouble (
+        /*[in]*/ long Index,
+        /*[out,retval]*/ double * Value ) = 0;
+      virtual HRESULT __stdcall AddAsyncString (
+        /*[in]*/ BSTR Value,
+        /*[in]*/ double TimeStamp ) = 0;
+      virtual HRESULT __stdcall SetAsStringChannel (
+        /*[in]*/ long Size ) = 0;
+      virtual HRESULT __stdcall ScaleValueDouble (
+        /*[in]*/ double Value,
+        /*[out,retval]*/ double * Value1 ) = 0;
+      virtual HRESULT __stdcall get_DStopDataAvail (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall get_DStopDataAvailDir (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall get_DStartDataAvail (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall get_IndexEx (
+        /*[out,retval]*/ VARIANT * Value ) = 0;
+      virtual HRESULT __stdcall ShowChannelSetup ( ) = 0;
+      virtual HRESULT __stdcall GetTSAddress (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall get_ControlChannelFlags (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall put_ControlChannelFlags (
+        /*[in]*/ long Value ) = 0;
+      virtual HRESULT __stdcall get_SRDivType (
+        /*[out,retval]*/ enum TSRDivType * Value ) = 0;
+      virtual HRESULT __stdcall FastCalc ( ) = 0;
+      virtual HRESULT __stdcall FastCalcInt32 (
+        /*[in]*/ long Min,
+        /*[in]*/ long Max,
+        /*[in]*/ double Ave,
+        /*[in]*/ double Rms ) = 0;
+      virtual HRESULT __stdcall AddIntegerSampleWithCalc (
+        /*[in]*/ long Value ) = 0;
+      virtual HRESULT __stdcall AddSmallintSampleWithCalc (
+        /*[in]*/ short Value ) = 0;
+      virtual HRESULT __stdcall AddShortintSampleWithCalc (
+        /*[in]*/ char Value ) = 0;
+      virtual HRESULT __stdcall FastCalcInt16 (
+        /*[in]*/ short Min,
+        /*[in]*/ short Max,
+        /*[in]*/ float Ave,
+        /*[in]*/ float Rms ) = 0;
+      virtual HRESULT __stdcall get_ViewInfo (
+        /*[out,retval]*/ struct IViewInfo * * Value ) = 0;
+      virtual HRESULT __stdcall AddAsyncBinarySample (
+        /*[in]*/ double TimeStamp,
+        /*[in]*/ VARIANT Data ) = 0;
+      virtual HRESULT __stdcall get_BinAvgSampleSize (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall put_BinAvgSampleSize (
+        /*[in]*/ long Value ) = 0;
+      virtual HRESULT __stdcall GetBinaryDataAtPos (
+        /*[in]*/ long Pos,
+        /*[in,out]*/ VARIANT * Data ) = 0;
+      virtual HRESULT __stdcall get_GetBinAddress (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall get_BinAbsPos (
+        /*[out,retval]*/ __int64 * Value ) = 0;
+      virtual HRESULT __stdcall get_BinBufSize (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall ValueChanged ( ) = 0;
+      virtual HRESULT __stdcall StartFastCalc ( ) = 0;
+      virtual HRESULT __stdcall get_KeepValues (
+        /*[out,retval]*/ VARIANT_BOOL * Value ) = 0;
+      virtual HRESULT __stdcall put_KeepValues (
+        /*[in]*/ VARIANT_BOOL Value ) = 0;
+};
+
+struct __declspec(uuid("788183a5-1fc0-48e8-93ec-a6ee075a42f9"))
+IChannelList : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ long Index,
+        /*[out,retval]*/ struct IChannel * * Value ) = 0;
+      virtual HRESULT __stdcall get__NewEnum (
+        /*[out,retval]*/ IUnknown * * Value ) = 0;
+};
+
+struct __declspec(uuid("763e6e43-6464-4cb8-9701-a645b060f216"))
+IChannelGroup : IChannelList
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Name (
+        /*[out,retval]*/ BSTR * Value ) = 0;
+      virtual HRESULT __stdcall get_ExportRate (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall put_ExportRate (
+        /*[in]*/ long Value ) = 0;
+      virtual HRESULT __stdcall GetIndexName (
+        /*[in]*/ struct T_ChIndex Index,
+        /*[out,retval]*/ BSTR * Value ) = 0;
+};
+
+struct __declspec(uuid("efc6dff0-b694-41f8-905d-45612724bd7d"))
+IChannelGroups : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ long Index,
+        /*[out,retval]*/ struct IChannelGroup * * Value ) = 0;
+      virtual HRESULT __stdcall get__NewEnum (
+        /*[out,retval]*/ IUnknown * * Value ) = 0;
+};
+
+struct __declspec(uuid("21b73cc2-ac60-4bab-bef0-fa4453894eef"))
+IPluginGroup : IChannelGroup
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall MountChannel (
+        /*[in]*/ long DataType,
+        /*[in]*/ VARIANT_BOOL Async,
+        /*[in]*/ long DBSize,
+        /*[out,retval]*/ struct IChannel * * Value ) = 0;
+      virtual HRESULT __stdcall ClearAllChannels ( ) = 0;
+      virtual HRESULT __stdcall UnmountChannel (
+        /*[in,out]*/ struct IChannel * * Channel ) = 0;
+      virtual HRESULT __stdcall AddIndexName (
+        /*[in]*/ long Level,
+        /*[in]*/ VARIANT Ind,
+        /*[in]*/ BSTR Name ) = 0;
+      virtual HRESULT __stdcall MountChannelEx (
+        /*[in]*/ BSTR PluginGUID,
+        /*[in]*/ long IndexLevel,
+        /*[in]*/ VARIANT Ind,
+        /*[out,retval]*/ struct IChannel * * Value ) = 0;
+      virtual HRESULT __stdcall FindChannel (
+        /*[in]*/ BSTR PluginGUID,
+        /*[in]*/ long IndexLevel,
+        /*[in]*/ VARIANT Ind,
+        /*[in]*/ VARIANT_BOOL AllowMount,
+        /*[out,retval]*/ struct IChannel * * Value ) = 0;
+      virtual HRESULT __stdcall MountInputGroup (
+        /*[in]*/ BSTR PluginGUID,
+        /*[in]*/ VARIANT Index,
+        /*[out,retval]*/ struct IInputGroup * * Value ) = 0;
+      virtual HRESULT __stdcall AddIndexNameEx (
+        /*[in]*/ BSTR PluginGUID,
+        /*[in]*/ long Level,
+        /*[in]*/ VARIANT Ind,
+        /*[in]*/ BSTR Name ) = 0;
+      virtual HRESULT __stdcall FindInputGroup (
+        /*[in]*/ BSTR PluginGUID,
+        /*[in]*/ long IndexLevel,
+        /*[in]*/ VARIANT Ind,
+        /*[out,retval]*/ struct IInputGroup * * Value ) = 0;
+};
+
+struct __declspec(uuid("7515b878-6b71-4020-bff3-b880451e163b"))
+IDataSection : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall ReadData (
+        /*[in]*/ struct IChannel * Channel,
+        /*[out]*/ VARIANT * Timestamps,
+        /*[out,retval]*/ VARIANT * Value ) = 0;
+      virtual HRESULT __stdcall get_Time (
+        /*[out,retval]*/ DATE * Value ) = 0;
+      virtual HRESULT __stdcall ReadData1 (
+        /*[in]*/ struct IChannel * Channel,
+        /*[out]*/ VARIANT * Data,
+        /*[out]*/ VARIANT * Timestamps ) = 0;
+      virtual HRESULT __stdcall get_DataCount (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall get_TrigPos (
+        /*[out,retval]*/ long * Value ) = 0;
+};
+
+struct __declspec(uuid("9289b1ac-5753-4d6b-b8d6-9e986194875c"))
+IDataSections : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall get__NewEnum (
+        /*[out,retval]*/ IUnknown * * Value ) = 0;
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ long Index,
+        /*[out,retval]*/ struct IDataSection * * Value ) = 0;
+};
+
+struct __declspec(uuid("a1114daa-8d7f-4809-92f9-d6c1dcbf5d81"))
+ILoadEngine : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall ReloadBlock (
+        /*[in]*/ long Num ) = 0;
+      virtual HRESULT __stdcall get_NumBlocks (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall get_DataSections (
+        /*[out,retval]*/ struct IDataSections * * Value ) = 0;
+      virtual HRESULT __stdcall get_ReducedOnly (
+        /*[out,retval]*/ VARIANT_BOOL * Value ) = 0;
+      virtual HRESULT __stdcall CloseFile ( ) = 0;
+      virtual HRESULT __stdcall get_FileOpened (
+        /*[out,retval]*/ VARIANT_BOOL * Value ) = 0;
+      virtual HRESULT __stdcall ShrinkFile (
+        /*[in]*/ BSTR FileName ) = 0;
+      virtual HRESULT __stdcall get_VideoLoadEngines (
+        /*[out,retval]*/ struct IVideoLoadEngines * * Value ) = 0;
+      virtual HRESULT __stdcall Reload (
+        /*[in]*/ struct T_RecordPosition Start,
+        /*[in]*/ struct T_RecordPosition Stop ) = 0;
+      virtual HRESULT __stdcall StartDBLoad (
+        /*[in]*/ struct T_RecordPosition Start,
+        /*[in]*/ struct T_RecordPosition Stop,
+        /*[in]*/ long BlockSize ) = 0;
+      virtual HRESULT __stdcall NextDBLoad (
+        /*[out,retval]*/ VARIANT_BOOL * Value ) = 0;
+      virtual HRESULT __stdcall StartVideoCompress ( ) = 0;
+      virtual HRESULT __stdcall StopVideoCompress (
+        /*[out,retval]*/ VARIANT_BOOL * Value ) = 0;
+      virtual HRESULT __stdcall GetVideoCompressDone (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall IsVideoCompressDone (
+        /*[out,retval]*/ VARIANT_BOOL * Value ) = 0;
+      virtual HRESULT __stdcall ReloadEx (
+        /*[in]*/ long StartBlock,
+        /*[in]*/ long EndBlock,
+        /*[in]*/ struct IChannel * Channel,
+        /*[in]*/ long MinLevel ) = 0;
+      virtual HRESULT __stdcall get_Duration (
+        /*[out,retval]*/ double * Value ) = 0;
+};
+
+struct __declspec(uuid("44f950d5-4db2-4bc8-a636-653d98cbf652"))
+IChannelConnection : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_AType (
+        /*[out,retval]*/ enum ConnTypes * Value ) = 0;
+      virtual HRESULT __stdcall put_AType (
+        /*[in]*/ enum ConnTypes Value ) = 0;
+      virtual HRESULT __stdcall get_NumValues (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall get_NumBlocks (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall GetDataValues (
+        /*[in]*/ long NumValues,
+        /*[out,retval]*/ VARIANT * Value ) = 0;
+      virtual HRESULT __stdcall GetDataBlocks (
+        /*[in]*/ long NumBlocks,
+        /*[out,retval]*/ VARIANT * Value ) = 0;
+      virtual HRESULT __stdcall get_Overlap (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall put_Overlap (
+        /*[in]*/ long Value ) = 0;
+      virtual HRESULT __stdcall get_BlockSize (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall put_BlockSize (
+        /*[in]*/ long Value ) = 0;
+      virtual HRESULT __stdcall Reset ( ) = 0;
+      virtual HRESULT __stdcall get_Channel (
+        /*[out,retval]*/ struct IChannel * * Value ) = 0;
+      virtual HRESULT __stdcall GetDataValues1 (
+        /*[in]*/ long NumValues,
+        /*[out]*/ VARIANT * Data ) = 0;
+      virtual HRESULT __stdcall GetDataBlocks1 (
+        /*[in]*/ long NumBlocks,
+        /*[out]*/ VARIANT * Data ) = 0;
+      virtual HRESULT __stdcall GetTSValues (
+        /*[in]*/ long NumValues,
+        /*[out,retval]*/ VARIANT * Value ) = 0;
+      virtual HRESULT __stdcall GetTSBlocks (
+        /*[in]*/ long NumBlocks,
+        /*[out,retval]*/ VARIANT * Value ) = 0;
+      virtual HRESULT __stdcall GetTSValues1 (
+        /*[in]*/ long NumValues,
+        /*[out]*/ VARIANT * Data ) = 0;
+      virtual HRESULT __stdcall GetTSBlocks1 (
+        /*[in]*/ long NumBlocks,
+        /*[out]*/ VARIANT * Data ) = 0;
+      virtual HRESULT __stdcall Start ( ) = 0;
+};
+
+struct __declspec(uuid("c0b4dee8-073d-4e57-9dac-8a72cbc6a51f"))
+IChannelGroup2 : IChannelGroup
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall GetIndexNameShort (
+        /*[in]*/ struct T_ChIndex Index,
+        /*[out,retval]*/ BSTR * Value ) = 0;
+};
+
+struct __declspec(uuid("78087aeb-d02b-488f-9757-ba685d03771c"))
+IAOGroup : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_OperationMode (
+        /*[out,retval]*/ enum AOOperationMode * Value ) = 0;
+      virtual HRESULT __stdcall put_OperationMode (
+        /*[in]*/ enum AOOperationMode Value ) = 0;
+      virtual HRESULT __stdcall get_SampleRate (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall put_SampleRate (
+        /*[in]*/ long Value ) = 0;
+      virtual HRESULT __stdcall get_StopTime (
+        /*[out,retval]*/ float * Value ) = 0;
+      virtual HRESULT __stdcall put_StopTime (
+        /*[in]*/ float Value ) = 0;
+      virtual HRESULT __stdcall get_StartTime (
+        /*[out,retval]*/ float * Value ) = 0;
+      virtual HRESULT __stdcall put_StartTime (
+        /*[in]*/ float Value ) = 0;
+      virtual HRESULT __stdcall get_StartFreq (
+        /*[out,retval]*/ float * Value ) = 0;
+      virtual HRESULT __stdcall put_StartFreq (
+        /*[in]*/ float Value ) = 0;
+      virtual HRESULT __stdcall get_StopFreq (
+        /*[out,retval]*/ float * Value ) = 0;
+      virtual HRESULT __stdcall put_StopFreq (
+        /*[in]*/ float Value ) = 0;
+      virtual HRESULT __stdcall get_DeltaFreq (
+        /*[out,retval]*/ float * Value ) = 0;
+      virtual HRESULT __stdcall put_DeltaFreq (
+        /*[in]*/ float Value ) = 0;
+      virtual HRESULT __stdcall get_LogSweep (
+        /*[out,retval]*/ VARIANT_BOOL * Value ) = 0;
+      virtual HRESULT __stdcall put_LogSweep (
+        /*[in]*/ VARIANT_BOOL Value ) = 0;
+      virtual HRESULT __stdcall get_SweepMode (
+        /*[out,retval]*/ enum AOSweepMode * Value ) = 0;
+      virtual HRESULT __stdcall put_SweepMode (
+        /*[in]*/ enum AOSweepMode Value ) = 0;
+      virtual HRESULT __stdcall get_Freq (
+        /*[out,retval]*/ float * Value ) = 0;
+      virtual HRESULT __stdcall put_Freq (
+        /*[in]*/ float Value ) = 0;
+      virtual HRESULT __stdcall get_AmplChangeFactor (
+        /*[out,retval]*/ float * Value ) = 0;
+      virtual HRESULT __stdcall put_AmplChangeFactor (
+        /*[in]*/ float Value ) = 0;
+      virtual HRESULT __stdcall get_DCChangeFactor (
+        /*[out,retval]*/ float * Value ) = 0;
+      virtual HRESULT __stdcall put_DCChangeFactor (
+        /*[in]*/ float Value ) = 0;
+      virtual HRESULT __stdcall get_PhaseChangeFactor (
+        /*[out,retval]*/ float * Value ) = 0;
+      virtual HRESULT __stdcall put_PhaseChangeFactor (
+        /*[in]*/ float Value ) = 0;
+      virtual HRESULT __stdcall get_FreqChangeFactor (
+        /*[out,retval]*/ float * Value ) = 0;
+      virtual HRESULT __stdcall put_FreqChangeFactor (
+        /*[in]*/ float Value ) = 0;
+      virtual HRESULT __stdcall get_ShowInfoChannels (
+        /*[out,retval]*/ VARIANT_BOOL * Value ) = 0;
+      virtual HRESULT __stdcall put_ShowInfoChannels (
+        /*[in]*/ VARIANT_BOOL Value ) = 0;
+      virtual HRESULT __stdcall get_ControlsClock (
+        /*[out,retval]*/ VARIANT_BOOL * Value ) = 0;
+      virtual HRESULT __stdcall get_AOChannels (
+        /*[out,retval]*/ struct IChannelList * * Value ) = 0;
+};
+
+struct __declspec(uuid("9d97cef7-1a44-4065-904a-28575032572d"))
+ITriggerCondition : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Mode (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall put_Mode (
+        /*[in]*/ long Value ) = 0;
+      virtual HRESULT __stdcall get_TrigType (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall put_TrigType (
+        /*[in]*/ long Value ) = 0;
+      virtual HRESULT __stdcall get_Direction (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall put_Direction (
+        /*[in]*/ long Value ) = 0;
+      virtual HRESULT __stdcall get_TrigValue (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall put_TrigValue (
+        /*[in]*/ long Value ) = 0;
+      virtual HRESULT __stdcall get_Level1 (
+        /*[out,retval]*/ float * Value ) = 0;
+      virtual HRESULT __stdcall put_Level1 (
+        /*[in]*/ float Value ) = 0;
+      virtual HRESULT __stdcall get_Level2 (
+        /*[out,retval]*/ float * Value ) = 0;
+      virtual HRESULT __stdcall put_Level2 (
+        /*[in]*/ float Value ) = 0;
+      virtual HRESULT __stdcall get_Channels (
+        /*[out,retval]*/ struct IChannelList * * Value ) = 0;
+      virtual HRESULT __stdcall AddChannel (
+        /*[in]*/ struct IChannel * Ch ) = 0;
+      virtual HRESULT __stdcall DeleteChannel (
+        /*[in]*/ long Index ) = 0;
+      virtual HRESULT __stdcall ClearChannels ( ) = 0;
+      virtual HRESULT __stdcall get_Direction1 (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall put_Direction1 (
+        /*[in]*/ long Value ) = 0;
+      virtual HRESULT __stdcall get_DeltaTime (
+        /*[out,retval]*/ double * Value ) = 0;
+      virtual HRESULT __stdcall put_DeltaTime (
+        /*[in]*/ double Value ) = 0;
+      virtual HRESULT __stdcall get_TimeValue (
+        /*[out,retval]*/ double * Value ) = 0;
+      virtual HRESULT __stdcall put_TimeValue (
+        /*[in]*/ double Value ) = 0;
+      virtual HRESULT __stdcall get_TimeUnit (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall put_TimeUnit (
+        /*[in]*/ long Value ) = 0;
+      virtual HRESULT __stdcall get_TimeCond (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall put_TimeCond (
+        /*[in]*/ long Value ) = 0;
+      virtual HRESULT __stdcall get_TimeFormat (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall put_TimeFormat (
+        /*[in]*/ long Value ) = 0;
+};
+
+struct __declspec(uuid("2ca6fa4f-0e5c-4b4e-9e8f-e241be14e622"))
+ITriggerCondList : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall get__NewEnum (
+        /*[out,retval]*/ IUnknown * * Value ) = 0;
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ long Index,
+        /*[out,retval]*/ struct ITriggerCondition * * Value ) = 0;
+      virtual HRESULT __stdcall Add (
+        /*[out,retval]*/ struct ITriggerCondition * * Value ) = 0;
+      virtual HRESULT __stdcall Remove (
+        /*[in]*/ long Ind ) = 0;
+};
+
+struct __declspec(uuid("3e3732b1-3146-429d-8c33-f89ae5ffde92"))
+ITrig : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_OrList (
+        /*[out,retval]*/ struct ITriggerCondList * * Value ) = 0;
+      virtual HRESULT __stdcall get_NotOrList (
+        /*[out,retval]*/ struct ITriggerCondList * * Value ) = 0;
+      virtual HRESULT __stdcall get_TrigIndex (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall GetTrigIndexEx (
+        /*[in,out]*/ long * CondIndex,
+        /*[in,out]*/ long * ChIndex,
+        /*[in,out]*/ struct IChannel * * Ch ) = 0;
+};
+
+struct __declspec(uuid("b2f13d39-72c9-497a-8a38-9d16ddf6d9f2"))
+ITrigger : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_PreTimeUsed (
+        /*[out,retval]*/ VARIANT_BOOL * Value ) = 0;
+      virtual HRESULT __stdcall put_PreTimeUsed (
+        /*[in]*/ VARIANT_BOOL Value ) = 0;
+      virtual HRESULT __stdcall get_PostTimeUsed (
+        /*[out,retval]*/ VARIANT_BOOL * Value ) = 0;
+      virtual HRESULT __stdcall put_PostTimeUsed (
+        /*[in]*/ VARIANT_BOOL Value ) = 0;
+      virtual HRESULT __stdcall get_PreTime (
+        /*[out,retval]*/ float * Value ) = 0;
+      virtual HRESULT __stdcall put_PreTime (
+        /*[in]*/ float Value ) = 0;
+      virtual HRESULT __stdcall get_PostTime (
+        /*[out,retval]*/ float * Value ) = 0;
+      virtual HRESULT __stdcall put_PostTime (
+        /*[in]*/ float Value ) = 0;
+      virtual HRESULT __stdcall get_StartTrig (
+        /*[out,retval]*/ struct ITrig * * Value ) = 0;
+      virtual HRESULT __stdcall get_StopTrig (
+        /*[out,retval]*/ struct ITrig * * Value ) = 0;
+      virtual HRESULT __stdcall get_HoldoffTimeUsed (
+        /*[out,retval]*/ VARIANT_BOOL * Value ) = 0;
+      virtual HRESULT __stdcall put_HoldoffTimeUsed (
+        /*[in]*/ VARIANT_BOOL Value ) = 0;
+      virtual HRESULT __stdcall get_HoldoffTime (
+        /*[out,retval]*/ float * Value ) = 0;
+      virtual HRESULT __stdcall put_HoldoffTime (
+        /*[in]*/ float Value ) = 0;
+      virtual HRESULT __stdcall get_PostTimeExtensionUsed (
+        /*[out,retval]*/ VARIANT_BOOL * Value ) = 0;
+      virtual HRESULT __stdcall put_PostTimeExtensionUsed (
+        /*[in]*/ VARIANT_BOOL Value ) = 0;
+};
+
+struct __declspec(uuid("a4d0a424-ae57-4d56-945e-3b8d1369ddec"))
+IAlarmCond : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Trigger (
+        /*[out,retval]*/ struct ITrig * * Value ) = 0;
+      virtual HRESULT __stdcall get_StopTrigger (
+        /*[out,retval]*/ struct ITrig * * Value ) = 0;
+      virtual HRESULT __stdcall get_Index (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall get_StopOption (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall put_StopOption (
+        /*[in]*/ long Value ) = 0;
+      virtual HRESULT __stdcall get_StopTime (
+        /*[out,retval]*/ float * Value ) = 0;
+      virtual HRESULT __stdcall put_StopTime (
+        /*[in]*/ float Value ) = 0;
+      virtual HRESULT __stdcall get_Avail (
+        /*[out,retval]*/ VARIANT_BOOL * Value ) = 0;
+      virtual HRESULT __stdcall get_Status (
+        /*[out,retval]*/ VARIANT_BOOL * Value ) = 0;
+      virtual HRESULT __stdcall EndAlarm ( ) = 0;
+      virtual HRESULT __stdcall get_Name (
+        /*[out,retval]*/ BSTR * Value ) = 0;
+      virtual HRESULT __stdcall get_CustomName (
+        /*[out,retval]*/ BSTR * Value ) = 0;
+      virtual HRESULT __stdcall put_CustomName (
+        /*[in]*/ BSTR Value ) = 0;
+};
+
+struct __declspec(uuid("f785eaad-9fbf-40a2-8532-3ac46dc8ce28"))
+IAlarms : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall get_ActiveCount (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ long I,
+        /*[out,retval]*/ struct IAlarmCond * * Value ) = 0;
+      virtual HRESULT __stdcall get_ActiveItem (
+        /*[in]*/ long I,
+        /*[out,retval]*/ struct IAlarmCond * * Value ) = 0;
+      virtual HRESULT __stdcall Add (
+        /*[out,retval]*/ struct IAlarmCond * * Value ) = 0;
+      virtual HRESULT __stdcall Remove (
+        /*[in]*/ long Index ) = 0;
+};
+
+struct __declspec(uuid("5d479bea-0369-46dc-8668-ebecc83e0b9f"))
+IUserInterface : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall ShowTrigCondSetup (
+        /*[in]*/ struct ITriggerCondition * Cond ) = 0;
+      virtual HRESULT __stdcall ChangeSetupScreen (
+        /*[in]*/ BSTR ScreenName ) = 0;
+};
+
+struct __declspec(uuid("d9d2402a-73a9-47c3-a121-951a7efe4fcf"))
+IVCContext : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_DChannels (
+        /*[out,retval]*/ struct IChannelList * * Value ) = 0;
+      virtual HRESULT __stdcall Repaint ( ) = 0;
+      virtual HRESULT __stdcall DataRegionChanged ( ) = 0;
+      virtual HRESULT __stdcall BroadcastPosChanged ( ) = 0;
+      virtual HRESULT __stdcall BroadcastScaleChanged (
+        /*[in]*/ struct T_RecordPosition Min,
+        /*[in]*/ struct T_RecordPosition Max,
+        /*[in]*/ long ZoomLevel,
+        /*[in]*/ double DeltaT ) = 0;
+      virtual HRESULT __stdcall get_DInputGroups (
+        /*[out,retval]*/ struct IInputGroups * * Value ) = 0;
+};
+
+struct __declspec(uuid("9b3ff991-2d72-4474-a82d-2464d071a715"))
+IMathContext : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall MountChannel (
+        /*[in]*/ long Id,
+        /*[in]*/ BSTR Descriptor,
+        /*[out,retval]*/ struct IChannel * * Value ) = 0;
+      virtual HRESULT __stdcall get_InputChannels (
+        /*[out,retval]*/ struct IChannelList * * Value ) = 0;
+      virtual HRESULT __stdcall get_OutputChannels (
+        /*[out,retval]*/ struct IChannelList * * Value ) = 0;
+      virtual HRESULT __stdcall MountChannelEx (
+        /*[out]*/ VARIANT_BOOL * Created,
+        /*[in]*/ long Id,
+        /*[in]*/ BSTR Descriptor,
+        /*[in]*/ BSTR AUnit,
+        /*[in]*/ BSTR Name,
+        /*[in]*/ long Color,
+        /*[out,retval]*/ struct IChannel * * Value ) = 0;
+      virtual HRESULT __stdcall MountInputGroup (
+        /*[in]*/ long Id,
+        /*[out,retval]*/ struct IInputGroup * * Value ) = 0;
+      virtual HRESULT __stdcall get_SubItemCount (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall get_SubItem (
+        /*[in]*/ long Index,
+        /*[out,retval]*/ struct IMathContext * * Value ) = 0;
+      virtual HRESULT __stdcall UnmountChannel (
+        /*[in]*/ struct IChannel * Ch ) = 0;
+      virtual HRESULT __stdcall SetDefaultChProps (
+        /*[in]*/ VARIANT_BOOL Force ) = 0;
+};
+
+struct __declspec(uuid("7a49908d-487a-4f85-96f2-d53b745e91cf"))
+IAxisDef : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_AxisType (
+        /*[out,retval]*/ enum TAxisType * Value ) = 0;
+      virtual HRESULT __stdcall put_AxisType (
+        /*[in]*/ enum TAxisType Value ) = 0;
+      virtual HRESULT __stdcall get_StartValue (
+        /*[out,retval]*/ double * Value ) = 0;
+      virtual HRESULT __stdcall put_StartValue (
+        /*[in]*/ double Value ) = 0;
+      virtual HRESULT __stdcall get_StepValue (
+        /*[out,retval]*/ double * Value ) = 0;
+      virtual HRESULT __stdcall put_StepValue (
+        /*[in]*/ double Value ) = 0;
+      virtual HRESULT __stdcall get_FloatValues (
+        /*[in]*/ long Index,
+        /*[out,retval]*/ double * Value ) = 0;
+      virtual HRESULT __stdcall put_FloatValues (
+        /*[in]*/ long Index,
+        /*[in]*/ double Value ) = 0;
+      virtual HRESULT __stdcall get_StringValues (
+        /*[in]*/ long Index,
+        /*[out,retval]*/ BSTR * Value ) = 0;
+      virtual HRESULT __stdcall put_StringValues (
+        /*[in]*/ long Index,
+        /*[in]*/ BSTR Value ) = 0;
+      virtual HRESULT __stdcall get_Size (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall get_Name (
+        /*[out,retval]*/ BSTR * Value ) = 0;
+      virtual HRESULT __stdcall put_Name (
+        /*[in]*/ BSTR Value ) = 0;
+      virtual HRESULT __stdcall get__Unit (
+        /*[out,retval]*/ BSTR * Value ) = 0;
+      virtual HRESULT __stdcall put__Unit (
+        /*[in]*/ BSTR Value ) = 0;
+      virtual HRESULT __stdcall get_Precision (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall put_Precision (
+        /*[in]*/ long Value ) = 0;
+      virtual HRESULT __stdcall get_CursorChannel (
+        /*[out,retval]*/ struct IChannel * * Value ) = 0;
+      virtual HRESULT __stdcall put_CursorChannel (
+        /*[in]*/ struct IChannel * Value ) = 0;
+      virtual HRESULT __stdcall get_AxisViewInfo (
+        /*[out,retval]*/ struct IAxisViewInfo * * Value ) = 0;
+};
+
+struct __declspec(uuid("0db0148a-639a-4adc-b781-213b14f1f9ef"))
+IArrayInfo : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_AxisDef (
+        /*[in]*/ long Index,
+        /*[out,retval]*/ struct IAxisDef * * Value ) = 0;
+      virtual HRESULT __stdcall get_DimCount (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall put_DimCount (
+        /*[in]*/ long Value ) = 0;
+      virtual HRESULT __stdcall get_DimSizes (
+        /*[in]*/ long Index,
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall put_DimSizes (
+        /*[in]*/ long Index,
+        /*[in]*/ long Value ) = 0;
+      virtual HRESULT __stdcall Init ( ) = 0;
+      virtual HRESULT __stdcall get_ItemChannels (
+        /*[out,retval]*/ VARIANT_BOOL * Value ) = 0;
+      virtual HRESULT __stdcall get_NameArr (
+        /*[in]*/ long Ind,
+        /*[out,retval]*/ BSTR * Value ) = 0;
+      virtual HRESULT __stdcall put_NameArr (
+        /*[in]*/ long Ind,
+        /*[in]*/ BSTR Value ) = 0;
+      virtual HRESULT __stdcall get_ColorArr (
+        /*[in]*/ long Ind,
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall put_ColorArr (
+        /*[in]*/ long Ind,
+        /*[in]*/ long Value ) = 0;
+      virtual HRESULT __stdcall get_SyncSource (
+        /*[out,retval]*/ struct ISyncSource * * Value ) = 0;
+};
+
+struct __declspec(uuid("5db01f14-c1ec-4b60-a258-5945b09eb818"))
+IMathItem : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_InputChannels (
+        /*[out,retval]*/ struct IChannelList * * Value ) = 0;
+      virtual HRESULT __stdcall get_OutputChannels (
+        /*[out,retval]*/ struct IChannelList * * Value ) = 0;
+};
+
+struct __declspec(uuid("41315abf-26aa-44b6-a758-c45c3c685997"))
+IMathObjContext : IMathItem
+{};
+
+struct __declspec(uuid("9d693130-279e-443a-b4ca-6c2ada913724"))
+IChannelListEx : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall AddCh (
+        /*[in]*/ struct IChannel * Ch ) = 0;
+      virtual HRESULT __stdcall Clear ( ) = 0;
+      virtual HRESULT __stdcall SetCh (
+        /*[in]*/ long Index,
+        /*[in]*/ struct IChannel * Ch ) = 0;
+};
+
+struct __declspec(uuid("9ea5ff19-04b2-4138-81db-88ecdab95f21"))
+IImportGroup : IChannelGroup
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall MountChannel (
+        /*[out,retval]*/ struct IChannel * * Value ) = 0;
+};
+
+struct __declspec(uuid("89dc7c60-9fce-48d3-a70a-eb035cfc3a44"))
+ICNTGroup : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall get__NewEnum (
+        /*[out,retval]*/ IUnknown * * Value ) = 0;
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ long Index,
+        /*[out,retval]*/ struct IChannel * * Value ) = 0;
+};
+
+struct __declspec(uuid("1bffb38d-377e-4e0a-a697-0e3d25aa768d"))
+ICntChannel : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_CntMode (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall get_CntFilter (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall get_BaseMode (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall get_CardChannel0 (
+        /*[out,retval]*/ struct IChannel * * Value ) = 0;
+      virtual HRESULT __stdcall get_CardChannel1 (
+        /*[out,retval]*/ struct IChannel * * Value ) = 0;
+      virtual HRESULT __stdcall get_CntPair (
+        /*[out,retval]*/ struct ICntChannel * * Value ) = 0;
+      virtual HRESULT __stdcall get_CntUpDownMode (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall get_CntNewValueUpdateMode (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall get_TrigLevels (
+        /*[in]*/ long Index,
+        /*[out,retval]*/ struct IDigitalTrigLevel * * Value ) = 0;
+      virtual HRESULT __stdcall get_CntSource (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall get_CntSourceInv (
+        /*[out,retval]*/ VARIANT_BOOL * Value ) = 0;
+      virtual HRESULT __stdcall get_DIChannels (
+        /*[in]*/ long Index,
+        /*[out,retval]*/ struct IChannel * * Value ) = 0;
+      virtual HRESULT __stdcall get_CntResetOnStartMeasure (
+        /*[out,retval]*/ VARIANT_BOOL * Value ) = 0;
+      virtual HRESULT __stdcall get_AdvCntMode (
+        /*[out,retval]*/ VARIANT_BOOL * Value ) = 0;
+      virtual HRESULT __stdcall get_CntEventWithZero (
+        /*[out,retval]*/ VARIANT_BOOL * Value ) = 0;
+      virtual HRESULT __stdcall get_CntDoManualReset (
+        /*[out,retval]*/ VARIANT_BOOL * Value ) = 0;
+      virtual HRESULT __stdcall get_CntGate (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall get_CntGateInv (
+        /*[out,retval]*/ VARIANT_BOOL * Value ) = 0;
+      virtual HRESULT __stdcall get_CntAux (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall get_CntAuxInv (
+        /*[out,retval]*/ VARIANT_BOOL * Value ) = 0;
+      virtual HRESULT __stdcall get_CanAutoCalculate (
+        /*[out,retval]*/ VARIANT_BOOL * Value ) = 0;
+      virtual HRESULT __stdcall get_CntEncoderMode (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall get_CntEncoderZero (
+        /*[out,retval]*/ VARIANT_BOOL * Value ) = 0;
+      virtual HRESULT __stdcall get_CntSignalZero (
+        /*[out,retval]*/ VARIANT_BOOL * Value ) = 0;
+      virtual HRESULT __stdcall get_TrigLevelsCombined (
+        /*[out,retval]*/ VARIANT_BOOL * Value ) = 0;
+};
+
+struct __declspec(uuid("df31d5d6-d4c4-47b6-84ec-73b748b67c22"))
+ITrigInfo : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Channel (
+        /*[out,retval]*/ struct IChannel * * Value ) = 0;
+      virtual HRESULT __stdcall get_Mode (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall get_Direction (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall get_Level1 (
+        /*[out,retval]*/ double * Value ) = 0;
+      virtual HRESULT __stdcall get_Level2 (
+        /*[out,retval]*/ double * Value ) = 0;
+      virtual HRESULT __stdcall get_TrigValue (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall get_DeltaTime (
+        /*[out,retval]*/ double * Value ) = 0;
+      virtual HRESULT __stdcall get_Direction1 (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall get_Manual (
+        /*[out,retval]*/ VARIANT_BOOL * Value ) = 0;
+};
+
+struct __declspec(uuid("4d89cff3-0bfa-4ce1-a17f-e449b5cda72e"))
+IEvent : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Type_ (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall get_Data (
+        /*[out,retval]*/ VARIANT * Value ) = 0;
+      virtual HRESULT __stdcall get_PosMid (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall get_PosDir (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall get_TimeStamp (
+        /*[out,retval]*/ double * Value ) = 0;
+      virtual HRESULT __stdcall get_TrigInfo (
+        /*[out,retval]*/ struct ITrigInfo * * Value ) = 0;
+};
+
+struct __declspec(uuid("c30bc69b-93bd-44c2-af67-95c12865f8a1"))
+IEventList : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall get__NewEnum (
+        /*[out,retval]*/ IUnknown * * Value ) = 0;
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ long Index,
+        /*[out,retval]*/ struct IEvent * * Value ) = 0;
+};
+
+struct __declspec(uuid("e224aecc-b2f3-42ee-a7c1-4650d1a5d740"))
+IDisplayFrameTemplate : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_GroupName (
+        /*[out,retval]*/ BSTR * Value ) = 0;
+      virtual HRESULT __stdcall put_GroupName (
+        /*[in]*/ BSTR Value ) = 0;
+      virtual HRESULT __stdcall get_TemplateName (
+        /*[out,retval]*/ BSTR * Value ) = 0;
+      virtual HRESULT __stdcall put_TemplateName (
+        /*[in]*/ BSTR Value ) = 0;
+      virtual HRESULT __stdcall get_SetupDOMDoc (
+        /*[out,retval]*/ VARIANT * Value ) = 0;
+      virtual HRESULT __stdcall CreateCustomGroupAndControl (
+        /*[in]*/ BSTR CustomVCGuid,
+        /*[in]*/ BSTR GroupName,
+        /*[in]*/ BSTR ControlName,
+        /*[in]*/ long GroupInd,
+        /*[in]*/ float Left,
+        /*[in]*/ float Width,
+        /*[in]*/ float Top,
+        /*[in]*/ float Height,
+        /*[out,retval]*/ VARIANT * Value ) = 0;
+      virtual HRESULT __stdcall CreateGroupAndControl (
+        /*[in]*/ BSTR GroupName,
+        /*[in]*/ BSTR ControlName,
+        /*[in]*/ long GroupInd,
+        /*[in]*/ float Left,
+        /*[in]*/ float Width,
+        /*[in]*/ float Top,
+        /*[in]*/ float Height,
+        /*[out,retval]*/ VARIANT * Value ) = 0;
+      virtual HRESULT __stdcall AddChannel (
+        /*[in]*/ VARIANT GraphNode,
+        /*[in]*/ long Ind,
+        /*[in]*/ struct IChannel * Ch ) = 0;
+      virtual HRESULT __stdcall AddItemChannel (
+        /*[in]*/ VARIANT GraphNode,
+        /*[in]*/ long Ind,
+        /*[in]*/ struct IChannel * Ch,
+        /*[in]*/ long ItemInd ) = 0;
+};
+
+struct __declspec(uuid("2af787a0-cf72-41a2-a0c9-d8dc56676387"))
+IDisplayFrameTemplates : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall get__NewEnum (
+        /*[out,retval]*/ IUnknown * * Value ) = 0;
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ long Index,
+        /*[out,retval]*/ struct IDisplayFrameTemplate * * Value ) = 0;
+      virtual HRESULT __stdcall Add (
+        /*[out,retval]*/ struct IDisplayFrameTemplate * * Value ) = 0;
+      virtual HRESULT __stdcall Clear ( ) = 0;
+};
+
+struct __declspec(uuid("96a73a79-b803-4331-9204-b28708f0811b"))
+IDisplayTemplate : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_DisplayFrameTemplates (
+        /*[out,retval]*/ struct IDisplayFrameTemplates * * Value ) = 0;
+      virtual HRESULT __stdcall get_DW (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall get_DH (
+        /*[out,retval]*/ long * Value ) = 0;
+};
+
+struct __declspec(uuid("b657e514-6aa4-4b43-af88-d5d4c8b6251c"))
+IIndexChanger : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall ChangePluginChIndex (
+        /*[in]*/ BSTR Guid,
+        /*[in]*/ VARIANT OldIndex,
+        /*[in]*/ VARIANT NewIndex ) = 0;
+      virtual HRESULT __stdcall ChangePluginChIndex1 (
+        /*[in]*/ BSTR Guid,
+        /*[in]*/ struct IChannel * Ch,
+        /*[in]*/ VARIANT NewIndex ) = 0;
+};
+
+struct __declspec(uuid("82d0cab4-6b17-4810-ba3f-06c235e76366"))
+IApp : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Data (
+        /*[out,retval]*/ struct IData * * Value ) = 0;
+      virtual HRESULT __stdcall get_Visible (
+        /*[out,retval]*/ VARIANT_BOOL * Value ) = 0;
+      virtual HRESULT __stdcall put_Visible (
+        /*[in]*/ VARIANT_BOOL Value ) = 0;
+      virtual HRESULT __stdcall SetInstrument (
+        /*[in]*/ long Id ) = 0;
+      virtual HRESULT __stdcall Stop ( ) = 0;
+      virtual HRESULT __stdcall Init ( ) = 0;
+      virtual HRESULT __stdcall get_Parent (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall put_Parent (
+        /*[in]*/ long Value ) = 0;
+      virtual HRESULT __stdcall get_ShowPropertyFrame (
+        /*[out,retval]*/ VARIANT_BOOL * Value ) = 0;
+      virtual HRESULT __stdcall put_ShowPropertyFrame (
+        /*[in]*/ VARIANT_BOOL Value ) = 0;
+      virtual HRESULT __stdcall SetupScreen ( ) = 0;
+      virtual HRESULT __stdcall get_ShowStoreOptions (
+        /*[out,retval]*/ VARIANT_BOOL * Value ) = 0;
+      virtual HRESULT __stdcall put_ShowStoreOptions (
+        /*[in]*/ VARIANT_BOOL Value ) = 0;
+      virtual HRESULT __stdcall get_ShowSROptions (
+        /*[out,retval]*/ VARIANT_BOOL * Value ) = 0;
+      virtual HRESULT __stdcall put_ShowSROptions (
+        /*[in]*/ VARIANT_BOOL Value ) = 0;
+      virtual HRESULT __stdcall HardwareSetup (
+        /*[in]*/ VARIANT_BOOL Plugins ) = 0;
+      virtual HRESULT __stdcall LoadSetup (
+        /*[in]*/ BSTR FileName ) = 0;
+      virtual HRESULT __stdcall SaveSetup (
+        /*[in]*/ BSTR FileName ) = 0;
+      virtual HRESULT __stdcall get_IniFileDir (
+        /*[out,retval]*/ BSTR * Value ) = 0;
+      virtual HRESULT __stdcall put_IniFileDir (
+        /*[in]*/ BSTR Value ) = 0;
+      virtual HRESULT __stdcall get_Left (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall put_Left (
+        /*[in]*/ long Value ) = 0;
+      virtual HRESULT __stdcall get_Top (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall put_Top (
+        /*[in]*/ long Value ) = 0;
+      virtual HRESULT __stdcall get_Width (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall put_Width (
+        /*[in]*/ long Value ) = 0;
+      virtual HRESULT __stdcall get_Height (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall put_Height (
+        /*[in]*/ long Value ) = 0;
+      virtual HRESULT __stdcall UpdateHardwareSetup ( ) = 0;
+      virtual HRESULT __stdcall Measure ( ) = 0;
+      virtual HRESULT __stdcall LoadFile (
+        /*[in]*/ BSTR FileName ) = 0;
+      virtual HRESULT __stdcall StartStoring (
+        /*[in]*/ BSTR FileName ) = 0;
+      virtual HRESULT __stdcall get_LoadEngine (
+        /*[out,retval]*/ struct ILoadEngine * * Value ) = 0;
+      virtual HRESULT __stdcall ExportData (
+        /*[in]*/ long ExportType,
+        /*[in]*/ long TimeAxis,
+        /*[in]*/ BSTR FileName ) = 0;
+      virtual HRESULT __stdcall SendCommand (
+        /*[in]*/ BSTR Cmd,
+        /*[in]*/ long Timeout,
+        /*[out,retval]*/ BSTR * Value ) = 0;
+      virtual HRESULT __stdcall ManualStart ( ) = 0;
+      virtual HRESULT __stdcall ManualStop ( ) = 0;
+      virtual HRESULT __stdcall get_ShowStyle (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall put_ShowStyle (
+        /*[in]*/ long Value ) = 0;
+      virtual HRESULT __stdcall get_StayOnTop (
+        /*[out,retval]*/ VARIANT_BOOL * Value ) = 0;
+      virtual HRESULT __stdcall put_StayOnTop (
+        /*[in]*/ VARIANT_BOOL Value ) = 0;
+      virtual HRESULT __stdcall SetScreenIndex (
+        /*[in]*/ long Index ) = 0;
+      virtual HRESULT __stdcall get_ActiveScreen (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall SendKey (
+        /*[in]*/ unsigned long Key ) = 0;
+      virtual HRESULT __stdcall get_UsedSetupfile (
+        /*[out,retval]*/ BSTR * Value ) = 0;
+      virtual HRESULT __stdcall get_UsedDatafile (
+        /*[out,retval]*/ BSTR * Value ) = 0;
+      virtual HRESULT __stdcall put_UsedDatafile (
+        /*[in]*/ BSTR Value ) = 0;
+      virtual HRESULT __stdcall get_LastKey (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall get_Screens (
+        /*[out,retval]*/ struct IScreens * * Value ) = 0;
+      virtual HRESULT __stdcall get_EventList (
+        /*[out,retval]*/ struct IEventList * * Value ) = 0;
+      virtual HRESULT __stdcall get_ActualRunMode (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall get_Version (
+        /*[out,retval]*/ BSTR * Value ) = 0;
+      virtual HRESULT __stdcall get_MasterClock (
+        /*[out,retval]*/ struct IMasterClock * * Value ) = 0;
+      virtual HRESULT __stdcall get_StoreEngine (
+        /*[out,retval]*/ struct IStoreEngine * * Value ) = 0;
+      virtual HRESULT __stdcall GoToInstruments ( ) = 0;
+      virtual HRESULT __stdcall SetFullScreen (
+        /*[in]*/ VARIANT_BOOL Full ) = 0;
+      virtual HRESULT __stdcall get_MainDataDir (
+        /*[out,retval]*/ BSTR * Value ) = 0;
+      virtual HRESULT __stdcall MainWndMessage (
+        /*[in]*/ long Msg,
+        /*[in]*/ long WParam,
+        /*[in]*/ VARIANT_BOOL Wait ) = 0;
+      virtual HRESULT __stdcall SetRemoteMode (
+        /*[in]*/ VARIANT_BOOL Remote ) = 0;
+      virtual HRESULT __stdcall MenuClick (
+        /*[in]*/ enum MenuItems Item ) = 0;
+      virtual HRESULT __stdcall get_MeasureSampleRate (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall put_MeasureSampleRate (
+        /*[in]*/ long Value ) = 0;
+      virtual HRESULT __stdcall SetScopeParams (
+        /*[in]*/ double PreTime,
+        /*[in]*/ double PostTime,
+        /*[in]*/ struct IChannel * Channel,
+        /*[in]*/ float Level,
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall NewSetup ( ) = 0;
+      virtual HRESULT __stdcall SetScopeUsed (
+        /*[in]*/ VARIANT_BOOL Value ) = 0;
+      virtual HRESULT __stdcall get_DataLost (
+        /*[out,retval]*/ VARIANT_BOOL * Value ) = 0;
+      virtual HRESULT __stdcall SetHeaderData (
+        /*[in]*/ BSTR Caption,
+        /*[in]*/ BSTR Header ) = 0;
+      virtual HRESULT __stdcall PrintScreen (
+        /*[in]*/ VARIANT_BOOL ShowDialog ) = 0;
+      virtual HRESULT __stdcall get_TimerInterval (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall put_TimerInterval (
+        /*[in]*/ long Value ) = 0;
+      virtual HRESULT __stdcall GetInterfaceVersion (
+        /*[in,out]*/ long * Major,
+        /*[in,out]*/ long * Minor,
+        /*[in,out]*/ long * Revision ) = 0;
+      virtual HRESULT __stdcall get_AISetupScreen (
+        /*[out,retval]*/ struct IAISetupScreen * * Value ) = 0;
+      virtual HRESULT __stdcall get_AlwaysEnableTrigger (
+        /*[out,retval]*/ VARIANT_BOOL * Value ) = 0;
+      virtual HRESULT __stdcall put_AlwaysEnableTrigger (
+        /*[in]*/ VARIANT_BOOL Value ) = 0;
+      virtual HRESULT __stdcall get_Trigger (
+        /*[out,retval]*/ struct ITrigger * * Value ) = 0;
+      virtual HRESULT __stdcall get_DisableStoring (
+        /*[out,retval]*/ VARIANT_BOOL * Value ) = 0;
+      virtual HRESULT __stdcall put_DisableStoring (
+        /*[in]*/ VARIANT_BOOL Value ) = 0;
+      virtual HRESULT __stdcall WriteErrorMessage (
+        /*[in]*/ BSTR ErrorMsg ) = 0;
+      virtual HRESULT __stdcall PauseStoring ( ) = 0;
+      virtual HRESULT __stdcall ResumeStoring ( ) = 0;
+      virtual HRESULT __stdcall LoadModuleSetup (
+        /*[in]*/ BSTR FileName ) = 0;
+      virtual HRESULT __stdcall ChangeDaqType (
+        /*[in]*/ long DaqType ) = 0;
+      virtual HRESULT __stdcall ChangeComPort (
+        /*[in]*/ long ComPort ) = 0;
+      virtual HRESULT __stdcall LoadDBC (
+        /*[in]*/ long PortNo,
+        /*[in]*/ BSTR FileName ) = 0;
+      virtual HRESULT __stdcall ZeroAllAutoChannels (
+        /*[in]*/ VARIANT_BOOL Zero ) = 0;
+      virtual HRESULT __stdcall ShowSensorEditor ( ) = 0;
+      virtual HRESULT __stdcall get_AOGroup (
+        /*[out,retval]*/ struct IAOGroup * * Value ) = 0;
+      virtual HRESULT __stdcall get_CAN (
+        /*[out,retval]*/ struct ICAN * * Value ) = 0;
+      virtual HRESULT __stdcall InitScopeTrig (
+        /*[in]*/ struct T_RecordPosition Start,
+        /*[in]*/ struct T_RecordPosition Stop ) = 0;
+      virtual HRESULT __stdcall CalcScopeTrig (
+        /*[out,retval]*/ VARIANT_BOOL * Value ) = 0;
+      virtual HRESULT __stdcall get_Acquiring (
+        /*[out,retval]*/ VARIANT_BOOL * Value ) = 0;
+      virtual HRESULT __stdcall get_Enabled (
+        /*[out,retval]*/ VARIANT_BOOL * Value ) = 0;
+      virtual HRESULT __stdcall put_Enabled (
+        /*[in]*/ VARIANT_BOOL Value ) = 0;
+      virtual HRESULT __stdcall AOSetManual ( ) = 0;
+      virtual HRESULT __stdcall AOGetManualAvail (
+        /*[out,retval]*/ VARIANT_BOOL * Value ) = 0;
+      virtual HRESULT __stdcall get_Modules (
+        /*[out,retval]*/ struct IModules * * Value ) = 0;
+      virtual HRESULT __stdcall StartModuleScan ( ) = 0;
+      virtual HRESULT __stdcall StopModuleScan ( ) = 0;
+      virtual HRESULT __stdcall get_RegType (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall get_AveragedCPB (
+        /*[out,retval]*/ struct IAveragedFFT * * Value ) = 0;
+      virtual HRESULT __stdcall LoadDisplaySetup (
+        /*[in]*/ BSTR FileName ) = 0;
+      virtual HRESULT __stdcall SetStoreMode (
+        /*[in]*/ long Mode ) = 0;
+      virtual HRESULT __stdcall get_Alarms (
+        /*[out,retval]*/ struct IAlarms * * Value ) = 0;
+      virtual HRESULT __stdcall get_DaqGroup (
+        /*[out,retval]*/ struct IDaqGroup * * Value ) = 0;
+      virtual HRESULT __stdcall get_IsSetupMode (
+        /*[out,retval]*/ VARIANT_BOOL * Value ) = 0;
+      virtual HRESULT __stdcall SetMainDataDir (
+        /*[in]*/ BSTR DataDir ) = 0;
+      virtual HRESULT __stdcall get_FileNameSettings (
+        /*[out,retval]*/ struct IFileNameSettings * * Value ) = 0;
+      virtual HRESULT __stdcall get_HasFRF (
+        /*[out,retval]*/ VARIANT_BOOL * Value ) = 0;
+      virtual HRESULT __stdcall get_Daq (
+        /*[out,retval]*/ struct IDaq * * Value ) = 0;
+      virtual HRESULT __stdcall get_GlobalHeader (
+        /*[out,retval]*/ struct IGlobalHeader * * Value ) = 0;
+      virtual HRESULT __stdcall get_FixedExternalClock (
+        /*[out,retval]*/ VARIANT_BOOL * Value ) = 0;
+      virtual HRESULT __stdcall put_FixedExternalClock (
+        /*[in]*/ VARIANT_BOOL Value ) = 0;
+      virtual HRESULT __stdcall WriteErrorLog (
+        /*[in]*/ BSTR Str ) = 0;
+      virtual HRESULT __stdcall UpdateSetupScreen ( ) = 0;
+      virtual HRESULT __stdcall NotifyTrackingChanged (
+        /*[in]*/ VARIANT_BOOL Tracking,
+        /*[in]*/ double TimeDiff ) = 0;
+      virtual HRESULT __stdcall get_Timing (
+        /*[out,retval]*/ struct ITiming * * Value ) = 0;
+      virtual HRESULT __stdcall get_UserInterface (
+        /*[out,retval]*/ struct IUserInterface * * Value ) = 0;
+      virtual HRESULT __stdcall get_AveragedFFT (
+        /*[out,retval]*/ struct IAveragedFFT * * Value ) = 0;
+      virtual HRESULT __stdcall ExportDataEx (
+        /*[in]*/ long ExportType,
+        /*[in]*/ long TimeAxis,
+        /*[in]*/ long ExportDataType,
+        /*[in]*/ long ExportOptions,
+        /*[in]*/ BSTR FileName ) = 0;
+      virtual HRESULT __stdcall get_MeasureSampleRateEx (
+        /*[out,retval]*/ double * Value ) = 0;
+      virtual HRESULT __stdcall put_MeasureSampleRateEx (
+        /*[in]*/ double Value ) = 0;
+      virtual HRESULT __stdcall get_PowerModules (
+        /*[out,retval]*/ struct IPowerModules * * Value ) = 0;
+      virtual HRESULT __stdcall get_ReducedRate (
+        /*[out,retval]*/ float * Value ) = 0;
+      virtual HRESULT __stdcall put_ReducedRate (
+        /*[in]*/ float Value ) = 0;
+      virtual HRESULT __stdcall HideCaptionBar ( ) = 0;
+      virtual HRESULT __stdcall ExecuteModulesFunction (
+        /*[in]*/ enum ModulesFunction Func,
+        unsigned char Group,
+        long Value ) = 0;
+      virtual HRESULT __stdcall ShowCaptionBar ( ) = 0;
+      virtual HRESULT __stdcall FirstScanDonePercent (
+        /*[out,retval]*/ float * Value ) = 0;
+      virtual HRESULT __stdcall get_SetupSampleRate (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall put_SetupSampleRate (
+        /*[in]*/ long Value ) = 0;
+      virtual HRESULT __stdcall get_NETMode (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall Start (
+        /*[out,retval]*/ VARIANT_BOOL * Value ) = 0;
+      virtual HRESULT __stdcall get_RemoteControlled (
+        /*[out,retval]*/ VARIANT_BOOL * Value ) = 0;
+      virtual HRESULT __stdcall get_IsAcqRunning (
+        /*[out,retval]*/ VARIANT_BOOL * Value ) = 0;
+      virtual HRESULT __stdcall get_Math (
+        /*[out,retval]*/ struct IMath * * Value ) = 0;
+      virtual HRESULT __stdcall LoadProject (
+        /*[in]*/ BSTR Name ) = 0;
+      virtual HRESULT __stdcall Analyze ( ) = 0;
+      virtual HRESULT __stdcall SetMainToolBar (
+        /*[in]*/ BSTR TabName,
+        /*[in]*/ BSTR ButtonName ) = 0;
+      virtual HRESULT __stdcall get_MainWindowHandle (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall GetSpecDir (
+        /*[in]*/ enum SpecDirectory DirType,
+        /*[out,retval]*/ BSTR * Value ) = 0;
+      virtual HRESULT __stdcall get_AmplInterfaces (
+        /*[out,retval]*/ struct IAmplInterfaces * * Value ) = 0;
+      virtual HRESULT __stdcall get_SuppressMessages (
+        /*[out,retval]*/ VARIANT_BOOL * Value ) = 0;
+      virtual HRESULT __stdcall put_SuppressMessages (
+        /*[in]*/ VARIANT_BOOL Value ) = 0;
+      virtual HRESULT __stdcall get_OfflineCalc (
+        /*[out,retval]*/ struct IOfflineCalc * * Value ) = 0;
+      virtual HRESULT __stdcall get_ConfigMode (
+        /*[out,retval]*/ VARIANT_BOOL * Value ) = 0;
+      virtual HRESULT __stdcall get_ShowInstrumentsInFullScreen (
+        /*[out,retval]*/ VARIANT_BOOL * Value ) = 0;
+      virtual HRESULT __stdcall put_ShowInstrumentsInFullScreen (
+        /*[in]*/ VARIANT_BOOL Value ) = 0;
+      virtual HRESULT __stdcall get_DisableKeyboardShortcuts (
+        /*[out,retval]*/ VARIANT_BOOL * Value ) = 0;
+      virtual HRESULT __stdcall put_DisableKeyboardShortcuts (
+        /*[in]*/ VARIANT_BOOL Value ) = 0;
+      virtual HRESULT __stdcall SaveSetupToXML (
+        /*[out]*/ BSTR * XML ) = 0;
+      virtual HRESULT __stdcall LoadSetupFromXML (
+        /*[in]*/ BSTR XML ) = 0;
+      virtual HRESULT __stdcall get_ProjectManager (
+        /*[out,retval]*/ struct IProjectManager * * Value ) = 0;
+      virtual HRESULT __stdcall get_Video (
+        /*[out,retval]*/ struct IVideo * * Value ) = 0;
+      virtual HRESULT __stdcall LoadSequence (
+        /*[in]*/ BSTR FileName ) = 0;
+      virtual HRESULT __stdcall GetDewesoftVersion (
+        /*[in,out]*/ long * Super,
+        /*[in,out]*/ long * Major,
+        /*[in,out]*/ long * Minor,
+        /*[in,out]*/ long * Build,
+        /*[in,out]*/ char * State ) = 0;
+      virtual HRESULT __stdcall GetSamplesEx (
+        /*[in]*/ double SampleRate,
+        /*[in]*/ VARIANT_BOOL SetupMode,
+        /*[in]*/ long Level,
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall get_LockableCursors (
+        /*[out,retval]*/ struct ILockableCursors * * Value ) = 0;
+      virtual HRESULT __stdcall ReportMessage (
+        /*[in]*/ enum ReportMessageType MsgType,
+        /*[in]*/ BSTR MsgSource,
+        /*[in]*/ BSTR Msg ) = 0;
+};
+
+struct __declspec(uuid("f095a7a6-c7cc-4492-a4f1-25596b54c673"))
+IPlugin : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall SetData (
+        /*[in]*/ struct IData * Data ) = 0;
+      virtual HRESULT __stdcall OnTrigger (
+        /*[in]*/ double Time ) = 0;
+      virtual HRESULT __stdcall Configure ( ) = 0;
+      virtual HRESULT __stdcall OnGetData ( ) = 0;
+      virtual HRESULT __stdcall OnStartAcq ( ) = 0;
+      virtual HRESULT __stdcall OnStopAcq ( ) = 0;
+      virtual HRESULT __stdcall OnStartStoring ( ) = 0;
+      virtual HRESULT __stdcall OnStopStoring ( ) = 0;
+      virtual HRESULT __stdcall Initiate ( ) = 0;
+      virtual HRESULT __stdcall SetApp (
+        /*[in]*/ struct IApp * App ) = 0;
+};
+
+struct __declspec(uuid("b06829e7-7afc-4921-b530-6ecbe286c905"))
+IPlugin2 : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall Initiate (
+        /*[in]*/ struct IApp * DeweApp ) = 0;
+      virtual HRESULT __stdcall OnStartAcq ( ) = 0;
+      virtual HRESULT __stdcall OnStopAcq ( ) = 0;
+      virtual HRESULT __stdcall OnStartStoring ( ) = 0;
+      virtual HRESULT __stdcall OnStopStoring ( ) = 0;
+      virtual HRESULT __stdcall OnGetData ( ) = 0;
+      virtual HRESULT __stdcall OnTrigger (
+        /*[in]*/ double Time ) = 0;
+      virtual HRESULT __stdcall Configure ( ) = 0;
+      virtual HRESULT __stdcall get_Id (
+        /*[out,retval]*/ BSTR * Value ) = 0;
+      virtual HRESULT __stdcall SaveSetup (
+        /*[in,out]*/ VARIANT * Data ) = 0;
+      virtual HRESULT __stdcall LoadSetup (
+        /*[in]*/ VARIANT Data ) = 0;
+      virtual HRESULT __stdcall NewSetup ( ) = 0;
+      virtual HRESULT __stdcall ClearChannelsInstance ( ) = 0;
+      virtual HRESULT __stdcall ShowFrame (
+        /*[in]*/ long Parent,
+        /*[out,retval]*/ VARIANT_BOOL * Value ) = 0;
+      virtual HRESULT __stdcall HideFrame ( ) = 0;
+      virtual HRESULT __stdcall UpdateFrame ( ) = 0;
+      virtual HRESULT __stdcall get_Used (
+        /*[out,retval]*/ VARIANT_BOOL * Value ) = 0;
+      virtual HRESULT __stdcall put_Used (
+        /*[in]*/ VARIANT_BOOL Value ) = 0;
+      virtual HRESULT __stdcall OnOleMsg (
+        /*[in]*/ long Msg,
+        /*[in]*/ long Param ) = 0;
+};
+
+struct __declspec(uuid("66c046ab-0518-453d-9e52-06340574a1c2"))
+ICustomExport : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_FileName (
+        /*[out,retval]*/ BSTR * Value ) = 0;
+      virtual HRESULT __stdcall put_FileName (
+        /*[in]*/ BSTR Value ) = 0;
+      virtual HRESULT __stdcall StartExport (
+        /*[in]*/ struct IApp * App ) = 0;
+      virtual HRESULT __stdcall EndExport ( ) = 0;
+      virtual HRESULT __stdcall get_ExportType (
+        /*[out,retval]*/ enum ExportTypes * Value ) = 0;
+      virtual HRESULT __stdcall get_AbsoluteTime (
+        /*[out,retval]*/ VARIANT_BOOL * Value ) = 0;
+      virtual HRESULT __stdcall put_AbsoluteTime (
+        /*[in]*/ VARIANT_BOOL Value ) = 0;
+      virtual HRESULT __stdcall StartDataFolder (
+        /*[in]*/ BSTR FolderName,
+        /*[in]*/ DATE AbsTime ) = 0;
+      virtual HRESULT __stdcall EndDataFolder ( ) = 0;
+      virtual HRESULT __stdcall StartInfo (
+        /*[in]*/ BSTR Info ) = 0;
+      virtual HRESULT __stdcall WriteInfoString (
+        /*[in]*/ BSTR Description,
+        /*[in]*/ BSTR Value ) = 0;
+      virtual HRESULT __stdcall WriteInfoInteger (
+        /*[in]*/ BSTR Description,
+        /*[in]*/ long Param ) = 0;
+      virtual HRESULT __stdcall WriteInfoSingle (
+        /*[in]*/ BSTR Description,
+        /*[in]*/ float Value ) = 0;
+      virtual HRESULT __stdcall WriteInfoDate (
+        /*[in]*/ BSTR Description,
+        /*[in]*/ DATE Value ) = 0;
+      virtual HRESULT __stdcall EndInfo ( ) = 0;
+      virtual HRESULT __stdcall StartTimeField (
+        /*[in]*/ BSTR FieldName,
+        /*[in]*/ BSTR FieldUnit ) = 0;
+      virtual HRESULT __stdcall StartDataField (
+        /*[in]*/ BSTR FieldName,
+        /*[in]*/ BSTR FieldUnit,
+        /*[in]*/ long ExportRate ) = 0;
+      virtual HRESULT __stdcall EndHeader ( ) = 0;
+      virtual HRESULT __stdcall StartValue (
+        /*[in]*/ double TimeValue ) = 0;
+      virtual HRESULT __stdcall StartAbsValue (
+        /*[in]*/ DATE DateTime ) = 0;
+      virtual HRESULT __stdcall WriteValue (
+        /*[in]*/ float Value ) = 0;
+      virtual HRESULT __stdcall WriteAsyncValue (
+        /*[in]*/ double TimeStamp,
+        /*[in]*/ float Value ) = 0;
+      virtual HRESULT __stdcall StartChannel (
+        /*[in]*/ BSTR FieldName,
+        /*[in]*/ BSTR FieldUnit,
+        /*[in]*/ VARIANT_BOOL Async ) = 0;
+      virtual HRESULT __stdcall get_Extension (
+        /*[out,retval]*/ BSTR * Value ) = 0;
+      virtual HRESULT __stdcall get_TimeIncrease (
+        /*[out,retval]*/ double * Value ) = 0;
+      virtual HRESULT __stdcall put_TimeIncrease (
+        /*[in]*/ double Value ) = 0;
+      virtual HRESULT __stdcall EndChannel ( ) = 0;
+      virtual HRESULT __stdcall EndValue ( ) = 0;
+      virtual HRESULT __stdcall get_SupportsAsync (
+        /*[out,retval]*/ VARIANT_BOOL * Value ) = 0;
+      virtual HRESULT __stdcall get_SupportsSRDiv (
+        /*[out,retval]*/ VARIANT_BOOL * Value ) = 0;
+      virtual HRESULT __stdcall get_DataCount (
+        /*[out,retval]*/ unsigned __int64 * Value ) = 0;
+      virtual HRESULT __stdcall put_DataCount (
+        /*[in]*/ unsigned __int64 Value ) = 0;
+};
+
+struct __declspec(uuid("99edf4c9-4784-4a66-a1ca-2e395ec319d6"))
+IPlugin3 : IPlugin2
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall OnStartSetup ( ) = 0;
+      virtual HRESULT __stdcall OnStopSetup ( ) = 0;
+      virtual HRESULT __stdcall OnBeforeStartAcq (
+        /*[in,out]*/ VARIANT_BOOL * AllowStart ) = 0;
+      virtual HRESULT __stdcall OnAfterStartAcq ( ) = 0;
+      virtual HRESULT __stdcall OnBeforeStopAcq (
+        /*[in,out]*/ VARIANT_BOOL * AllowStop ) = 0;
+      virtual HRESULT __stdcall OnAfterStopAcq ( ) = 0;
+      virtual HRESULT __stdcall OnRepaintFrame ( ) = 0;
+      virtual HRESULT __stdcall OnTriggerStop (
+        /*[in]*/ double Time,
+        /*[in]*/ double TrigDuration ) = 0;
+      virtual HRESULT __stdcall OnAfterCalcMath ( ) = 0;
+      virtual HRESULT __stdcall GetDWTypeLibVersion (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall OnGetSetupData ( ) = 0;
+      virtual HRESULT __stdcall OnResizeFrame (
+        /*[in]*/ long Width,
+        /*[in]*/ long Height ) = 0;
+      virtual HRESULT __stdcall ProvidesClock (
+        /*[in,out]*/ VARIANT_BOOL * Value ) = 0;
+      virtual HRESULT __stdcall OnGetClock (
+        /*[in,out]*/ long * ClockLow,
+        /*[in,out]*/ long * ClockHigh ) = 0;
+      virtual HRESULT __stdcall SetCANPort (
+        /*[in]*/ long Port ) = 0;
+      virtual HRESULT __stdcall OnAlarm (
+        /*[in]*/ long CondIndex,
+        /*[in]*/ VARIANT_BOOL Status ) = 0;
+      virtual HRESULT __stdcall OnBigListLoad (
+        /*[in]*/ BSTR TextSetup ) = 0;
+      virtual HRESULT __stdcall OnExit ( ) = 0;
+      virtual HRESULT __stdcall OnShowHWFrame (
+        /*[in]*/ long Parent,
+        /*[out,retval]*/ VARIANT_BOOL * Value ) = 0;
+      virtual HRESULT __stdcall OnHideHWFrame ( ) = 0;
+};
+
+struct __declspec(uuid("6b0b2596-bc6b-4c04-8155-ed285696da7d"))
+ICustomExport2 : ICustomExport
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall SetAbsMin (
+        /*[in]*/ float AbsMin ) = 0;
+      virtual HRESULT __stdcall SetAbsMax (
+        /*[in]*/ float AbsMax ) = 0;
+      virtual HRESULT __stdcall SetTrigOffset (
+        /*[in]*/ double TrigTime ) = 0;
+      virtual HRESULT __stdcall SetChannelColor (
+        /*[in]*/ long Color ) = 0;
+      virtual HRESULT __stdcall SetRangeMax (
+        /*[in]*/ float Value ) = 0;
+      virtual HRESULT __stdcall SetRangeMin (
+        /*[in]*/ float Value ) = 0;
+      virtual HRESULT __stdcall WriteDoubleValue (
+        /*[in]*/ double Value ) = 0;
+      virtual HRESULT __stdcall WriteAsyncDoubleValue (
+        /*[in]*/ double TimeStamp,
+        /*[in]*/ double Value ) = 0;
+      virtual HRESULT __stdcall GetDWTypeLibVersion (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall get_SupportsDouble (
+        /*[out,retval]*/ VARIANT_BOOL * Value ) = 0;
+      virtual HRESULT __stdcall SetDoubleFloat (
+        /*[in]*/ VARIANT_BOOL DoubleFloat ) = 0;
+      virtual HRESULT __stdcall StartEvents ( ) = 0;
+      virtual HRESULT __stdcall StopEvents ( ) = 0;
+      virtual HRESULT __stdcall WriteEvent (
+        /*[in]*/ long EventType,
+        /*[in]*/ BSTR EventTypeString,
+        /*[in]*/ double Time,
+        /*[in]*/ BSTR Comment ) = 0;
+      virtual HRESULT __stdcall SetApp (
+        /*[in]*/ struct IApp * App ) = 0;
+      virtual HRESULT __stdcall SetChannel (
+        /*[in]*/ struct IChannel * Ch ) = 0;
+};
+
+struct __declspec(uuid("3a2b361a-ee1b-4ceb-9848-2c0982bcac7f"))
+ICustomDAQ : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_CardFound (
+        /*[out,retval]*/ VARIANT_BOOL * Value ) = 0;
+      virtual HRESULT __stdcall get_NumChannels (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall GetDeviceType ( ) = 0;
+      virtual HRESULT __stdcall GetBitResolution (
+        /*[in]*/ long ChIndex,
+        /*[in,out]*/ long * Bits ) = 0;
+      virtual HRESULT __stdcall GetSampleRates (
+        /*[in,out]*/ VARIANT * List ) = 0;
+      virtual HRESULT __stdcall CheckSampleRate (
+        /*[in]*/ long WantedRate,
+        /*[in]*/ long NumChannels,
+        /*[in]*/ VARIANT ChList,
+        /*[in,out]*/ long * AdjustedRate ) = 0;
+      virtual HRESULT __stdcall StartAcq (
+        /*[in]*/ long SampleRate,
+        /*[in]*/ VARIANT_BOOL SetupMode ) = 0;
+      virtual HRESULT __stdcall StopAcq ( ) = 0;
+      virtual HRESULT __stdcall GetData (
+        /*[in,out]*/ long * Samples ) = 0;
+      virtual HRESULT __stdcall GetCurrentTime (
+        /*[in,out]*/ __int64 * Time ) = 0;
+      virtual HRESULT __stdcall SetApp (
+        /*[in]*/ struct IApp * App ) = 0;
+      virtual HRESULT __stdcall GetCardName (
+        /*[in,out]*/ BSTR * Name ) = 0;
+      virtual HRESULT __stdcall GetDWTypeLibVersion (
+        /*[in,out]*/ long * Version ) = 0;
+      virtual HRESULT __stdcall GetBufferSize (
+        /*[out]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall ShowSetupFrame (
+        /*[in]*/ long AppHandle,
+        /*[in]*/ long Handle ) = 0;
+      virtual HRESULT __stdcall HideSetupFrame ( ) = 0;
+      virtual HRESULT __stdcall GetChannelGain (
+        /*[out]*/ float * Gain ) = 0;
+      virtual HRESULT __stdcall GetMinMax (
+        /*[in]*/ long ChnIndex,
+        /*[in,out]*/ float * Min,
+        /*[in,out]*/ float * Max ) = 0;
+      virtual HRESULT __stdcall GetOptionsCount (
+        /*[in,out]*/ long * Cnt ) = 0;
+      virtual HRESULT __stdcall GetOptionName (
+        /*[in]*/ long Index,
+        /*[in,out]*/ BSTR * Name ) = 0;
+      virtual HRESULT __stdcall get_NumCNTChannels (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall GetCNTBitResolution (
+        /*[in]*/ long ChIndex,
+        /*[in,out]*/ long * Bits ) = 0;
+      virtual HRESULT __stdcall GetDeviceCode (
+        /*[out]*/ BSTR * Code,
+        /*[out]*/ BSTR * Verify ) = 0;
+};
+
+struct __declspec(uuid("0d7e8d61-796e-47ab-9631-2fc80a5af203"))
+IExportFrame : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall ShowFrame (
+        /*[in]*/ long Handle,
+        /*[out]*/ long * FrameHeight ) = 0;
+      virtual HRESULT __stdcall HideFrame ( ) = 0;
+      virtual HRESULT __stdcall Apply ( ) = 0;
+      virtual HRESULT __stdcall SetExpApp (
+        /*[in]*/ struct IApp * App ) = 0;
+};
+
+struct __declspec(uuid("6f188a41-ad92-4380-b560-02a07dda1339"))
+IMath : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall get_MathObject (
+        /*[in]*/ long Index,
+        /*[out,retval]*/ struct IMathObject * * Value ) = 0;
+      virtual HRESULT __stdcall get__NewEnum (
+        /*[out,retval]*/ IUnknown * * Value ) = 0;
+      virtual HRESULT __stdcall FindObjByID (
+        /*[in]*/ long Index,
+        /*[out,retval]*/ struct IMathObject * * Value ) = 0;
+      virtual HRESULT __stdcall AddObj (
+        /*[in]*/ BSTR Guid,
+        /*[out,retval]*/ struct IMathObject * * Value ) = 0;
+      virtual HRESULT __stdcall RemoveObj (
+        /*[in]*/ long I ) = 0;
+};
+
+struct __declspec(uuid("b5ff31ac-f12b-4c28-adce-14874043c10a"))
+IMathObject : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall get_MathModule (
+        /*[in]*/ long Index,
+        /*[out,retval]*/ struct IMathModule * * Value ) = 0;
+      virtual HRESULT __stdcall get__NewEnum (
+        /*[out,retval]*/ IUnknown * * Value ) = 0;
+      virtual HRESULT __stdcall get_MathObjContext (
+        /*[out,retval]*/ struct IMathObjContext * * Value ) = 0;
+      virtual HRESULT __stdcall get_MathGUID (
+        /*[out,retval]*/ BSTR * Value ) = 0;
+      virtual HRESULT __stdcall get_Id (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall FindModuleByID (
+        /*[in]*/ long I,
+        /*[out,retval]*/ struct IMathModule * * Value ) = 0;
+      virtual HRESULT __stdcall get_MathType (
+        /*[out,retval]*/ BSTR * Value ) = 0;
+      virtual HRESULT __stdcall get_Name (
+        /*[out,retval]*/ BSTR * Value ) = 0;
+      virtual HRESULT __stdcall put_Name (
+        /*[in]*/ BSTR Value ) = 0;
+};
+
+struct __declspec(uuid("e17a04ba-e047-4896-892e-a8937cc290b6"))
+IMathModule : IMathItem
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Id (
+        /*[out,retval]*/ long * Value ) = 0;
+      virtual HRESULT __stdcall get_MathObject (
+        /*[out,retval]*/ struct IMathObject * * Value ) = 0;
+};
+
+//
+// Named GUID constants initializations
+//
+
+extern "C" const GUID __declspec(selectany) LIBID_DEWEsoft =
+    {0x96d9b72c,0x93f3,0x4d0c,{0x90,0xbb,0x14,0x66,0x84,0x51,0x56,0xef}};
+extern "C" const GUID __declspec(selectany) DIID_IAppEvents =
+    {0xc15bab67,0x52bb,0x4664,{0x8c,0x9d,0xe8,0xcc,0x1a,0x1a,0x4c,0x44}};
+extern "C" const GUID __declspec(selectany) CLSID_App =
+    {0x58a7d77d,0x64f1,0x4db8,{0xa6,0xcb,0xf2,0xb4,0xca,0xb8,0x40,0x56}};
+extern "C" const GUID __declspec(selectany) IID_IScreen =
+    {0x8262475b,0x8f95,0x4917,{0xa3,0x39,0xa3,0x43,0xcb,0x5d,0x50,0x65}};
+extern "C" const GUID __declspec(selectany) IID_IScreens =
+    {0xa3923065,0x75e3,0x4dfb,{0xb0,0x49,0x5c,0xcb,0x98,0x1c,0x15,0xf3}};
+extern "C" const GUID __declspec(selectany) IID_IMasterClock =
+    {0x254bf4b3,0xcf9c,0x49a3,{0x8f,0x75,0x7c,0xe3,0x5e,0xf0,0x1a,0x5d}};
+extern "C" const GUID __declspec(selectany) IID_IAISetupScreen =
+    {0x56102555,0x9e45,0x4ae6,{0xb3,0xbe,0xa4,0xd7,0xf8,0x30,0x29,0x6e}};
+extern "C" const GUID __declspec(selectany) IID_IDaqChannel =
+    {0x158b5c24,0xcf4d,0x4edf,{0xb2,0xc8,0x68,0xd4,0x6a,0x5c,0xd6,0x76}};
+extern "C" const GUID __declspec(selectany) IID_IVideoLoadEngine =
+    {0x0e036530,0xb449,0x4ebc,{0xaf,0x84,0xfb,0x2c,0xa6,0x67,0x57,0x35}};
+extern "C" const GUID __declspec(selectany) IID_IVideoLoadEngines =
+    {0x87d35b4c,0x8fa5,0x4080,{0x9c,0xde,0xac,0x49,0xca,0xda,0x92,0xc5}};
+extern "C" const GUID __declspec(selectany) IID_IPadData =
+    {0x97ff1354,0xfd61,0x4339,{0x94,0xc9,0xb3,0x66,0x91,0x41,0x0c,0x4e}};
+extern "C" const GUID __declspec(selectany) IID_IDaqData =
+    {0x129fc1e1,0x2091,0x4789,{0x97,0x8b,0xfa,0xa0,0x5f,0x25,0x92,0x60}};
+extern "C" const GUID __declspec(selectany) IID_IModule =
+    {0xda7bd5dc,0xc815,0x4471,{0xad,0xa6,0x8b,0x7b,0xe9,0x12,0x6e,0x1f}};
+extern "C" const GUID __declspec(selectany) IID_IModules =
+    {0xb37a70cb,0x5b08,0x490a,{0xae,0x57,0x3d,0x75,0xf1,0xc5,0x9b,0x1c}};
+extern "C" const GUID __declspec(selectany) IID_IAveragedFFT =
+    {0x82d459fe,0xbc05,0x4ff2,{0x85,0x97,0x74,0xbb,0x45,0x01,0x06,0x08}};
+extern "C" const GUID __declspec(selectany) IID_INothing =
+    {0xd7050b91,0x6a5d,0x4228,{0x93,0x78,0x00,0x21,0x32,0x5c,0x81,0x5c}};
+extern "C" const GUID __declspec(selectany) IID_IPluginLicense =
+    {0x20627eb4,0xd51b,0x4267,{0xa6,0xcb,0x8c,0x86,0x11,0x2e,0x75,0x02}};
+extern "C" const GUID __declspec(selectany) IID_IDaqGroup =
+    {0xfc698ce1,0x0973,0x498a,{0xaa,0x6b,0x2f,0x82,0x83,0x0b,0xe3,0xa6}};
+extern "C" const GUID __declspec(selectany) IID_IFileNameSettings =
+    {0xceb1a90b,0xd594,0x47b5,{0xa1,0x54,0xbb,0x7b,0x46,0x03,0xac,0xa2}};
+extern "C" const GUID __declspec(selectany) IID_IPluginChannel =
+    {0xe39d43bc,0xbfb8,0x4d48,{0xaf,0x5b,0x53,0xeb,0xa5,0x5c,0x88,0x17}};
+extern "C" const GUID __declspec(selectany) IID_IDiscreteItem =
+    {0x04242cbe,0xcf38,0x4a86,{0xb5,0x4b,0xd7,0x8a,0x9b,0x64,0xe0,0xfb}};
+extern "C" const GUID __declspec(selectany) IID_IDiscreteList =
+    {0x53330bbc,0x6b11,0x4805,{0x8c,0x41,0x48,0xb1,0x30,0x47,0xdc,0x42}};
+extern "C" const GUID __declspec(selectany) IID_IGHObject =
+    {0xb2fdbf74,0x7a7d,0x4be1,{0xbf,0xdc,0x59,0xf3,0x64,0xf3,0x20,0xdc}};
+extern "C" const GUID __declspec(selectany) IID_IGlobalHeader =
+    {0x14bb3a33,0xf7a5,0x4656,{0x8c,0x94,0x3b,0x52,0x9d,0x73,0x06,0xb0}};
+extern "C" const GUID __declspec(selectany) IID_ITiming =
+    {0xf8f34a4f,0xcbad,0x4240,{0x9d,0xaf,0xc2,0x26,0x28,0x2b,0x86,0x15}};
+extern "C" const GUID __declspec(selectany) IID_IMathFrameContext =
+    {0x14c2577b,0x0281,0x475a,{0x93,0x02,0x39,0x4d,0x1f,0xa1,0xb4,0x73}};
+extern "C" const GUID __declspec(selectany) IID_IDewePlugin =
+    {0x5c45f430,0xee53,0x49dc,{0x93,0x5b,0x36,0x31,0x4a,0x52,0xd4,0x38}};
+extern "C" const GUID __declspec(selectany) IID_IPluginChannelXMLHelper =
+    {0xe3638e01,0xed8e,0x40c4,{0xba,0xac,0xd0,0x0b,0x5b,0x02,0x3e,0xa7}};
+extern "C" const GUID __declspec(selectany) IID_IMathChannel =
+    {0x0c418a3e,0xcdf3,0x4f89,{0xb2,0x8b,0x8d,0x63,0xac,0xa8,0x39,0x8f}};
+extern "C" const GUID __declspec(selectany) IID_IProperties =
+    {0xdbb2d89c,0x443b,0x4abf,{0x83,0x8e,0x27,0xcd,0xea,0x6e,0x42,0x4c}};
+extern "C" const GUID __declspec(selectany) IID_IInputGroup =
+    {0x74e73f54,0xf623,0x4271,{0x80,0x71,0xd3,0xe7,0x15,0xb9,0xef,0x70}};
+extern "C" const GUID __declspec(selectany) IID_IInputGroups =
+    {0x185eb8a2,0x805f,0x4b63,{0xa1,0xfc,0xbb,0xee,0x49,0xa6,0x93,0x37}};
+extern "C" const GUID __declspec(selectany) IID_IRegistrationHelper =
+    {0x5649e2dc,0x2ef0,0x4d1d,{0x8e,0x23,0x2a,0x0d,0xc0,0x41,0xd0,0xa5}};
+extern "C" const GUID __declspec(selectany) IID_IAmplifier =
+    {0x39f60bb4,0x26eb,0x47c1,{0x88,0x4a,0xd1,0x01,0x14,0xfa,0x06,0xe7}};
+extern "C" const GUID __declspec(selectany) IID_IAmplChain =
+    {0x24428804,0x6902,0x4cc5,{0x80,0x8c,0x86,0xb3,0x62,0x41,0x4b,0xda}};
+extern "C" const GUID __declspec(selectany) IID_IAmplChainList =
+    {0x01c5e234,0xc56d,0x4fa3,{0x8c,0x77,0xe1,0xad,0x04,0x84,0x79,0x0d}};
+extern "C" const GUID __declspec(selectany) IID_IAmplInterface =
+    {0x40aadaed,0xbcc1,0x4134,{0xb1,0x54,0xde,0x6e,0x01,0x6d,0xe7,0x03}};
+extern "C" const GUID __declspec(selectany) IID_IAmplInterfaces =
+    {0x2e02870e,0x2b86,0x40be,{0xba,0xd3,0x1f,0xf6,0xff,0x4d,0x03,0xc9}};
+extern "C" const GUID __declspec(selectany) IID_IImportChannel =
+    {0xb05e7b8b,0x09a8,0x418e,{0x8b,0x32,0x92,0x2b,0xd7,0x29,0xf1,0xad}};
+extern "C" const GUID __declspec(selectany) IID_IPluginLicense2 =
+    {0x06ed52b2,0x5a28,0x4564,{0x99,0xce,0x10,0xed,0x7a,0x82,0xf9,0x33}};
+extern "C" const GUID __declspec(selectany) IID_IOfflineCalc =
+    {0x6d30b59f,0x0060,0x40db,{0xb6,0xb2,0x7f,0x87,0x46,0x5c,0xe3,0xb7}};
+extern "C" const GUID __declspec(selectany) IID_ICustomDAQ2 =
+    {0x062c4672,0xb1c5,0x43fa,{0x8c,0x77,0x62,0xc1,0xdc,0xb9,0x28,0xf0}};
+extern "C" const GUID __declspec(selectany) IID_IDigitalTrigLevel =
+    {0xc58c7b68,0xe2f7,0x478a,{0xac,0xf7,0x11,0xb8,0xd6,0xa1,0x65,0x09}};
+extern "C" const GUID __declspec(selectany) IID_ISyncSource =
+    {0xaa6c3d58,0xed6d,0x4529,{0xaa,0xf8,0xec,0xb0,0xa6,0x82,0xa2,0x70}};
+extern "C" const GUID __declspec(selectany) IID_ICANMsg =
+    {0x1d828c6f,0x8559,0x4000,{0x84,0xb1,0x57,0x04,0x51,0x54,0x17,0x53}};
+extern "C" const GUID __declspec(selectany) IID_ICANPortContext =
+    {0x953fd7c5,0xa46c,0x4f92,{0xa2,0x29,0x22,0x0a,0x12,0xa1,0xa1,0x15}};
+extern "C" const GUID __declspec(selectany) IID_ICANContext =
+    {0x6dd0e754,0x22ab,0x4687,{0x8f,0xd4,0x28,0xd9,0x47,0x5c,0xd0,0x2c}};
+extern "C" const GUID __declspec(selectany) IID_IProjectManager =
+    {0x0ab26cc9,0x1f8f,0x4289,{0x9f,0x0e,0x6f,0xb4,0x2b,0xa4,0xca,0xc0}};
+extern "C" const GUID __declspec(selectany) IID_IDIPort =
+    {0xcc93ddf0,0xd660,0x47bf,{0x97,0xd8,0x36,0x8a,0xfc,0xe0,0xa6,0xbe}};
+extern "C" const GUID __declspec(selectany) IID_IDIGroup =
+    {0xa727cf4a,0xfbaf,0x45f6,{0xbc,0x6a,0x8a,0x58,0xe0,0x5a,0xeb,0x3f}};
+extern "C" const GUID __declspec(selectany) IID_IDIChannel =
+    {0x1a6efdac,0x300e,0x40d7,{0x8a,0x4e,0x0f,0x4c,0x37,0x09,0x93,0xdd}};
+extern "C" const GUID __declspec(selectany) IID_IVideoFrame =
+    {0x999f8e10,0xec80,0x4d2a,{0xa7,0x85,0xc1,0xfd,0x3c,0xb8,0x7f,0x22}};
+extern "C" const GUID __declspec(selectany) IID_ICamera =
+    {0xc102fc8b,0xbfde,0x4d2f,{0x95,0x4c,0x06,0x2c,0xf1,0x9e,0xaa,0x6b}};
+extern "C" const GUID __declspec(selectany) IID_IVideo =
+    {0x85163d18,0x0a7e,0x4844,{0x93,0xeb,0xf9,0xa0,0xc4,0xc4,0x39,0x68}};
+extern "C" const GUID __declspec(selectany) IID_IViewInfo =
+    {0xdaa5f907,0x902b,0x4d5b,{0x98,0x2b,0x4a,0xfc,0xb1,0x91,0xee,0xb1}};
+extern "C" const GUID __declspec(selectany) IID_IAxisViewInfo =
+    {0x0850b5b8,0x80c8,0x41a5,{0xa3,0x4d,0x04,0xad,0xfe,0x00,0xa0,0x00}};
+extern "C" const GUID __declspec(selectany) IID_ILockableCursor =
+    {0x4e5157c0,0xcb61,0x4a6e,{0x81,0x83,0xe4,0xd7,0x47,0x56,0x8c,0x21}};
+extern "C" const GUID __declspec(selectany) IID_ILockableCursors =
+    {0xb2ede09d,0xd64b,0x4ef2,{0xae,0xfd,0x69,0x45,0xa7,0x6d,0xfa,0xc4}};
+extern "C" const GUID __declspec(selectany) IID_IMathItem2 =
+    {0x83054c30,0x0f5b,0x433d,{0x98,0x63,0xe5,0x21,0xc5,0xca,0x25,0x4b}};
+extern "C" const GUID __declspec(selectany) IID_IStoreEngine =
+    {0x97c5783f,0x0b84,0x47d9,{0x82,0x94,0x9f,0x33,0xb2,0x73,0x90,0x76}};
+extern "C" const GUID __declspec(selectany) IID_IAOChannel =
+    {0xc6e7dd46,0x7bca,0x42f3,{0x9a,0xc7,0x00,0x77,0xd1,0x9d,0x4e,0xcf}};
+extern "C" const GUID __declspec(selectany) IID_IPlugin4 =
+    {0xbea4a4fb,0x010a,0x4d58,{0x91,0x40,0x72,0x97,0x83,0xed,0x0f,0x99}};
+extern "C" const GUID __declspec(selectany) IID_IPowerModule =
+    {0xc4a25fdc,0x9f2e,0x413d,{0x9e,0xc8,0x8d,0xf4,0x3b,0xd2,0x10,0xca}};
+extern "C" const GUID __declspec(selectany) IID_IPowerModules =
+    {0x2cd91570,0x4eef,0x4ab9,{0xa2,0x4c,0xd3,0xc6,0x63,0xb4,0xf5,0xb1}};
+extern "C" const GUID __declspec(selectany) IID_ICustomExport3 =
+    {0x947bf399,0x9ef8,0x4417,{0xa5,0xc0,0xd5,0xcc,0xd7,0x9a,0x0b,0x14}};
+extern "C" const GUID __declspec(selectany) IID_ISetupMessages =
+    {0xf1dd1197,0xa2c6,0x478a,{0x84,0x0c,0xb2,0x26,0x86,0x4b,0x11,0xd3}};
+extern "C" const GUID __declspec(selectany) IID_ICANPort =
+    {0xf560c6ca,0xc5fd,0x4921,{0xae,0x58,0xa4,0xf6,0x9b,0x17,0xa3,0xe9}};
+extern "C" const GUID __declspec(selectany) IID_ICAN =
+    {0x1d49da44,0xd8ee,0x4cd7,{0x8b,0x62,0xdd,0x4e,0x7b,0x52,0x3b,0x8e}};
+extern "C" const GUID __declspec(selectany) IID_IDaq =
+    {0xaa2e8a89,0xaadd,0x4b5f,{0x81,0xb9,0xd9,0xf7,0x6b,0xf3,0x5c,0x2a}};
+extern "C" const GUID __declspec(selectany) IID_IData =
+    {0x45be650b,0x1f90,0x46bf,{0xbc,0x65,0x85,0x3f,0x09,0xa0,0xa2,0x41}};
+extern "C" const GUID __declspec(selectany) IID_IChannel =
+    {0xcae48a7c,0x581e,0x4c0b,{0xae,0x4f,0x7a,0x2e,0xb8,0x9c,0x0d,0xff}};
+extern "C" const GUID __declspec(selectany) IID_IChannelList =
+    {0x788183a5,0x1fc0,0x48e8,{0x93,0xec,0xa6,0xee,0x07,0x5a,0x42,0xf9}};
+extern "C" const GUID __declspec(selectany) IID_IChannelGroup =
+    {0x763e6e43,0x6464,0x4cb8,{0x97,0x01,0xa6,0x45,0xb0,0x60,0xf2,0x16}};
+extern "C" const GUID __declspec(selectany) IID_IChannelGroups =
+    {0xefc6dff0,0xb694,0x41f8,{0x90,0x5d,0x45,0x61,0x27,0x24,0xbd,0x7d}};
+extern "C" const GUID __declspec(selectany) IID_IPluginGroup =
+    {0x21b73cc2,0xac60,0x4bab,{0xbe,0xf0,0xfa,0x44,0x53,0x89,0x4e,0xef}};
+extern "C" const GUID __declspec(selectany) IID_IDataSection =
+    {0x7515b878,0x6b71,0x4020,{0xbf,0xf3,0xb8,0x80,0x45,0x1e,0x16,0x3b}};
+extern "C" const GUID __declspec(selectany) IID_IDataSections =
+    {0x9289b1ac,0x5753,0x4d6b,{0xb8,0xd6,0x9e,0x98,0x61,0x94,0x87,0x5c}};
+extern "C" const GUID __declspec(selectany) IID_ILoadEngine =
+    {0xa1114daa,0x8d7f,0x4809,{0x92,0xf9,0xd6,0xc1,0xdc,0xbf,0x5d,0x81}};
+extern "C" const GUID __declspec(selectany) IID_IChannelConnection =
+    {0x44f950d5,0x4db2,0x4bc8,{0xa6,0x36,0x65,0x3d,0x98,0xcb,0xf6,0x52}};
+extern "C" const GUID __declspec(selectany) IID_IChannelGroup2 =
+    {0xc0b4dee8,0x073d,0x4e57,{0x9d,0xac,0x8a,0x72,0xcb,0xc6,0xa5,0x1f}};
+extern "C" const GUID __declspec(selectany) IID_IAOGroup =
+    {0x78087aeb,0xd02b,0x488f,{0x97,0x57,0xba,0x68,0x5d,0x03,0x77,0x1c}};
+extern "C" const GUID __declspec(selectany) IID_ITriggerCondition =
+    {0x9d97cef7,0x1a44,0x4065,{0x90,0x4a,0x28,0x57,0x50,0x32,0x57,0x2d}};
+extern "C" const GUID __declspec(selectany) IID_ITriggerCondList =
+    {0x2ca6fa4f,0x0e5c,0x4b4e,{0x9e,0x8f,0xe2,0x41,0xbe,0x14,0xe6,0x22}};
+extern "C" const GUID __declspec(selectany) IID_ITrig =
+    {0x3e3732b1,0x3146,0x429d,{0x8c,0x33,0xf8,0x9a,0xe5,0xff,0xde,0x92}};
+extern "C" const GUID __declspec(selectany) IID_ITrigger =
+    {0xb2f13d39,0x72c9,0x497a,{0x8a,0x38,0x9d,0x16,0xdd,0xf6,0xd9,0xf2}};
+extern "C" const GUID __declspec(selectany) IID_IAlarmCond =
+    {0xa4d0a424,0xae57,0x4d56,{0x94,0x5e,0x3b,0x8d,0x13,0x69,0xdd,0xec}};
+extern "C" const GUID __declspec(selectany) IID_IAlarms =
+    {0xf785eaad,0x9fbf,0x40a2,{0x85,0x32,0x3a,0xc4,0x6d,0xc8,0xce,0x28}};
+extern "C" const GUID __declspec(selectany) IID_IUserInterface =
+    {0x5d479bea,0x0369,0x46dc,{0x86,0x68,0xeb,0xec,0xc8,0x3e,0x0b,0x9f}};
+extern "C" const GUID __declspec(selectany) IID_IVCContext =
+    {0xd9d2402a,0x73a9,0x47c3,{0xa1,0x21,0x95,0x1a,0x7e,0xfe,0x4f,0xcf}};
+extern "C" const GUID __declspec(selectany) IID_IMathContext =
+    {0x9b3ff991,0x2d72,0x4474,{0xa8,0x2d,0x24,0x64,0xd0,0x71,0xa7,0x15}};
+extern "C" const GUID __declspec(selectany) IID_IAxisDef =
+    {0x7a49908d,0x487a,0x4f85,{0x96,0xf2,0xd5,0x3b,0x74,0x5e,0x91,0xcf}};
+extern "C" const GUID __declspec(selectany) IID_IArrayInfo =
+    {0x0db0148a,0x639a,0x4adc,{0xb7,0x81,0x21,0x3b,0x14,0xf1,0xf9,0xef}};
+extern "C" const GUID __declspec(selectany) IID_IMathItem =
+    {0x5db01f14,0xc1ec,0x4b60,{0xa2,0x58,0x59,0x45,0xb0,0x9e,0xb8,0x18}};
+extern "C" const GUID __declspec(selectany) IID_IMathObjContext =
+    {0x41315abf,0x26aa,0x44b6,{0xa7,0x58,0xc4,0x5c,0x3c,0x68,0x59,0x97}};
+extern "C" const GUID __declspec(selectany) IID_IChannelListEx =
+    {0x9d693130,0x279e,0x443a,{0xb4,0xca,0x6c,0x2a,0xda,0x91,0x37,0x24}};
+extern "C" const GUID __declspec(selectany) IID_IImportGroup =
+    {0x9ea5ff19,0x04b2,0x4138,{0x81,0xdb,0x88,0xec,0xda,0xb9,0x5f,0x21}};
+extern "C" const GUID __declspec(selectany) IID_ICNTGroup =
+    {0x89dc7c60,0x9fce,0x48d3,{0xa7,0x0a,0xeb,0x03,0x5c,0xfc,0x3a,0x44}};
+extern "C" const GUID __declspec(selectany) IID_ICntChannel =
+    {0x1bffb38d,0x377e,0x4e0a,{0xa6,0x97,0x0e,0x3d,0x25,0xaa,0x76,0x8d}};
+extern "C" const GUID __declspec(selectany) IID_ITrigInfo =
+    {0xdf31d5d6,0xd4c4,0x47b6,{0x84,0xec,0x73,0xb7,0x48,0xb6,0x7c,0x22}};
+extern "C" const GUID __declspec(selectany) IID_IEvent =
+    {0x4d89cff3,0x0bfa,0x4ce1,{0xa1,0x7f,0xe4,0x49,0xb5,0xcd,0xa7,0x2e}};
+extern "C" const GUID __declspec(selectany) IID_IEventList =
+    {0xc30bc69b,0x93bd,0x44c2,{0xaf,0x67,0x95,0xc1,0x28,0x65,0xf8,0xa1}};
+extern "C" const GUID __declspec(selectany) IID_IDisplayFrameTemplate =
+    {0xe224aecc,0xb2f3,0x42ee,{0xa7,0xc1,0x46,0x50,0xd1,0xa5,0xd7,0x40}};
+extern "C" const GUID __declspec(selectany) IID_IDisplayFrameTemplates =
+    {0x2af787a0,0xcf72,0x41a2,{0xa0,0xc9,0xd8,0xdc,0x56,0x67,0x63,0x87}};
+extern "C" const GUID __declspec(selectany) IID_IDisplayTemplate =
+    {0x96a73a79,0xb803,0x4331,{0x92,0x04,0xb2,0x87,0x08,0xf0,0x81,0x1b}};
+extern "C" const GUID __declspec(selectany) IID_IIndexChanger =
+    {0xb657e514,0x6aa4,0x4b43,{0xaf,0x88,0xd5,0xd4,0xc8,0xb6,0x25,0x1c}};
+extern "C" const GUID __declspec(selectany) IID_IApp =
+    {0x82d0cab4,0x6b17,0x4810,{0xba,0x3f,0x06,0xc2,0x35,0xe7,0x63,0x66}};
+extern "C" const GUID __declspec(selectany) IID_IPlugin =
+    {0xf095a7a6,0xc7cc,0x4492,{0xa4,0xf1,0x25,0x59,0x6b,0x54,0xc6,0x73}};
+extern "C" const GUID __declspec(selectany) IID_IPlugin2 =
+    {0xb06829e7,0x7afc,0x4921,{0xb5,0x30,0x6e,0xcb,0xe2,0x86,0xc9,0x05}};
+extern "C" const GUID __declspec(selectany) IID_ICustomExport =
+    {0x66c046ab,0x0518,0x453d,{0x9e,0x52,0x06,0x34,0x05,0x74,0xa1,0xc2}};
+extern "C" const GUID __declspec(selectany) IID_IPlugin3 =
+    {0x99edf4c9,0x4784,0x4a66,{0xa1,0xca,0x2e,0x39,0x5e,0xc3,0x19,0xd6}};
+extern "C" const GUID __declspec(selectany) IID_ICustomExport2 =
+    {0x6b0b2596,0xbc6b,0x4c04,{0x81,0x55,0xed,0x28,0x56,0x96,0xda,0x7d}};
+extern "C" const GUID __declspec(selectany) IID_ICustomDAQ =
+    {0x3a2b361a,0xee1b,0x4ceb,{0x98,0x48,0x2c,0x09,0x82,0xbc,0xac,0x7f}};
+extern "C" const GUID __declspec(selectany) IID_IExportFrame =
+    {0x0d7e8d61,0x796e,0x47ab,{0x96,0x31,0x2f,0xc8,0x0a,0x5a,0xf2,0x03}};
+extern "C" const GUID __declspec(selectany) IID_IMath =
+    {0x6f188a41,0xad92,0x4380,{0xb5,0x60,0x02,0xa0,0x7d,0xda,0x13,0x39}};
+extern "C" const GUID __declspec(selectany) IID_IMathObject =
+    {0xb5ff31ac,0xf12b,0x4c28,{0xad,0xce,0x14,0x87,0x40,0x43,0xc1,0x0a}};
+extern "C" const GUID __declspec(selectany) IID_IMathModule =
+    {0xe17a04ba,0xe047,0x4896,{0x89,0x2e,0xa8,0x93,0x7c,0xc2,0x90,0xb6}};
+
+#pragma pack(pop)

@@ -1,0 +1,35 @@
+// DsCppPlugin.idl : DsCppPlugin 的 IDL 源
+//
+
+// 此文件将由 MIDL 工具处理以
+// 产生类型库(DsCppPlugin.tlb)和封送处理代码。
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(7535BA08-07C2-49B3-9C6E-3E1D7D9ED9DA),
+	dual,
+	nonextensible,
+	pointer_default(unique)
+]
+interface IVCppPluginImpl : IDispatch{
+};
+[
+	uuid(C91AC3EE-977D-44CE-BF7E-0AE1D66C93C4),
+	version(1.0),
+]
+library DsCppPluginLib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(04E27926-AA4D-4FAC-A8FA-65864502913F)		
+	]
+	coclass VCppPluginImpl
+	{
+		[default] interface IVCppPluginImpl;
+	};
+};
+
+import "shobjidl.idl";

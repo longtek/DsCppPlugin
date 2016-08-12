@@ -1,0 +1,16 @@
+HKCR
+{
+	NoRemove CLSID
+	{
+		ForceRemove {04E27926-AA4D-4FAC-A8FA-65864502913F} = s 'VCppPluginImpl Class'
+		{
+			ForceRemove Programmable
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			TypeLib = s '{C91AC3EE-977D-44CE-BF7E-0AE1D66C93C4}'
+			Version = s '1.0'
+		}
+	}
+}
