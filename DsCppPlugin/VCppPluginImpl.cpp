@@ -543,7 +543,6 @@ bool CVCppPluginImpl::IsTrig()
 			return FALSE;
 		}
 }
-
 void CVCppPluginImpl::StoreValue(int chId, float val)
 {       
 	    double ts =(samplesSoFar[chId]-1)/(double)m_sampleRate;
@@ -558,6 +557,7 @@ void CVCppPluginImpl::StoreValue(int chId, float val)
 			}
 			    Calculate(chId ,val);
 				float fval=0.0;
+				if(!m_bNret[chId])
 				{
 					long lPos;
 					m_pChCounter[m_CounterIndex[chId]]->get_DBPos(&lPos);
@@ -567,9 +567,7 @@ void CVCppPluginImpl::StoreValue(int chId, float val)
 					lPos=DBBuffSize;
 					}
 					m_pChCounter[m_CounterIndex[chId]]->get_DBValues(lPos-1,&fval);
-				}
-				if(!m_bNret[chId])
-				{
+					m_CntValue=fval;
 					m_bNret[chId]=TRUE;
 					if(fval<=100.0)
 						DN=N1;
@@ -584,8 +582,7 @@ void CVCppPluginImpl::StoreValue(int chId, float val)
 					if(!m_bStop[chId])
 						m_bStart[chId]=TRUE;					
 					if(numfftsample[chId]>=DN)
-					{
-						m_CntValue=fval;
+					{						
 						m_bStop[chId]=TRUE; //开始峰值触发计算标志;
 					}
 					m_pCh[chId][2]->AddAsyncSingleSample(val,ts);
@@ -635,6 +632,7 @@ void CVCppPluginImpl::StoreValue(int chId, float val)
 void CVCppPluginImpl::StoreValue_Ex(int chId,float val)
 {
 	double ts =(samplesSoFar[chId]-1)/(double)m_sampleRate;
+	bool bPstrig=IsPsTrig();//峰值触发
 	Calculate(chId ,val);
 	float fval=0.0;
 	if(!m_bNret[chId]) //每个通道都得记录;
@@ -657,29 +655,39 @@ void CVCppPluginImpl::StoreValue_Ex(int chId,float val)
 		if(1300.0<fval)
 			DN=N3;	
 		m_CntValue=(double)fval;
+		if(bPstrig)
+		{ m_lPointNumReal=DN;}
+		else{m_lPointNumReal=m_lPointNum;}
 	}
-
-	if((m_lNowNum[chId]++)<m_lPointNum)
-	{					
-		if(numfftsample[chId]<DN)
-		{
-			xreal[chId][numfftsample[chId]++]=val;
-			//if(numfftsample[chId]>=DN)
-			//m_CntValue=(double)fval/60;
-		}
-		if(m_lNowNum[chId]>=m_lPointNum)
+	if(bPstrig)
+	{
+		if(m_lNowNum[chId]>=DN)
 		{
 			m_bStart[chId]=TRUE;
 			m_lNowNum[chId]=0;
 		}
-	}	
-	if(m_StoreCountEx[chId]==m_iSignalOutPoint-1)
-	{
 		m_pCh[chId][2]->AddAsyncSingleSample(val,ts);
+	}
+	else if(m_StoreCountEx[chId]==m_iSignalOutPoint-1)
+	{
+	    m_pCh[chId][2]->AddAsyncSingleSample(val,ts);
+	}
+	if((m_lNowNum[chId]++)<m_lPointNumReal)
+	{					
+		if(numfftsample[chId]<DN)
+		{
+			xreal[chId][numfftsample[chId]++]=val;
+		}
+		if(m_lNowNum[chId]>=m_lPointNumReal)
+		{
+			m_bStart[chId]=TRUE;
+			m_lNowNum[chId]=0;
+		}
 	}
 }
 HRESULT CVCppPluginImpl::OnGetData()
 {
+	//时间出发和峰值触发 多次读取可能造成误差;
 	for(int i = 0; i < numAIChannels; i++)
 	{
 		if (m_pAi[i] == NULL)
@@ -690,8 +698,7 @@ HRESULT CVCppPluginImpl::OnGetData()
 		m_pAi[i]->get_DBBufSize(&buffSize);
 		
 		if (newBuffPos < oldBuffPos[i]) //ring buffer turn
-		{
-	    	//oldPos to end of buffer
+		{   //oldPos to end of buffer
 			for (int pos = oldBuffPos[i]; pos < buffSize; pos++)
 			{
 				m_pAi[i]->get_DBValues(pos, &val);
@@ -701,8 +708,7 @@ HRESULT CVCppPluginImpl::OnGetData()
 				else if(m_CountType==间隔计算)
 				StoreValue(i,val);
 				else StoreValue(i,val);
-			}	
-			// 0 to newPos
+			}// 0 to newPos
 			for (int pos = 0; pos < newBuffPos; pos++)
 			{
 				m_pAi[i]->get_DBValues(pos, &val);
@@ -724,7 +730,7 @@ HRESULT CVCppPluginImpl::OnGetData()
 					StoreValue_Ex(i,val);
 				else if(m_CountType==间隔计算)
 					StoreValue(i,val);
-				else StoreValue(i,val);
+				else  StoreValue(i,val);
 			}
 		}	
 		oldBuffPos[i] = newBuffPos;
@@ -737,8 +743,8 @@ HRESULT CVCppPluginImpl::OnGetData()
 			    if(++m_StoreCountEx[i]==m_iSignalOutPoint)m_StoreCountEx[i]=0;
 				OnPutData(i);
 				MyFFT(xreal[i],ximag,numfftsample[i],i);
-			}
-			else  m_bNret[i]=FALSE;						
+				m_bNret[i]=FALSE;
+			}								
 			continue;
 		}
 		if(m_CountType==间隔计算)
@@ -751,8 +757,8 @@ HRESULT CVCppPluginImpl::OnGetData()
 					m_bStart[i]=FALSE;
 					OnPutData(i);
 					MyFFT(xreal[i],ximag,numfftsample[i],i);
-				}
-				else m_bNret[i]=FALSE;
+					m_bNret[i]=FALSE;
+				}			
 				m_bStop[i]=FALSE;
 				continue; //IsPsTrig()变为0，!IsTrig()&&!IsPsTrig()为真 会多输出一次数值，直接跳出本次循环。
 			}			
@@ -764,9 +770,9 @@ HRESULT CVCppPluginImpl::OnGetData()
 					++m_numALLtrig[i];
 					m_bStart[i]=FALSE;
 					OnPutData(i);
-					MyFFT(xreal[i],ximag,numfftsample[i],i);		
-				}
-				else m_bNret[i]=FALSE;
+					MyFFT(xreal[i],ximag,numfftsample[i],i);
+					m_bNret[i]=FALSE;
+				}			    
 			}
 		}	
 	}
@@ -788,9 +794,10 @@ void CVCppPluginImpl::Time_Calculate()
 	m_lPointNum=m_sampleRate*m_fPointTime;
 	if(m_lPointNum<=N1)
 	{
-		m_lPointNum=N1;
+		m_lPointNum=N1;		
 		m_fPointTime=(double) m_lPointNum/m_sampleRate;
 	}
+	m_lPointNumReal=m_lPointNum;
 }
 void CVCppPluginImpl::Calculate(int chId ,float val)
 {
@@ -975,51 +982,44 @@ void CVCppPluginImpl::MyFFT(float *data1,float *data2,int n,int chId)
 				m_pCh[chId][19+(ind++)]->AddAsyncSingleSample(ffvalue,ts);
 				float ValRMS=fval/(double)sqrt(2.0);
 				m_pCh[chId][19+(ind++)]->AddAsyncSingleSample(ValRMS,ts);
-		   }
-			if(ChAllNum[chId]>0)
-			{   				
-				for(int i=0;i<ChAllNum[chId];i++)
-				{   
-					long MaxNum=0;float val=0.0;
-					int iCreat=0;float ValRMS=0.0;
-					//if(signalType[chId][i]==固有频率)
-					{  
-						if(m_Exfremult[chId][i]>0)//在被动范围内，寻找最大值；
+		 
+				if(ChAllNum[chId]>0)
+				{   				
+					for(int i=0;i<ChAllNum[chId];i++)
+					{   
+						long MaxNum=0;float val=0.0;
+						int iCreat=0;float ValRMS=0.0;
+						if(m_Exfremult[chId][i]>0)//在频率动范围内，寻找最大值;
 						{
-						   long fMultStart=0;long fMultStop=0;
-						   fMultStart=(long)(m_freqmult[chId][i]-m_Exfremult[chId][i])/(double)m_fBasefre;
-						   fMultStop=(long)(m_freqmult[chId][i]+m_Exfremult[chId][i])/(double)m_fBasefre;
-						   for(int j=fMultStart;j<=fMultStop;j++)
-						   {   
-							   float tempval=sqrt(data1[j]*data1[j]+data2 [j]*data2 [j]);
-							   if(tempval>val) {val=tempval;MaxNum=j;}
-						   }
+							long fMultStart=0;long fMultStop=0;
+							fMultStart=(long)(m_freqmult[chId][i]*fnum-m_Exfremult[chId][i])/(double)m_fBasefre;
+							fMultStop=(long)(m_freqmult[chId][i]*fnum+m_Exfremult[chId][i])/(double)m_fBasefre;
+							for(int j=fMultStart;j<=fMultStop;j++)
+							{   
+								float tempval=sqrt(data1[j]*data1[j]+data2 [j]*data2 [j]);
+								if(tempval>val) {val=tempval;MaxNum=j;}
+							}
 						}
 						else 
 						{   
-							MaxNum=(long)m_freqmult[chId][i]/(double)m_fBasefre;
+							MaxNum=(long)(m_freqmult[chId][i]*fnum+0.5)/(double)m_fBasefre;
 							val=sqrt(data1[MaxNum]*data1[MaxNum]+data2 [MaxNum]*data2 [MaxNum]);
 						}
+						 m_pCh[chId][22+i*3+(iCreat++)]->AddAsyncSingleSample(val/(n/2),ts);
+						 float ffval=0.0;
+						 ffval=MaxNum*m_fBasefre;	
+						 m_pCh[chId][22+i*3+(iCreat++)]->AddAsyncSingleSample(ffval,ts);
+						 ValRMS=val/(n/2)/(double)sqrt(2.0);
+						 m_pCh[chId][22+i*3+(iCreat++)]->AddAsyncSingleSample(ValRMS,ts);
 					}
-					//else if(signalType[chId][i]==倍数频率)
-					{
-						MaxNum=long(m_freqmult[chId][i]*fnum+0.5);
-						val=sqrt(data1[MaxNum]*data1[MaxNum]+data2 [MaxNum]*data2 [MaxNum]);
-					}
-					 m_pCh[chId][22+i*3+(iCreat++)]->AddAsyncSingleSample(val/(n/2),ts);
-					 float ffval=0.0;
-					 ffval=MaxNum*m_fBasefre;	
-					 m_pCh[chId][22+i*3+(iCreat++)]->AddAsyncSingleSample(ffval,ts);
-					 ValRMS=val/(n/2)/(double)sqrt(2.0);
-                     m_pCh[chId][22+i*3+(iCreat++)]->AddAsyncSingleSample(ValRMS,ts);
 				}
-			}
-		}	  
-	numfftsample[chId]=0;	
-	memset(xreal[chId],0, sizeof(xreal[chId]));
-	memset(ximag, 0, sizeof(ximag));
-	memset(wreal, 0, sizeof(wreal));
-	memset(wimag, 0, sizeof(wimag));
+            }
+	  }	  
+	  numfftsample[chId]=0;	
+	  memset(xreal[chId],0, sizeof(xreal[chId]));
+	  memset(ximag, 0, sizeof(ximag));
+	  memset(wreal, 0, sizeof(wreal));
+	  memset(wimag, 0, sizeof(wimag));
 }
 void CVCppPluginImpl::MySwap(float *dat1, float *dat2,int n,int chId)
 {

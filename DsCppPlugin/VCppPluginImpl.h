@@ -115,7 +115,7 @@ private:
 	float         wreal [N0/2], wimag [N0/2];
 	float         m_CntValue,m_fBasefre,m_CntSum;
 	float         m_ave_fval;
- 	long          m_lPointNum;  
+ 	long          m_lPointNum,m_lPointNumReal;  
 	long          m_lNowNum[CHANNELNUM ];
 	long          m_StoreCount,m_StoreCountEx[CHANNELNUM ];
 public:

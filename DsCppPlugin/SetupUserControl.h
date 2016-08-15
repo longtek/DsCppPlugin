@@ -201,7 +201,7 @@ namespace DsCppPlugin {
     private: System::Windows::Forms::Label^  label21;
     private: System::Windows::Forms::Label^  label20;
     private: System::Windows::Forms::ListView^  listViewInfo;
-    private: System::Windows::Forms::ListViewItem^  listViewItem;
+    
 
 
 private: System::Windows::Forms::Button^  Print;
@@ -229,6 +229,8 @@ private: System::Windows::Forms::TextBox^  ChNameBox;
 private: System::Windows::Forms::Label^  ChName;
 private: System::Windows::Forms::Label^  label23;
 private: System::Windows::Forms::TextBox^  SUM;
+private: System::Windows::Forms::Label^  label24;
+private: System::Windows::Forms::TextBox^  ChFre;
 
 
 
@@ -631,6 +633,8 @@ private: System::Windows::Forms::TextBox^  SUM;
 			this->ChName = (gcnew System::Windows::Forms::Label());
 			this->label23 = (gcnew System::Windows::Forms::Label());
 			this->SUM = (gcnew System::Windows::Forms::TextBox());
+			this->label24 = (gcnew System::Windows::Forms::Label());
+			this->ChFre = (gcnew System::Windows::Forms::TextBox());
 			this->groupBox1->SuspendLayout();
 			this->SuspendLayout();
 			// 
@@ -2505,7 +2509,7 @@ private: System::Windows::Forms::TextBox^  SUM;
 			this->ChNameBox->Location = System::Drawing::Point(51, 404);
 			this->ChNameBox->Name = L"ChNameBox";
 			this->ChNameBox->ReadOnly = true;
-			this->ChNameBox->Size = System::Drawing::Size(59, 28);
+			this->ChNameBox->Size = System::Drawing::Size(68, 28);
 			this->ChNameBox->TabIndex = 218;
 			// 
 			// ChName
@@ -2520,25 +2524,44 @@ private: System::Windows::Forms::TextBox^  SUM;
 			// label23
 			// 
 			this->label23->AutoSize = true;
-			this->label23->Location = System::Drawing::Point(152, 383);
+			this->label23->Location = System::Drawing::Point(128, 384);
 			this->label23->Name = L"label23";
-			this->label23->Size = System::Drawing::Size(44, 18);
+			this->label23->Size = System::Drawing::Size(62, 18);
 			this->label23->TabIndex = 220;
-			this->label23->Text = L"×ÜÊý";
+			this->label23->Text = L"Ch.Sum";
 			// 
 			// SUM
 			// 
-			this->SUM->Location = System::Drawing::Point(182, 405);
+			this->SUM->Location = System::Drawing::Point(126, 404);
 			this->SUM->Name = L"SUM";
 			this->SUM->ReadOnly = true;
-			this->SUM->Size = System::Drawing::Size(62, 28);
+			this->SUM->Size = System::Drawing::Size(68, 28);
 			this->SUM->TabIndex = 221;
+			// 
+			// label24
+			// 
+			this->label24->AutoSize = true;
+			this->label24->Location = System::Drawing::Point(198, 383);
+			this->label24->Name = L"label24";
+			this->label24->Size = System::Drawing::Size(62, 18);
+			this->label24->TabIndex = 222;
+			this->label24->Text = L"Ch.Fre";
+			// 
+			// ChFre
+			// 
+			this->ChFre->Location = System::Drawing::Point(201, 404);
+			this->ChFre->Name = L"ChFre";
+			this->ChFre->ReadOnly = true;
+			this->ChFre->Size = System::Drawing::Size(68, 28);
+			this->ChFre->TabIndex = 223;
 			// 
 			// SetupUserControl
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(9, 18);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackColor = System::Drawing::SystemColors::ActiveCaption;
+			this->Controls->Add(this->ChFre);
+			this->Controls->Add(this->label24);
 			this->Controls->Add(this->SUM);
 			this->Controls->Add(this->label23);
 			this->Controls->Add(this->ChName);
@@ -5713,6 +5736,11 @@ private: System::Windows::Forms::TextBox^  SUM;
 				 stri.Format(_T("%d"),plugin->ChAllNum[chId]);
 				 cstr = gcnew String(stri); 
 				 SUM->Text=cstr;
+				 BSTR bstr;
+				 plugin->m_pChCounter[plugin->m_CounterIndex[chId]]->get_Name(&bstr);
+				 stri=bstr;
+				 cstr = gcnew String(stri);
+				 ChFre->Text=cstr;
 				 for(int i=0;i<plugin->ChAllNum[chId];i++)
 				 {
 					 stri.Format(_T("%d"),i);

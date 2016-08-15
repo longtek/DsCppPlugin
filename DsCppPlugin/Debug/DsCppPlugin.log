@@ -1,7 +1,7 @@
-﻿生成启动时间为 2016/8/12 9:40:51。
+﻿生成启动时间为 2016/8/15 11:51:41。
      1>项目“F:\PROJECT\DsCppPlugin16\DsCppPlugin\DsCppPlugin.vcxproj”在节点 2 上(build 个目标)。
      1>InitializeBuildStatus:
-         正在对“Debug\DsCppPlugin.unsuccessfulbuild”执行 Touch 任务。
+         正在创建“Debug\DsCppPlugin.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
        Midl:
          所有输出均为最新。
        GenerateTargetFrameworkMonikerAttribute:
@@ -37,4 +37,4 @@
 
 生成成功。
 
-已用时间 00:00:12.01
+已用时间 00:00:12.28
