@@ -599,25 +599,25 @@ void CVCppPluginImpl::StoreValue(int chId, float val)
 			 float fval=0.0;
 			 if(!m_bNret[chId])
 			 {		//读取转速;		
-					  {
-						  long lPos;
-						  m_pChCounter[m_CounterIndex[chId]]->get_DBPos(&lPos);
-						  if(lPos==0)
-						  { 
-							  long DBBuffSize;
-							  m_pChCounter[m_CounterIndex[chId]]->get_DBBufSize(&DBBuffSize);
-							  lPos=DBBuffSize;
-						  }
-						  m_pChCounter[m_CounterIndex[chId]]->get_DBValues(lPos-1,&fval);
-						  m_CntValue=(double)fval;
-					  }
-				      m_bNret[chId]=TRUE;
-					  if(fval<=100.0)
-						  DN=N1;
-					  if(100.0<fval&&fval<=1300.0)
-					      DN=N2;
-					  if(1300.0<fval)
-					      DN=N3;
+				{
+					long lPos;
+					m_pChCounter[m_CounterIndex[chId]]->get_DBPos(&lPos);
+					if(lPos==0)
+					{ 
+						long DBBuffSize;
+						m_pChCounter[m_CounterIndex[chId]]->get_DBBufSize(&DBBuffSize);
+						lPos=DBBuffSize;
+					}
+					m_pChCounter[m_CounterIndex[chId]]->get_DBValues(lPos-1,&fval);
+					m_CntValue=(double)fval;
+				}
+				m_bNret[chId]=TRUE;
+				if(fval<=100.0)
+					DN=N1;
+				if(100.0<fval&&fval<=1300.0)
+					DN=N2;
+				if(1300.0<fval)
+					DN=N3;
 			}
 		    if(numfftsample[chId]<DN)
 			{
@@ -992,8 +992,8 @@ void CVCppPluginImpl::MyFFT(float *data1,float *data2,int n,int chId)
 						if(m_Exfremult[chId][i]>0)//在频率动范围内，寻找最大值;
 						{
 							long fMultStart=0;long fMultStop=0;
-							fMultStart=(long)(m_freqmult[chId][i]*fnum-m_Exfremult[chId][i])/(double)m_fBasefre;
-							fMultStop=(long)(m_freqmult[chId][i]*fnum+m_Exfremult[chId][i])/(double)m_fBasefre;
+							fMultStart=(long)(m_freqmult[chId][i]*fnum-m_Exfremult[chId][i]/(double)m_fBasefre);
+							fMultStop=(long)(m_freqmult[chId][i]*fnum+m_Exfremult[chId][i]/(double)m_fBasefre);
 							for(int j=fMultStart;j<=fMultStop;j++)
 							{   
 								float tempval=sqrt(data1[j]*data1[j]+data2 [j]*data2 [j]);
@@ -1002,7 +1002,7 @@ void CVCppPluginImpl::MyFFT(float *data1,float *data2,int n,int chId)
 						}
 						else 
 						{   
-							MaxNum=(long)(m_freqmult[chId][i]*fnum+0.5)/(double)m_fBasefre;
+							MaxNum=(long)(m_freqmult[chId][i]*fnum+0.5);
 							val=sqrt(data1[MaxNum]*data1[MaxNum]+data2 [MaxNum]*data2 [MaxNum]);
 						}
 						 m_pCh[chId][22+i*3+(iCreat++)]->AddAsyncSingleSample(val/(n/2),ts);
